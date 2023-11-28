@@ -1,0 +1,50 @@
+command:
+  - ${ENVIRONMENT_VARIABLE}
+  - ${interpreter}
+  - ${program}
+  - ${project}
+  - ${args}
+method: grid
+metric:
+  goal: maximize
+  name: AUC.test.max
+parameters:
+  architecture:
+    values:
+      - LSTM
+  hidden_dim:
+    values:
+      - 128
+  include_bot_vector:
+    values:
+      - false
+  is_test:
+    values:
+      - true
+  lr:
+    values:
+      - 0.0004
+  model_n_layers:
+    values:
+      - 4
+  online_simulation_size:
+    values:
+      - 0
+      - 100
+  seed:
+    values:
+      - 23
+      - 24
+      - 35
+  simulation_bot_per_user:
+    values:
+      - 6
+  simulation_signal_error:
+    values:
+      - 0.3
+  simulation_size:
+    values:
+      - 0
+      - 10000
+program: main.py
+project: StrategyTransfer
