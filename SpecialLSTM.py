@@ -57,6 +57,10 @@ class SpecialLSTM(nn.Module):
         lstm_output, (game_vector, user_vector) = self.main_task(lstm_input.contiguous(),
                                                                  (game_vector.contiguous(),
                                                                   user_vector.contiguous()))
+
+        # game_vector is the hidden state of the last layer of the LSTM
+        # user_vector is the cell state of the last layer of the LSTM
+
         user_vector = user_vector.reshape(shape)
         game_vector = game_vector.reshape(shape)
         if hasattr(self, "input_twice") and self.input_twice:

@@ -64,6 +64,13 @@ parser.add_argument('--OFFLINE_SIM_DATA_PATH', type=str, default="data/LLM_games
 parser.add_argument('--personas_balanced', type=str2bool, default=True, help='Personas balanced flag')
 parser.add_argument('--personas_group_number', type=int, default=-1, help='Personas group number')
 
+# Our Project:
+#   1. We want to use information from previous games as well when training the transformer, instead of having a cold
+#   start for each game.
+#   2. We want to "get the best of both worlds" by combining the EFs and the GPT embeddings.
+parser.add_argument('--save_previous_games', type=str2bool, default=False, help='Save previous games flag')
+parser.add_argument('--combine_features', type=str2bool, default=False, help='Combine features flag')
+
 
 args = parser.parse_args()
 

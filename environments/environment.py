@@ -22,12 +22,12 @@ class Environment:
         self.n_layers = config["layers"]
         self.env_learning_rate = config["ENV_LEARNING_RATE"]
         self.model_path = model_path
-        self.init_model_arc(config=config)
+        self.init_model_arc(config=config)  # Creates the lstm / transformer architecture and saves in self.model
         self.loss_fn = nn.NLLLoss(reduction="none")
         self.currentDM = None
         self.currentGame = None
         self.config = config
-        force_train = config["force_train"]
+        force_train = config["force_train"]  # False = pretrained model.
         if not force_train:
             try:
                 self.load()
@@ -43,14 +43,14 @@ class Environment:
 
     def train(self, do_eval=True):
         print("Start training the environment...")
-        online_sim_type = self.config["online_sim_type"]
+        online_sim_type = self.config["online_sim_type"]  # default: before_epoch
         assert online_sim_type in ["None", "mixed", "before_epoch", "init"]
         phases = []
 
         if online_sim_type == "init":
             raise NotImplementedError("The 'init' simulation type is not implemented yet.")
         
-        elif self.config["task"] == "on_policy":
+        elif self.config["task"] == "on_policy":  # ignore this
             human_train_size = self.config["human_train_size"]
             test_size = ON_POLICY_TEST_SIZE
             real_users = np.random.choice(range(test_size, DATA_CLEAN_ACTION_PATH_X_NUMBER_OF_USERS), human_train_size, replace=False)
@@ -63,10 +63,10 @@ class Environment:
             # else:
             #     real_users = np.arange(DATA_CLEAN_ACTION_PATH_X_NUMBER_OF_USERS)
             if self.config["ENV_HPT_mode"]:
-                all_users = np.arange(DATA_CLEAN_ACTION_PATH_X_NUMBER_OF_USERS)
+                all_users = np.arange(DATA_CLEAN_ACTION_PATH_X_NUMBER_OF_USERS)  # indices from 0 to 209
                 train_users = np.random.choice(all_users,
                                                int(DATA_CLEAN_ACTION_PATH_X_NUMBER_OF_USERS * 0.8), replace=False)
-                test_users = np.setdiff1d(all_users, train_users)
+                test_users = np.setdiff1d(all_users, train_users)  # the rest of the users
                 train_dataset = OfflineDataSet(user_groups="X", strategies=[3, 0, 2, 5], users=train_users,
                                                weight_type=self.config.loss_weight_type, config=self.config)
             else:

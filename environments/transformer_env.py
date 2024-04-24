@@ -5,7 +5,7 @@ from SpecialLSTM import SpecialLSTM
 from consts import *
 
 
-class transformer_env_ARC(nn.Module):
+class transformer_env_ARC(nn.Module):  # ARC = architecture
     def __init__(self, config):
         super().__init__()
         input_dim = config["input_dim"]
