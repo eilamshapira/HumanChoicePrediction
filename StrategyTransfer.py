@@ -68,10 +68,11 @@ parser.add_argument('--personas_group_number', type=int, default=-1, help='Perso
 # Our Project:
 #   1. We want to use information from previous games as well when training the transformer, instead of having a cold
 #   start for each game.
-#   2. We want to "get the best of both worlds" by combining the EFs and the GPT embeddings.
+#   2. We want to "get the best of both worlds" by combining different types of embeddings.
+
 parser.add_argument('--save_previous_games', type=str2bool, default=False, help='Save previous games flag')
 parser.add_argument('--combine_features', type=str2bool, default=False, help='Combine features flag')
-parser.add_argument('--feature_combination', type=lambda x: [str(i) for i in x.split('_')], default='EFs_GPT4', help='Feature combination')
+parser.add_argument('--feature_combination', type=lambda x: x.split('_'), default='EFs_GPT4', help='Feature combination')
 
 
 
