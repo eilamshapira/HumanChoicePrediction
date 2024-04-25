@@ -110,8 +110,6 @@ for meta_feature, meta_feature_map in meta_features_map.items():
         for config_feature, val in meta_feature_map[config[meta_feature]].items():
             config[config_feature] = val
 
-print(config)
-
 if "LLM_USERS_PER_PERSONA" in config.keys():
     assert "offline_simulation_size" not in config.keys()
     groups = personas.get_personas_in_group(config.personas_group_number)
