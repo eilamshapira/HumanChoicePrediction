@@ -73,6 +73,7 @@ parser.add_argument('--personas_group_number', type=int, default=-1, help='Perso
 parser.add_argument('--save_previous_games', type=str2bool, default=False, help='Save previous games flag')
 parser.add_argument('--combine_features', type=str2bool, default=False, help='Combine features flag')
 parser.add_argument('--feature_combination', type=lambda x: x.split('_'), default='EFs_GPT4', help='Feature combination')
+parser.add_argument('--pca_dim', type=int, default=36, help='PCA dimension')
 
 
 
@@ -93,10 +94,23 @@ meta_features_map = {"features": {"EFs": {"FEATURES_PATH": config["SIMULATION_EF
 # data = OfflineDataSet(user_groups="X", weight_type=config['loss_weight_type'], config=config)
 
 for meta_feature, meta_feature_map in meta_features_map.items():
-    if config[meta_feature] not in meta_feature_map.keys():
-        raise NotImplementedError(meta_feature)
-    for config_feature, val in meta_feature_map[config[meta_feature]].items():
-        config[config_feature] = val
+    if meta_feature == "features" and config['combine_features']:  # OUR IMPROVEMENT
+        for feature_type in config['feature_combination']:  # feature_type = EFs, GPT4, or BERT
+            if feature_type not in meta_feature_map.keys():  # feature_type is not one of the legal values
+                raise NotImplementedError(feature_type)
+            for config_feature, val in meta_feature_map[feature_type].items():
+                if config_feature in config.keys():
+                    config[config_feature][feature_type] = val
+                else:
+                    config[config_feature] = {feature_type: val}
+
+    else:  # ORIGINAL CODE
+        if config[meta_feature] not in meta_feature_map.keys():
+            raise NotImplementedError(meta_feature)
+        for config_feature, val in meta_feature_map[config[meta_feature]].items():
+            config[config_feature] = val
+
+print(config)
 
 if "LLM_USERS_PER_PERSONA" in config.keys():
     assert "offline_simulation_size" not in config.keys()
@@ -106,16 +120,21 @@ if "LLM_USERS_PER_PERSONA" in config.keys():
 if "online_simulation_factor" in config.keys():
     config["online_simulation_size"] = (config["offline_simulation_size"] + config["human_train_size"]) * config["online_simulation_factor"]
 
-config["input_dim"] = config['REVIEW_DIM'] + STRATEGY_DIM
+if config['combine_features']:  # OUR IMPROVEMENT
+    config["input_dim"] = config['pca_dim'] + STRATEGY_DIM
+else:  # ORIGINAL
+    config["input_dim"] = config['REVIEW_DIM'] + STRATEGY_DIM
 config["wandb_run_id"] = wandb.run.id
 
 set_global_seed(config["seed"])
 
 all_user_points = []
 all_bot_points = []
-hotels = utils.Hotels(config)
+# TODO: check if we use the value hotels
+# hotels = utils.Hotels(config)  # do we use this?
 
 env_name = config["wandb_run_id"]
+
 
 if config["save_previous_games"]:
     env_model = None  # change to our model

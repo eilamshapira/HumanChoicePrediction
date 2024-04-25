@@ -18,6 +18,7 @@ from tqdm import trange
 import pandas as pd
 from consts import *
 from utils import personas
+from sklearn.decomposition import PCA
 
 
 class OfflineDataSet(Dataset):
@@ -85,11 +86,24 @@ class OfflineDataSet(Dataset):
         for u, i in sorted(self.actions_df.indices.keys()):
             self.n_groups_by_user_id[u].append(i)
 
-        # Loads data from the csv and converts it to a dictionary of id: numerical vector of the features of the review
-        self.review_reduced = pd.read_csv(config['FEATURES_PATH'], index_col=0).T.astype(int).to_dict(orient='list')
-        # Converts the vector to a tensor
-        self.review_reduced = {int(rid): torch.Tensor(vec) for rid, vec in self.review_reduced.items()}
-        self.review_reduced[-1] = torch.zeros(config["REVIEW_DIM"])
+        if self.config["combine_features"]:
+            reviews_data = defaultdict(list)
+            for feature_name in self.config["feature_combination"]:
+                review = pd.read_csv(config['FEATURES_PATH'][feature_name], index_col=0).T.astype(float).to_dict(orient='list')
+                for rid, vec in review.items():
+                    reviews_data[rid] += vec
+            X = np.array(list(reviews_data.values()))
+            X = PCA(n_components=self.config["pca_dim"]).fit_transform(X)
+            self.review_reduced = {int(rid): torch.Tensor(vec) for rid, vec in zip(reviews_data.keys(), X)}
+            self.review_reduced[-1] = torch.zeros(config["pca_dim"])
+
+
+        else:  # ORIGINAL CODE
+            # Loads data from the csv and converts it to a dictionary of id: numerical vector of the features of the review
+            self.review_reduced = pd.read_csv(config['FEATURES_PATH'], index_col=0).T.astype(int).to_dict(orient='list')
+            # Converts the vector to a tensor
+            self.review_reduced = {int(rid): torch.Tensor(vec) for rid, vec in self.review_reduced.items()}
+            self.review_reduced[-1] = torch.zeros(config["REVIEW_DIM"])
 
         # Creates a dictionary of all reviews including the positive part, negative part and final score. The keys
         # are the unique IDs of each review. Unclear why we need this...
@@ -211,9 +225,27 @@ class OnlineSimulationDataSet(Dataset):
         self.hotels = np.array(self.hotels)
         self.reviews_id = np.array(self.reviews_id)
 
-        self.review_reduced = pd.read_csv(config['FEATURES_PATH'], index_col=0).T.astype(int).to_dict(orient='list')
-        self.review_reduced = {int(rid): torch.Tensor(vec) for rid, vec in self.review_reduced.items()}
-        self.review_reduced[-1] = torch.zeros(config["REVIEW_DIM"])
+        # self.review_reduced = pd.read_csv(config['FEATURES_PATH'], index_col=0).T.astype(int).to_dict(orient='list')
+        # self.review_reduced = {int(rid): torch.Tensor(vec) for rid, vec in self.review_reduced.items()}
+        # self.review_reduced[-1] = torch.zeros(config["REVIEW_DIM"])
+
+        if self.config["combine_features"]:
+            reviews_data = defaultdict(list)
+            for feature_name in self.config["feature_combination"]:
+                review = pd.read_csv(config['FEATURES_PATH'][feature_name], index_col=0).T.astype(float).to_dict(orient='list')
+                for rid, vec in review.items():
+                    reviews_data[rid] += vec
+            X = np.array(list(reviews_data.values()))
+            X = PCA(n_components=self.config["pca_dim"]).fit_transform(X)
+            self.review_reduced = {int(rid): torch.Tensor(vec) for rid, vec in zip(reviews_data.keys(), X)}
+            self.review_reduced[-1] = torch.zeros(config["pca_dim"])
+        else:  # ORIGINAL CODE
+            # Loads data from the csv and converts it to a dictionary of id: numerical vector of the features of the review
+            self.review_reduced = pd.read_csv(config['FEATURES_PATH'], index_col=0).T.astype(int).to_dict(orient='list')
+            # Converts the vector to a tensor
+            self.review_reduced = {int(rid): torch.Tensor(vec) for rid, vec in self.review_reduced.items()}
+            self.review_reduced[-1] = torch.zeros(config["REVIEW_DIM"])
+
 
         self.gcf = pd.read_csv(config['SIMULATION_EFs_PATH'], index_col=0, dtype=float).T
         self.gcf.columns = self.gcf.columns.astype(int)
