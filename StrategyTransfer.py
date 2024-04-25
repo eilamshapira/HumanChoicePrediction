@@ -5,6 +5,7 @@ from utils.functions import *
 import wandb
 from utils import personas
 import argparse
+from utils.datasets import OfflineDataSet
 
 parser = argparse.ArgumentParser(description='Hyperparameter tuning with wandb.')
 def str2bool(v):
@@ -86,6 +87,8 @@ meta_features_map = {"features": {"EFs": {"FEATURES_PATH": config["SIMULATION_EF
                                       "transformer": {"use_user_vector": False}}
                      }
 
+# data = OfflineDataSet(user_groups="X", weight_type=config['loss_weight_type'], config=config)
+
 for meta_feature, meta_feature_map in meta_features_map.items():
     if config[meta_feature] not in meta_feature_map.keys():
         raise NotImplementedError(meta_feature)
@@ -111,7 +114,9 @@ hotels = utils.Hotels(config)
 
 env_name = config["wandb_run_id"]
 
-if config["architecture"] == "LSTM":
+if config["save_previous_games"]:
+    env_model = None  # change to our model
+elif config["architecture"] == "LSTM":
     env_model = environments.LSTM_env.LSTM_env(env_name, config=config)
 elif config["architecture"] == "transformer":
     env_model = environments.transformer_env.transformer_env(env_name, config=config)

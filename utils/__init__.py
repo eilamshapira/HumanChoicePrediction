@@ -58,7 +58,7 @@ class Hotels:
 
 class StrategicSituation:
     def __init__(self, prev_round_situation: 'StrategicSituation' = None, prev_round_results=None, from_dict={}):
-        if len(from_dict):
+        if len(from_dict):  # from_dict is not empty, take information from there.
             self.round = from_dict["round"]
             self.last_didGo = from_dict["last_didGo"]
             self.last_didWin = from_dict["last_didWin"]
@@ -66,7 +66,7 @@ class StrategicSituation:
             self.last_last_didWin = from_dict["last_last_didWin"]
             self.user_points = from_dict["user_points"]
             self.bot_points = from_dict["bot_points"]
-        elif prev_round_situation is None:
+        elif prev_round_situation is None:  # first round of game
             self.round = 1
             self.last_didGo = None
             self.last_didWin = None
@@ -74,7 +74,7 @@ class StrategicSituation:
             self.last_last_didWin = None
             self.user_points = 0
             self.bot_points = 0
-        else:
+        else:  # from_dict is empty, we will take the information from the previous round and the dict
             self.round = prev_round_situation.round + 1
             assert prev_round_results["didGo"] is not None
             assert prev_round_results["didWin"] is not None
@@ -118,7 +118,7 @@ def predict_go_proba(env_model, strategic_situation: StrategicSituation, review_
     if not isinstance(review_vector, torch.Tensor):
         review_vector = torch.Tensor(review_vector)
 
-    vec = torch.cat([torch.Tensor(strategic_situation()), review_vector.flatten()])
+    vec = torch.cat([torch.Tensor(strategic_situation()), review_vector.flatten()])  # TODO: We may want to change here
     if vectors:
         output = env_model.predict_proba({"x": vec,
                                           "user_vector": vectors["user_vector"],

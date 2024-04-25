@@ -27,7 +27,7 @@ class Environment:
         self.currentDM = None
         self.currentGame = None
         self.config = config
-        force_train = config["force_train"]  # False = pretrained model.
+        force_train = config["force_train"]  # False = pretrained model. Default = True
         if not force_train:
             try:
                 self.load()
@@ -71,7 +71,7 @@ class Environment:
                                                weight_type=self.config.loss_weight_type, config=self.config)
             else:
                 train_dataset = OfflineDataSet(user_groups="X", weight_type=self.config.loss_weight_type,
-                                               config=self.config)
+                                               config=self.config)  #
 
             train_sampler = NewUserBatchSampler(train_dataset, batch_size=ENV_BATCH_SIZE, shuffle=True)
             train_dataloader = DataLoader(train_dataset, batch_sampler=train_sampler, shuffle=False)
