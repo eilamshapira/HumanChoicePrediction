@@ -60,9 +60,10 @@ class OfflineDataSet(Dataset):
         if "persona" in self.actions_df.columns:
             print("user per persona:", self.actions_df[["persona", "user_id"]].drop_duplicates().groupby("persona").count())
 
-        grouped_counts = self.actions_df.groupby(["user_id", "strategy_id"]).size().reset_index(name="N")
+        grouped_counts = self.actions_df.groupby(["user_id", "strategy_id"]).size().reset_index(name="N")  # For
+        # every pair of DM and bot, how many rounds the DM played against the bot.
         self.actions_df = self.actions_df.merge(grouped_counts, on=["user_id", "strategy_id"], how="left")
-        number_of_groups = len(grouped_counts)
+        number_of_groups = len(grouped_counts)  # num of players * num of bots
         total_samples = len(self.actions_df)
         self.actions_df["weight"] = 1
         if weight_type == "sender_receiver" or weight_type == "both":
@@ -77,20 +78,24 @@ class OfflineDataSet(Dataset):
 
         self.actions_df = self.actions_df.groupby(["user_id", "gameId"])
 
-        self.idx_to_group = list(self.actions_df.indices.keys())
-        self.group_to_idx = {g: i for i, g in enumerate(self.idx_to_group)}
-        self.n_groups_by_user_id = defaultdict(list)
+        self.idx_to_group = list(self.actions_df.indices.keys())  # all pairs of user id and game ids in the csv
+        self.group_to_idx = {g: i for i, g in enumerate(self.idx_to_group)}  # pair of user and game => index in
+        # idx_to_group
+        self.n_groups_by_user_id = defaultdict(list)  # user => ids of games that user played
         for u, i in sorted(self.actions_df.indices.keys()):
             self.n_groups_by_user_id[u].append(i)
 
+        # Loads data from the csv and converts it to a dictionary of id: numerical vector of the features of the review
         self.review_reduced = pd.read_csv(config['FEATURES_PATH'], index_col=0).T.astype(int).to_dict(orient='list')
+        # Converts the vector to a tensor
         self.review_reduced = {int(rid): torch.Tensor(vec) for rid, vec in self.review_reduced.items()}
         self.review_reduced[-1] = torch.zeros(config["REVIEW_DIM"])
 
+        # Creates a dictionary of all reviews including the positive part, negative part and final score. The keys
+        # are the unique IDs of each review. Unclear why we need this...
         self.reviews = {}
         for h in range(1, N_HOTELS + 1):
-            hotel_df = pd.read_csv(os.path.join(reviews_path, f"{h}.csv"),
-                                   header=None)
+            hotel_df = pd.read_csv(os.path.join(reviews_path, f"{h}.csv"), header=None)
             for review in hotel_df.iterrows():
                 self.reviews[review[1][0]] = {"positive": review[1][2],
                                               "negative": review[1][3],
@@ -104,24 +109,30 @@ class OfflineDataSet(Dataset):
 
     def __getitem__(self, item):
         if isinstance(item, int):
-            group = self.idx_to_group[item]
+            group = self.idx_to_group[item]  # group is a tuple of user id and game id. Important, we may want to
+            # change the data to be just the user id without the game id.
         else:
-            group = item
-        game = self.actions_df.get_group(group).reset_index()
-        user_id = game["user_id"][0]
+            group = item  # group is a tuple of user id and game id
+        game = self.actions_df.get_group(group).reset_index()  # get all rounds of the given game
+        user_id = game["user_id"][0]  # same as group[0]
         n_rounds = len(game)
 
-        game["is_sample"] = np.ones(n_rounds).astype(bool)
-        if n_rounds < DATA_ROUNDS_PER_GAME:
+        game["is_sample"] = np.ones(n_rounds).astype(bool)  # vector of size n_rounds of True
+        if n_rounds < DATA_ROUNDS_PER_GAME:  # The game ended before it was supposed to
             game = pd.concat([game] + [DATA_BLANK_ROW_DF(game["strategy_id"][0])] * (DATA_ROUNDS_PER_GAME - n_rounds),
-                             ignore_index=True)
+                             ignore_index=True)  # Padding to be 10 rounds
 
-        bot_strategy = game["strategy_id"].to_numpy()
+        # All the features of the situation as in page 18 of the paper:
 
-        hotels_scores = game["hotelScore"].to_numpy()
+        bot_strategy = game["strategy_id"].to_numpy()  # vector of size n_rounds of the strategy id (which is always
+        # the same in the same game)
 
-        action_taken = game["didGo"].to_numpy().astype(np.int64)
-        is_hotel_good = (game["didGo"] == game["didWin"]).to_numpy()
+        hotels_scores = game["hotelScore"].to_numpy()  # vector of size n_rounds of the hotel score for each round
+
+
+        action_taken = game["didGo"].to_numpy().astype(np.int64)  # vector of size n_rounds of the action taken by the DM
+        is_hotel_good = (game["didGo"] == game["didWin"]).to_numpy()  # vector of size n_rounds of whether the hotel
+        # score > 0.8
 
         reaction_time = game["reaction_time"].to_numpy()
         last_reaction_time = game["last_reaction_time"].to_numpy()
@@ -133,7 +144,7 @@ class OfflineDataSet(Dataset):
 
         reviewId = game["reviewId"]
         round_num = np.full(10, -1)
-        round_num[:n_rounds] = np.arange(n_rounds)
+        round_num[:n_rounds] = np.arange(n_rounds)  # round_num = [1, 2, ..., n_rounds, -1, -1, ...]
 
         sample = {"user_id": user_id, "bot_strategy": bot_strategy, "n_rounds": n_rounds, "roundNum": round_num,
                   "hotels_scores": hotels_scores, "action_taken": action_taken, "is_hotel_good": is_hotel_good,
@@ -157,7 +168,7 @@ class OfflineDataSet(Dataset):
         for column_name, (lower, upper) in zip(reaction_time_columns_names, reaction_time_bins):
             sample[column_name] = (lower <= last_reaction_time) & (last_reaction_time < upper)
 
-        sample["review_vector"] = torch.stack(sample["review_vector"])
+        sample["review_vector"] = torch.stack(sample["review_vector"])  # Matrix of 10 x REVIEW_DIM
         return sample
 
 
@@ -522,3 +533,4 @@ class ConcatDatasets(IterableDataset):
 
     def __len__(self):
         return max(len(self.dataloader1), len(self.dataloader2))
+
