@@ -134,9 +134,7 @@ all_bot_points = []
 env_name = config["wandb_run_id"]
 
 
-if config["save_previous_games"]:
-    env_model = None  # change to our model
-elif config["architecture"] == "LSTM":
+if config["architecture"] == "LSTM":
     env_model = environments.LSTM_env.LSTM_env(env_name, config=config)
 elif config["architecture"] == "transformer":
     env_model = environments.transformer_env.transformer_env(env_name, config=config)
