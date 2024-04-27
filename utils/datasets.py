@@ -88,8 +88,11 @@ class OfflineDataSet(Dataset):
         self.group_to_idx = {g: i for i, g in enumerate(self.idx_to_group)}  # pair of user and game => index in
         # idx_to_group
         self.n_groups_by_user_id = defaultdict(list)  # user => ids of games that user played
-        for u, i in sorted(self.actions_df.indices.keys()):
-            self.n_groups_by_user_id[u].append(i)
+        if self.config["save_previous_games"]:
+            pass
+        else:
+            for u, i in sorted(self.actions_df.indices.keys()):
+                self.n_groups_by_user_id[u].append(i)
 
         if self.config["combine_features"]:
             reviews_data = defaultdict(list)
