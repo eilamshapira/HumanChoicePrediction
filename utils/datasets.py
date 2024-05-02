@@ -209,7 +209,6 @@ class OfflineDataSet(Dataset):
         sample["review_vector"] = torch.stack(sample["review_vector"])  # Matrix of max_user_rounds x REVIEW_DIM
         # max_user_rounds is 10 if we look at a single game
 
-        2 / 0
         return sample
 
 
