@@ -256,7 +256,7 @@ class OnlineSimulationDataSet(Dataset):
         # self.review_reduced = {int(rid): torch.Tensor(vec) for rid, vec in self.review_reduced.items()}
         # self.review_reduced[-1] = torch.zeros(config["REVIEW_DIM"])
 
-        if self.config["combine_features"]:
+        if self.config["combine_features"]:  # Our improvement
             reviews_data = defaultdict(list)
             for feature_name in self.config["feature_combination"]:
                 review = pd.read_csv(config['FEATURES_PATH'][feature_name], index_col=0).T.astype(float).to_dict(

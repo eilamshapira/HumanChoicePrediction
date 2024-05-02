@@ -6,6 +6,7 @@ from utils.datasets import OnlineSimulationDataSet
 class UserSampler(Sampler):
     def __init__(self, dataset, batch_size):
         # TODO : Add the ability to sample only users without also sampling games.
+        print('here')
         super().__init__(dataset)
         self.dataset = dataset
         group_sizes = dataset.n_groups_by_user_id
