@@ -12,6 +12,7 @@ class transformer_env_ARC(nn.Module):  # ARC = architecture
         dropout = config["dropout"]
         nhead = config["transformer_nheads"]
         hidden_dim = config["hidden_dim"]
+        self.save_previous_games = config["save_previous_games"]
         self.user_vectors = None
 
         self.fc = nn.Sequential(nn.Linear(input_dim, hidden_dim),
@@ -30,13 +31,20 @@ class transformer_env_ARC(nn.Module):  # ARC = architecture
 
     def forward(self, vectors, **kwargs):
         x = vectors["x"]
+        max_rounds = x.shape[1]
         x = self.fc(x)
         output = []
-        for i in range(DATA_ROUNDS_PER_GAME):
-            time_output = self.main_task(x[:, :i+1].contiguous())[:, -1, :]
-            output.append(time_output)
+        if self.save_previous_games:
+            for i in range(max_rounds):
+                time_output = self.main_task(x[:, max(i-50, 0):i+1].contiguous())[:, -1, :]
+                output.append(time_output)
+        else:
+            for i in range(DATA_ROUNDS_PER_GAME):
+                time_output = self.main_task(x[:, :i+1].contiguous())[:, -1, :]
+                output.append(time_output)
         output = torch.stack(output, 1)
         output = self.main_task_classifier(output)
+        print(output)
         return {"output": output}
 
     def predict_proba(self, data, update_vectors: bool, vectors_in_input=False):

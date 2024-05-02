@@ -73,8 +73,11 @@ class Environment:
                 train_dataset = OfflineDataSet(user_groups="X", weight_type=self.config.loss_weight_type,
                                                config=self.config)  #
 
-            train_sampler = NewUserBatchSampler(train_dataset, batch_size=ENV_BATCH_SIZE, shuffle=True)
-            train_dataloader = DataLoader(train_dataset, batch_sampler=train_sampler, shuffle=False)
+            if self.config["save_previous_games"]:
+                train_dataloader = DataLoader(train_dataset, batch_size=ENV_BATCH_SIZE, shuffle=True)
+            else:
+                train_sampler = NewUserBatchSampler(train_dataset, batch_size=ENV_BATCH_SIZE, shuffle=True)
+                train_dataloader = DataLoader(train_dataset, batch_sampler=train_sampler, shuffle=False)
             phases += [("Train", train_dataloader)]
         
         if self.config["offline_simulation_size"] != 0:
@@ -112,9 +115,11 @@ class Environment:
                 assert self.config["task"] == "on_policy"
                 test_dataset = OfflineDataSet(user_groups="X", users=llm_real_test, weight_type="sender_receiver", config=self.config,
                                               strategies=self.config.strategies)
-
-            test_sampler = NewUserBatchSampler(test_dataset, batch_size=ENV_BATCH_SIZE, shuffle=False)
-            test_dataloader = DataLoader(test_dataset, batch_sampler=test_sampler, shuffle=False)
+            if self.config["save_previous_games"]:
+                test_dataloader = DataLoader(test_dataset, batch_size=ENV_BATCH_SIZE, shuffle=False)
+            else:
+                test_sampler = NewUserBatchSampler(test_dataset, batch_size=ENV_BATCH_SIZE, shuffle=False)
+                test_dataloader = DataLoader(test_dataset, batch_sampler=test_sampler, shuffle=False)
             phases += [("Test", test_dataloader)]
 
         if self.config["online_simulation_size"] > 0 and online_sim_type == "before_epoch":
@@ -126,7 +131,10 @@ class Environment:
         self.set_train_mode()
         metrics = Metrics("ENV")
         for epoch in range(self.config["total_epochs"]):
-            result_saver = ResultSaver(config=self.config, epoch=epoch)
+            if self.config["save_previous_games"]:
+                result_saver = OurResultSaver(config=self.config, epoch=epoch)
+            else:
+                result_saver = ResultSaver(config=self.config, epoch=epoch)
             print("#" * 16)
             print(f"# Epoch {epoch}")
             print("#" * 16)
@@ -156,11 +164,15 @@ class Environment:
                         dataloader = ConcatDatasets(dataloader, online_simulation_dataloader)
                 else:
                     self.set_eval_mode()
+                print('here')
                 for batch in tqdm(dataloader, desc=phase):
                     batch = {k: v.to(device) if isinstance(v, torch.Tensor) else v for k, v in batch.items()}
 
                     batch_size, _ = batch["hotels_scores"].shape
-                    review_vector = batch["review_vector"].reshape(batch_size, DATA_ROUNDS_PER_GAME, -1)
+                    if self.config["save_previous_games"]:
+                        review_vector = batch["review_vector"]
+                    else:
+                        review_vector = batch["review_vector"].reshape(batch_size, DATA_ROUNDS_PER_GAME, -1)
                     env_input = [batch[feature].unsqueeze(-1) for feature in STRATEGIC_FEATURES_ORDER]
                     env_input += [review_vector]
                     env_input = torch.cat(env_input, dim=2).double().to(device)
@@ -178,6 +190,7 @@ class Environment:
                             model_output = self.model(model_vectors)
                     output = model_output["output"]
                     mask = (batch["action_taken"] != -100).flatten()
+                    print(output.shape)
                     relevant_predictions = output.reshape(batch_size * DATA_ROUNDS_PER_GAME, -1)[mask]
                     relevant_ground_truth = batch["action_taken"].flatten()[mask]
                     relevant_weight = batch["weight"][batch["is_sample"]]
@@ -199,11 +212,16 @@ class Environment:
                         loss.backward()
                         optimizer.step()
                     else:
-                        result_saver.add_results(ids=batch["action_id"].flatten()[mask].cpu(),
-                                                 user_id=torch.repeat_interleave(batch["user_id"],
-                                                                                 batch["bot_strategy"].shape[-1])[mask].cpu(),
-                                                 bot_strategy=batch["bot_strategy"].flatten()[mask].cpu(),
-                                                 accuracy=proba_to_right_action.cpu())
+                        if self.config["save_previous_games"]:
+                            result_saver.add_results(ids=batch["action_id"].flatten()[mask].cpu(),
+                                                     user_id=batch["user_id"][mask].cpu(),
+                                                     accuracy=proba_to_right_action.cpu())
+                        else:
+                            result_saver.add_results(ids=batch["action_id"].flatten()[mask].cpu(),
+                                                     user_id=torch.repeat_interleave(batch["user_id"],
+                                                                                     batch["bot_strategy"].shape[-1])[mask].cpu(),
+                                                     bot_strategy=batch["bot_strategy"].flatten()[mask].cpu(),
+                                                     accuracy=proba_to_right_action.cpu())
 
                     if self.use_user_vector:
                         updated_user_vectors = model_output["user_vector"].to("cpu").detach()

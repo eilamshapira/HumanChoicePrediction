@@ -6,7 +6,7 @@ from utils.datasets import OnlineSimulationDataSet
 class UserSampler(Sampler):
     def __init__(self, dataset, batch_size):
         # TODO : Add the ability to sample only users without also sampling games.
-        print('here')
+        print('herezzzz')
         super().__init__(dataset)
         self.dataset = dataset
         group_sizes = dataset.n_groups_by_user_id
@@ -116,6 +116,52 @@ class NewUserBatchSampler(Sampler):
     def __len__(self):
         return int(len(self.dataset) / self.batch_size)
 
+
+class OurUserBatchSampler(Sampler):
+    def __init__(self, dataset, batch_size, shuffle=False, sampling_type="distribution"):
+        super().__init__(dataset)
+        self.dataset = dataset
+        self.batch_size = batch_size
+        self.active_users = dataset.actions_df.keys()
+        self.shuffle = shuffle
+        self.sampling_type = sampling_type
+        assert sampling_type in ["simple", "distribution"]
+
+    def get_batch(self):
+        cur_batch_size = min(self.batch_size, len(self.active_users))
+        if self.shuffle:
+            if self.sampling_type == "distribution":
+                distribution = [(self.total_groups_per_users[user] - group_idx) / self.groups_remain for user, group_idx
+                                in self.active_users.items()]
+                self.groups_remain -= cur_batch_size
+                if self.groups_remain > 0:
+                    users_in_batch = np.random.choice(list(self.active_users.keys()), cur_batch_size, replace=False, p=distribution)
+                else:
+                    users_in_batch = []
+            else:
+                users_in_batch = random.sample(self.active_users.keys(), cur_batch_size)
+        else:
+            users_in_batch = list(self.active_users.keys())[:cur_batch_size]
+        batch_idx = []
+        for user in users_in_batch:
+            group_of_user = self.dataset.n_groups_by_user_id[user][self.active_users[user]]
+            batch_idx += [(user, group_of_user)]
+            self.active_users[user] += 1
+            if self.active_users[user] == len(self.dataset.n_groups_by_user_id[user]):
+                del self.active_users[user]
+                del self.total_groups_per_users[user]
+        return batch_idx
+
+    def __iter__(self):
+        batch = self.get_batch()
+        while len(batch):
+            yield batch
+            batch = self.get_batch()
+        else:
+            self.__init__(self.dataset, self.batch_size, self.shuffle)
+
+    def __len__(self):
+        return int(len(self.dataset) / self.batch_size)
 
 class UserBatchSampler(BatchSampler):
     def __init__(self, dataset, batch_size, drop_last=False):

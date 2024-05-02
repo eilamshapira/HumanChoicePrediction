@@ -163,7 +163,6 @@ class ResultSaver:
         self.bot_strategy = []
         self.accuracy = []
         self.directory = Path('predictions', config["wandb_run_id"])
-
         self.directory.mkdir(parents=True, exist_ok=True)
 
     def add_results(self, ids, user_id, bot_strategy, accuracy):
@@ -174,7 +173,7 @@ class ResultSaver:
 
     def next_epoch(self):
         data = pd.DataFrame({
-            'ID': torch.cat(self.ids).numpy().astype(int),
+            'ID': torch.cat(self.ids).numpy().astype(int),  # Action ID
             'User_ID': torch.cat(self.user_id).numpy().astype(int),
             'Bot_Strategy': torch.cat(self.bot_strategy).numpy().astype(int),
             'Accuracy': torch.cat(self.accuracy).numpy()
@@ -188,6 +187,36 @@ class ResultSaver:
             wandb.log_artifact(artifact)
         return data
 
+
+class OurResultSaver:
+    def __init__(self, config, epoch):
+        self.config = config
+        self.epoch = epoch
+        self.ids = []
+        self.user_id = []
+        self.accuracy = []
+        self.directory = Path('predictions', config["wandb_run_id"])
+        self.directory.mkdir(parents=True, exist_ok=True)
+
+    def add_results(self, ids, user_id, accuracy):
+        self.ids += [ids]
+        self.accuracy += [accuracy]
+        self.user_id += [user_id]
+
+    def next_epoch(self):
+        data = pd.DataFrame({
+            'ID': torch.cat(self.ids).numpy().astype(int),  # Action ID
+            'User_ID': torch.cat(self.user_id).numpy().astype(int),
+            'Accuracy': torch.cat(self.accuracy).numpy()
+        })
+        path = str(self.directory) + f"/{self.epoch}.csv"
+        data.to_csv(path, index=False, header=True, float_format='%.4f')
+        if self.config["save_artifacts"]:
+            run_name = self.config["wandb_run_id"]
+            artifact = wandb.Artifact(f"{run_name}_predictions_epoch_{self.epoch}", type="predictions")
+            artifact.add_file(path)
+            wandb.log_artifact(artifact)
+        return data
 
 
 class GumbelSigmoid(torch.nn.Module):
