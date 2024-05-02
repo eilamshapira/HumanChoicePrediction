@@ -36,7 +36,7 @@ class transformer_env_ARC(nn.Module):  # ARC = architecture
         output = []
         if self.save_previous_games:
             for i in range(max_rounds):
-                time_output = self.main_task(x[:, max(i-20, 0):i+1].contiguous())[:, -1, :]
+                time_output = self.main_task(x[:, max(i-10, 0):i+1].contiguous())[:, -1, :]
                 output.append(time_output)
         else:
             for i in range(DATA_ROUNDS_PER_GAME):
