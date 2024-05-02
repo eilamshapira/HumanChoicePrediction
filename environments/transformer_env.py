@@ -44,7 +44,6 @@ class transformer_env_ARC(nn.Module):  # ARC = architecture
                 output.append(time_output)
         output = torch.stack(output, 1)
         output = self.main_task_classifier(output)
-        print(output)
         return {"output": output}
 
     def predict_proba(self, data, update_vectors: bool, vectors_in_input=False):

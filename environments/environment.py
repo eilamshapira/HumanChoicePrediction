@@ -164,7 +164,6 @@ class Environment:
                         dataloader = ConcatDatasets(dataloader, online_simulation_dataloader)
                 else:
                     self.set_eval_mode()
-                print('here')
                 for batch in tqdm(dataloader, desc=phase):
                     batch = {k: v.to(device) if isinstance(v, torch.Tensor) else v for k, v in batch.items()}
 
@@ -190,8 +189,11 @@ class Environment:
                             model_output = self.model(model_vectors)
                     output = model_output["output"]
                     mask = (batch["action_taken"] != -100).flatten()
-                    print(output.shape)
-                    relevant_predictions = output.reshape(batch_size * DATA_ROUNDS_PER_GAME, -1)[mask]
+                    if self.config["save_previous_games"]:
+                        relevant_predictions = output.reshape(-1, 2)[mask]
+                    else:
+                        relevant_predictions = output.reshape(batch_size * DATA_ROUNDS_PER_GAME, -1)[mask]
+
                     relevant_ground_truth = batch["action_taken"].flatten()[mask]
                     relevant_weight = batch["weight"][batch["is_sample"]]
 
