@@ -225,7 +225,7 @@ class Environment:
                     else:
                         if self.config["save_previous_games"]:
                             result_saver.add_results(ids=batch["action_id"].flatten()[mask].cpu(),
-                                                     user_id=batch["user_id"][mask].cpu(),
+                                                     user_id=batch["user_id"].cpu(),
                                                      accuracy=proba_to_right_action.cpu())
                         else:
                             result_saver.add_results(ids=batch["action_id"].flatten()[mask].cpu(),
