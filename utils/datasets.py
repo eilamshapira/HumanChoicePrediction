@@ -28,10 +28,12 @@ class OfflineDataSet(Dataset):
         x_path = DATA_CLEAN_ACTION_PATH_X
         y_path = DATA_CLEAN_ACTION_PATH_Y
         self.actions_df = None
+        self.first_user = 0
         if "X" in user_groups:  # Offline Human - training groups (E_A)
             self.actions_df = pd.read_csv(x_path)
             assert self.actions_df.user_id.max() + 1 == DATA_CLEAN_ACTION_PATH_X_NUMBER_OF_USERS
         if "Y" in user_groups:  # Offline Human - testing groups (E_B)
+            self.first_user = DATA_CLEAN_ACTION_PATH_X_NUMBER_OF_USERS
             Y_dataset = pd.read_csv(y_path)
             assert Y_dataset.user_id.max() + 1 == DATA_CLEAN_ACTION_PATH_Y_NUMBER_OF_USERS
             Y_dataset.user_id += DATA_CLEAN_ACTION_PATH_X_NUMBER_OF_USERS
@@ -130,8 +132,10 @@ class OfflineDataSet(Dataset):
         return len(self.idx_to_group)
 
     def __getitem__(self, item):
+        print(self.actions_df)
         if self.config["save_previous_games"]:  # OUR IMPROVEMENT
-            group = item
+            print('Item:', item)
+            group = item + self.first_user
             user_games = self.actions_df.get_group(group).reset_index()
             user_id = group
             n_rounds = len(user_games)
@@ -213,7 +217,7 @@ class OfflineDataSet(Dataset):
         return sample
 
 
-class OnlineSimulationDataSet(Dataset):
+class OnlineSimulationDataSet(Dataset):  # TODO: Change for change 1 and change 2
     def __init__(self, config):
         self.config = config
         simulation_th = SIMULATION_TH

@@ -122,6 +122,15 @@ class Environment:
                 test_dataloader = DataLoader(test_dataset, batch_sampler=test_sampler, shuffle=False)
             phases += [("Test", test_dataloader)]
 
+            # for batch in train_dataloader:
+            #     break
+
+            print('Starting test data loader')
+
+            for batch in test_dataloader:
+                pass
+                # print(batch)
+
         if self.config["online_simulation_size"] > 0 and online_sim_type == "before_epoch":
             phases.insert(0, ("Online Simulation", "sim_dataloader"))
 
