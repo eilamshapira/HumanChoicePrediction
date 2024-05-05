@@ -1,3 +1,5 @@
+import torch
+
 from utils.datasets import OfflineDataSet, OnlineSimulationDataSet, ConcatDatasets
 from utils.samplers import NewUserBatchSampler, SimulationSampler
 from consts import *
@@ -225,7 +227,8 @@ class Environment:
                     else:
                         if self.config["save_previous_games"]:
                             result_saver.add_results(ids=batch["action_id"].flatten()[mask].cpu(),
-                                                     user_id=batch["user_id"].cpu(),
+                                                     user_id=torch.repeat_interleave(batch["user_id"],
+                                                                                     batch["action_id"].shape[-1])[mask].cpu(),
                                                      accuracy=proba_to_right_action.cpu())
                         else:
                             result_saver.add_results(ids=batch["action_id"].flatten()[mask].cpu(),
