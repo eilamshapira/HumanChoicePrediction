@@ -142,10 +142,7 @@ class Environment:
         self.set_train_mode()
         metrics = Metrics("ENV")
         for epoch in range(self.config["total_epochs"]):
-            if self.config["save_previous_games"]:
-                result_saver = OurResultSaver(config=self.config, epoch=epoch)
-            else:
-                result_saver = ResultSaver(config=self.config, epoch=epoch)
+            result_saver = ResultSaver(config=self.config, epoch=epoch)
             print("#" * 16)
             print(f"# Epoch {epoch}")
             print("#" * 16)
@@ -225,17 +222,11 @@ class Environment:
                         loss.backward()
                         optimizer.step()
                     else:
-                        if self.config["save_previous_games"]:
-                            result_saver.add_results(ids=batch["action_id"].flatten()[mask].cpu(),
-                                                     user_id=torch.repeat_interleave(batch["user_id"],
-                                                                                     batch["action_id"].shape[-1])[mask].cpu(),
-                                                     accuracy=proba_to_right_action.cpu())
-                        else:
-                            result_saver.add_results(ids=batch["action_id"].flatten()[mask].cpu(),
-                                                     user_id=torch.repeat_interleave(batch["user_id"],
-                                                                                     batch["bot_strategy"].shape[-1])[mask].cpu(),
-                                                     bot_strategy=batch["bot_strategy"].flatten()[mask].cpu(),
-                                                     accuracy=proba_to_right_action.cpu())
+                        result_saver.add_results(ids=batch["action_id"].flatten()[mask].cpu(),
+                                                 user_id=torch.repeat_interleave(batch["user_id"],
+                                                                                 batch["bot_strategy"].shape[-1])[mask].cpu(),
+                                                 bot_strategy=batch["bot_strategy"].flatten()[mask].cpu(),
+                                                 accuracy=proba_to_right_action.cpu())
 
                     if self.use_user_vector:
                         updated_user_vectors = model_output["user_vector"].to("cpu").detach()
@@ -257,17 +248,16 @@ class Environment:
                             results_df["Accuracy"] = results_df["Accuracy"] > 0.5
                         accuracy = results_df["Accuracy"].mean()
                         metrics.write(prefix+"accuracy", accuracy)
-                        if not self.config["save_previous_games"]:
-                            for strategy in results_df["Bot_Strategy"].unique():
-                                bot_accuracy = results_df[results_df["Bot_Strategy"] == strategy]["Accuracy"].mean()
-                                metrics.write(prefix+f"accuracy_strategy_{strategy}", bot_accuracy)
-                            accuracy_per_mean_strategy = results_df.groupby("Bot_Strategy").mean()["Accuracy"].mean()
-                            metrics.write(prefix+f"accuracy_per_mean_strategy", accuracy_per_mean_strategy)
-                            accuracy_per_mean_user = results_df.groupby("User_ID").mean()["Accuracy"].mean()
-                            metrics.write(prefix+"accuracy_per_mean_user", accuracy_per_mean_user)
-                            accuracy_per_mean_user_and_bot = results_df.groupby(["User_ID", "Bot_Strategy"]).mean()["Accuracy"].mean()
-                            metrics.write(prefix+"accuracy_per_mean_user_and_bot", accuracy_per_mean_user_and_bot)
-                            print(prefix+"accuracy_per_mean_user_and_bot: ", accuracy_per_mean_user_and_bot)
+                        for strategy in results_df["Bot_Strategy"].unique():
+                            bot_accuracy = results_df[results_df["Bot_Strategy"] == strategy]["Accuracy"].mean()
+                            metrics.write(prefix+f"accuracy_strategy_{strategy}", bot_accuracy)
+                        accuracy_per_mean_strategy = results_df.groupby("Bot_Strategy").mean()["Accuracy"].mean()
+                        metrics.write(prefix+f"accuracy_per_mean_strategy", accuracy_per_mean_strategy)
+                        accuracy_per_mean_user = results_df.groupby("User_ID").mean()["Accuracy"].mean()
+                        metrics.write(prefix+"accuracy_per_mean_user", accuracy_per_mean_user)
+                        accuracy_per_mean_user_and_bot = results_df.groupby(["User_ID", "Bot_Strategy"]).mean()["Accuracy"].mean()
+                        metrics.write(prefix+"accuracy_per_mean_user_and_bot", accuracy_per_mean_user_and_bot)
+                        print(prefix+"accuracy_per_mean_user_and_bot: ", accuracy_per_mean_user_and_bot)
                 wandb.log(metrics.all)
             metrics.next_epoch()
         self.model.to("cpu")
