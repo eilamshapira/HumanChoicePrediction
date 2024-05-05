@@ -257,16 +257,17 @@ class Environment:
                             results_df["Accuracy"] = results_df["Accuracy"] > 0.5
                         accuracy = results_df["Accuracy"].mean()
                         metrics.write(prefix+"accuracy", accuracy)
-                        for strategy in results_df["Bot_Strategy"].unique():
-                            bot_accuracy = results_df[results_df["Bot_Strategy"] == strategy]["Accuracy"].mean()
-                            metrics.write(prefix+f"accuracy_strategy_{strategy}", bot_accuracy)
-                        accuracy_per_mean_strategy = results_df.groupby("Bot_Strategy").mean()["Accuracy"].mean()
-                        metrics.write(prefix+f"accuracy_per_mean_strategy", accuracy_per_mean_strategy)
-                        accuracy_per_mean_user = results_df.groupby("User_ID").mean()["Accuracy"].mean()
-                        metrics.write(prefix+"accuracy_per_mean_user", accuracy_per_mean_user)
-                        accuracy_per_mean_user_and_bot = results_df.groupby(["User_ID", "Bot_Strategy"]).mean()["Accuracy"].mean()
-                        metrics.write(prefix+"accuracy_per_mean_user_and_bot", accuracy_per_mean_user_and_bot)
-                        print(prefix+"accuracy_per_mean_user_and_bot: ", accuracy_per_mean_user_and_bot)
+                        if not self.config["save_previous_games"]:
+                            for strategy in results_df["Bot_Strategy"].unique():
+                                bot_accuracy = results_df[results_df["Bot_Strategy"] == strategy]["Accuracy"].mean()
+                                metrics.write(prefix+f"accuracy_strategy_{strategy}", bot_accuracy)
+                            accuracy_per_mean_strategy = results_df.groupby("Bot_Strategy").mean()["Accuracy"].mean()
+                            metrics.write(prefix+f"accuracy_per_mean_strategy", accuracy_per_mean_strategy)
+                            accuracy_per_mean_user = results_df.groupby("User_ID").mean()["Accuracy"].mean()
+                            metrics.write(prefix+"accuracy_per_mean_user", accuracy_per_mean_user)
+                            accuracy_per_mean_user_and_bot = results_df.groupby(["User_ID", "Bot_Strategy"]).mean()["Accuracy"].mean()
+                            metrics.write(prefix+"accuracy_per_mean_user_and_bot", accuracy_per_mean_user_and_bot)
+                            print(prefix+"accuracy_per_mean_user_and_bot: ", accuracy_per_mean_user_and_bot)
                 wandb.log(metrics.all)
             metrics.next_epoch()
         self.model.to("cpu")
