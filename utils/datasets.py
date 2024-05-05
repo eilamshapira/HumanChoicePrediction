@@ -132,9 +132,7 @@ class OfflineDataSet(Dataset):
         return len(self.idx_to_group)
 
     def __getitem__(self, item):
-        print(self.actions_df)
         if self.config["save_previous_games"]:  # OUR IMPROVEMENT
-            print('Item:', item)
             group = item + self.first_user
             user_games = self.actions_df.get_group(group).reset_index()
             user_id = group
