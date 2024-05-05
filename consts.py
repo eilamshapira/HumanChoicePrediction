@@ -10,6 +10,9 @@ DATA_CLEAN_ACTION_PATH_Y_NUMBER_OF_USERS = 35
 DATA_CLEAN_ACTION_PATH_Y = "data/games_clean_Y.csv"
 OFFLINE_SIM_DATA_PATH = "data/LLM_games_personas.csv"
 
+REVIEW_ENCODERS_PATH = "models/reviews_encoders"
+REVIEW_VECTORS_PATH = "data/reviews_vectors"
+
 USING_REACTION_TIME = True
 reaction_time_bins = [(0, 400),
                       (400, 800),
