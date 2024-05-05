@@ -287,6 +287,11 @@ class OnlineSimulationDataSet(Dataset):
         self.n_go = 0
         self.n_dont_go = 0
 
+        if self.config["save_previous_games"]:
+            self.max_user_rounds = 0
+        else:
+            self.max_user_rounds = DATA_ROUNDS_PER_GAME
+
         pbar = trange(self.max_active)
         for i in pbar:
             self.new_user()
@@ -296,10 +301,7 @@ class OnlineSimulationDataSet(Dataset):
         # User ID starts from 245 (210 + 35)
         self.add_to_user_id = DATA_CLEAN_ACTION_PATH_X_NUMBER_OF_USERS + DATA_CLEAN_ACTION_PATH_Y_NUMBER_OF_USERS
 
-        if self.config["save_previous_games"]:
-            self.max_user_rounds = 0
-        else:
-            self.max_user_rounds = DATA_ROUNDS_PER_GAME
+
 
 
     class SimulatedUser:
