@@ -294,7 +294,9 @@ class OnlineSimulationDataSet(Dataset):
 
         pbar = trange(self.max_active)
         for i in pbar:
-            self.new_user()
+            num_rounds = self.new_user()
+            if self.config["save_previous_games"] and num_rounds > self.max_user_rounds:
+                self.max_user_rounds = num_rounds
             pbar.set_description(f"Create online-simulation users for this epoch. "
                                  f"mean games/user: {(self.total_games_created / self.next_user):.2f}")
 
@@ -429,6 +431,7 @@ class OnlineSimulationDataSet(Dataset):
                                   favorite_topic_method="review", **args)
         bots = self.sample_bots()  # samples 6 bots that the user will play against
         game_id = 0
+        rounds_played = 0
         for bot in bots:
             user.return_to_init_proba()
             bot_strategy = getattr(bot_strategies, f"strategy_{bot}")
@@ -447,6 +450,7 @@ class OnlineSimulationDataSet(Dataset):
                 last_reaction_time = -1
                 weight = 1
                 for round_number in range(1, DATA_ROUNDS_PER_GAME + 1):  # start a new round
+                    rounds_played += 1
                     hotel_id, hotel = self.get_hotel()  # get a hotel
 
                     bot_message = self.bot_plays(bot_strategy, hotel, previous_rounds)  # expert plays
@@ -499,12 +503,11 @@ class OnlineSimulationDataSet(Dataset):
                     game.append(row)  # game is a list of dictionaries (rounds)
                 self.add_game(user_id, game)  # save the game dataframe in self.users[CURRENT USER ID]
                 game_id += 1
-        if self.config["save_previous_games"] and game_id > self.max_user_rounds:
-            self.max_user_rounds = game_id * DATA_ROUNDS_PER_GAME
         self.next_user += 1
         self.n_games_per_user[user_id] = game_id
         self.total_games_created += game_id
         self.active_users.append(user_id)
+        return rounds_played
 
     def __len__(self):
         if self.next_user <= 50:
