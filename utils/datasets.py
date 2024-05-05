@@ -198,8 +198,8 @@ class OfflineDataSet(Dataset):
                   "last_last_didGo_True": game["last_last_didGo_True"].to_numpy(),
                   "last_last_didWin_False": game["last_last_didWin_False"].to_numpy(),
                   "last_last_didWin_True": game["last_last_didWin_True"].to_numpy(),
-                  "user_points": user_points / self.max_user_rounds,
-                  "bot_points": bot_points / self.max_user_rounds, "user_earned_more": user_earned_more,
+                  "user_points": user_points / 10,
+                  "bot_points": bot_points / 10, "user_earned_more": user_earned_more,
                   "user_not_earned_more": user_not_earned_more,
                   "review_vector": reviewId.apply(lambda r: self.review_reduced[r]).tolist(),
                   "is_sample": game["is_sample"].to_numpy(),
@@ -215,7 +215,7 @@ class OfflineDataSet(Dataset):
         return sample
 
 
-class OnlineSimulationDataSet(Dataset):  # TODO: Change for change 1 and change 2
+class OnlineSimulationDataSet(Dataset):
     def __init__(self, config):
         self.config = config
         simulation_th = SIMULATION_TH
@@ -229,7 +229,7 @@ class OnlineSimulationDataSet(Dataset):  # TODO: Change for change 1 and change 
         weight_type = self.config["loss_weight_type"]
         self.bots_per_user = config["bots_per_user"]
 
-        self.n_users = int(n_users / self.bots_per_user * 6)
+        self.n_users = int(n_users / self.bots_per_user * 6)  # bots per user = 6 thus n_users = online simulation size
         max_active = int(max_active / self.bots_per_user * 6)
 
         self.SIMULATION_TH = simulation_th
@@ -249,8 +249,8 @@ class OnlineSimulationDataSet(Dataset):  # TODO: Change for change 1 and change 
         for hotel in range(1, N_HOTELS + 1):
             hotel_path = f"{DATA_GAME_REVIEWS_PATH}/{hotel}.csv"
             hotel_csv = pd.read_csv(hotel_path, header=None)
-            self.hotels.append(hotel_csv.iloc[:, 4].to_numpy())
-            self.reviews_id.append(hotel_csv.iloc[:, 0].to_numpy())
+            self.hotels.append(hotel_csv.iloc[:, 4].to_numpy())  # rankings of the hotel
+            self.reviews_id.append(hotel_csv.iloc[:, 0].to_numpy())  # ids of the reviews for each hotel
         self.hotels = np.array(self.hotels)
         self.reviews_id = np.array(self.reviews_id)
 
@@ -276,7 +276,9 @@ class OnlineSimulationDataSet(Dataset):  # TODO: Change for change 1 and change 
             self.review_reduced = {int(rid): torch.Tensor(vec) for rid, vec in self.review_reduced.items()}
             self.review_reduced[-1] = torch.zeros(config["REVIEW_DIM"])
 
-        self.gcf = pd.read_csv(config['SIMULATION_EFs_PATH'], index_col=0, dtype=float).T
+        self.gcf = pd.read_csv(config['SIMULATION_EFs_PATH'], index_col=0, dtype=float).T  # For each review,
+        # feature vector of review
+
         self.gcf.columns = self.gcf.columns.astype(int)
 
         self.basic_nature = utils.basic_nature_options.pers[basic_nature]
@@ -291,7 +293,14 @@ class OnlineSimulationDataSet(Dataset):  # TODO: Change for change 1 and change 
             pbar.set_description(f"Create online-simulation users for this epoch. "
                                  f"mean games/user: {(self.total_games_created / self.next_user):.2f}")
 
+        # User ID starts from 245 (210 + 35)
         self.add_to_user_id = DATA_CLEAN_ACTION_PATH_X_NUMBER_OF_USERS + DATA_CLEAN_ACTION_PATH_Y_NUMBER_OF_USERS
+
+        if self.config["save_previous_games"]:
+            self.max_user_rounds = 0
+        else:
+            self.max_user_rounds = DATA_ROUNDS_PER_GAME
+
 
     class SimulatedUser:
         def __init__(self, user_improve, basic_nature, favorite_topic_method, **args):
@@ -339,6 +348,9 @@ class OnlineSimulationDataSet(Dataset):  # TODO: Change for change 1 and change 
             self.user_proba[0] = 1 - self.user_proba[1:].sum()
 
     def play_round(self, bot_message, user, previous_rounds, hotel, review_id):
+        """
+        Given information about the current state, the user makes a decision
+        """
         user_strategy = self.sample_from_probability_vector(user.user_proba)
         user_strategy_function = user.ACTIONS[user_strategy][2]
         review_features = self.gcf[review_id]
@@ -368,6 +380,9 @@ class OnlineSimulationDataSet(Dataset):  # TODO: Change for change 1 and change 
                 return i
 
     def get_hotel(self, hotel_id=None):
+        """
+        Given hotel id return the vector of size 7 of its scores
+        """
         if hotel_id is None:
             hotel_id = np.random.randint(N_HOTELS) + 1
         hotel = self.hotels[hotel_id]
@@ -410,7 +425,7 @@ class OnlineSimulationDataSet(Dataset):  # TODO: Change for change 1 and change 
         args = {"favorite_review": self.get_review()}
         user = self.SimulatedUser(user_improve=self.user_improve, basic_nature=self.basic_nature,
                                   favorite_topic_method="review", **args)
-        bots = self.sample_bots()
+        bots = self.sample_bots()  # samples 6 bots that the user will play against
         game_id = 0
         for bot in bots:
             user.return_to_init_proba()
@@ -479,9 +494,11 @@ class OnlineSimulationDataSet(Dataset):  # TODO: Change for change 1 and change 
 
                     last_last_didGo, last_last_didWin = last_didGo, last_didWin
                     last_didGo, last_didWin = int(user_action), int(round_result)
-                    game.append(row)
-                self.add_game(user_id, game)
+                    game.append(row)  # game is a list of dictionaries (rounds)
+                self.add_game(user_id, game)  # save the game dataframe in self.users[CURRENT USER ID]
                 game_id += 1
+        if self.config["save_previous_games"] and game_id > self.max_user_rounds:
+            self.max_user_rounds = game_id * DATA_ROUNDS_PER_GAME
         self.next_user += 1
         self.n_games_per_user[user_id] = game_id
         self.total_games_created += game_id
@@ -491,7 +508,7 @@ class OnlineSimulationDataSet(Dataset):  # TODO: Change for change 1 and change 
         if self.next_user <= 50:
             return self.n_users * 42
         else:
-            return int(self.n_users * self.total_games_created / self.next_user)
+            return int(self.n_users * self.total_games_created / self.next_user)  # Total games created
 
     def get_game(self, user_id):
         game = self.users[user_id].pop(0)
@@ -501,15 +518,36 @@ class OnlineSimulationDataSet(Dataset):  # TODO: Change for change 1 and change 
                 self.new_user()
         return game
 
+    def get_user(self, user_id):
+        """
+        For user with user id, get dataframe of all rounds played, regardless of the game.
+        """
+        user = self.users[user_id]
+        self.active_users.remove(user_id)
+        if self.next_user < self.n_users:
+            self.new_user()
+        return pd.concat(user, ignore_index=True)
+
     def __getitem__(self, user_id):
-        game = self.get_game(user_id)
+        if self.config["save_previous_games"]:
+            user_info = self.get_user(user_id)
+            user_id = user_info["user_id"][0] + self.add_to_user_id
+            n_rounds = len(user_info)
 
-        user_id = game["user_id"][0] + self.add_to_user_id
-        n_rounds = len(game)
+            if n_rounds < self.max_user_rounds:
+                user_info = pd.concat([user_info] + [DATA_BLANK_ROW_DF(user_info["strategy_id"][0])] * (self.max_user_rounds - n_rounds),
+                                      ignore_index=True)
 
-        if n_rounds < DATA_ROUNDS_PER_GAME:
-            game = pd.concat([game] + [DATA_BLANK_ROW_DF(game["strategy_id"][0])] * (DATA_ROUNDS_PER_GAME - n_rounds),
-                             ignore_index=True)
+            game = user_info  # change the name to game for consistency with the other case
+        else:  # ORIGINAL CODE
+            game = self.get_game(user_id)
+
+            user_id = game["user_id"][0] + self.add_to_user_id
+            n_rounds = len(game)
+
+            if n_rounds < DATA_ROUNDS_PER_GAME:
+                game = pd.concat([game] + [DATA_BLANK_ROW_DF(game["strategy_id"][0])] * (DATA_ROUNDS_PER_GAME - n_rounds),
+                                 ignore_index=True)
 
         bot_strategy = game["strategy_id"].to_numpy()
         hotels_scores = game["hotelScore"].to_numpy()
@@ -531,7 +569,7 @@ class OnlineSimulationDataSet(Dataset):  # TODO: Change for change 1 and change 
 
         reviewId = game["reviewId"]
 
-        round_num = np.full(10, -1)
+        round_num = np.full(self.max_user_rounds, -1)
         round_num[:n_rounds] = np.arange(n_rounds)
         action_ids = -np.ones_like(user_points)
 
