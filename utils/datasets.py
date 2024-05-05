@@ -510,6 +510,9 @@ class OnlineSimulationDataSet(Dataset):
         return rounds_played
 
     def __len__(self):
+        if self.config["save_previous_games"]:
+            return self.n_users / SIMULATION_BATCH_SIZE
+
         if self.next_user <= 50:
             return self.n_users * 42
         else:
