@@ -1,6 +1,6 @@
 import wandb
-YOUR_WANDB_USERNAME = "eilamshapira"
-project = "NLP2024_PROJECT_YOUR_UID"
+YOUR_WANDB_USERNAME = "beneliav1"
+project = "Strategy_Transfer_TACL"
 
 command = [
         "${ENVIRONMENT_VARIABLE}",
@@ -12,17 +12,23 @@ command = [
 
 sweep_config = {
     "name": "LSTM: SimFactor=0/4 for any features representation",
-    "method": "grid",
+    "method": "random",
     "metric": {
         "goal": "maximize",
         "name": "AUC.test.max"
     },
     "parameters": {
         "ENV_HPT_mode": {"values": [False]},
-        "architecture": {"values": ["LSTM"]},
+        "architecture": {"values": ["transformer"]},
         "seed": {"values": list(range(1, 6))},
-        "online_simulation_factor": {"values": [0, 4]},
-        "features": {"values": ["EFs", "GPT4", "BERT"]},
+        "save_previous_games": {"values": [True]},
+        "combine_features": {"values": [True]},
+        "seed": {"values": [1, 2, 3]},
+        "feature_combination": {"values": ["EFs_GPT4", "EFs_BERT"]},
+        "transformer_nheads": {"values": [2, 4, 8]},
+        "hidden_dim": {"values": [32, 64, 128]},
+        "layers": {"values": [1, 2]},
+        "ENV_LEARNING_RATE": {"values": [1e-3, 1e-4, 1e-5]},
     },
     "command": command
 }
