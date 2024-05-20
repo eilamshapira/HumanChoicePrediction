@@ -128,7 +128,6 @@ set_global_seed(config["seed"])
 
 all_user_points = []
 all_bot_points = []
-# TODO: check if we use the value hotels
 # hotels = utils.Hotels(config)  # do we use this?
 
 env_name = config["wandb_run_id"]

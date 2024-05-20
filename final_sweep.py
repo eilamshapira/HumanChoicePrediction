@@ -11,7 +11,7 @@ command = [
     ]
 
 sweep_config = {
-    "name": "LSTM: SimFactor=0/4 for any features representation",
+    "name": "Hyperparameter tuning for transformer model",
     "method": "random",
     "metric": {
         "goal": "maximize",
