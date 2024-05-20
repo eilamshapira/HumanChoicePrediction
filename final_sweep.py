@@ -15,7 +15,7 @@ sweep_config = {
     "method": "random",
     "metric": {
         "goal": "maximize",
-        "name": "AUC.test.max"
+        "name": "ENV_test_accuracy_per_mean_user_and_bot"
     },
     "parameters": {
         "ENV_HPT_mode": {"values": [False]},
