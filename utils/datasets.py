@@ -95,7 +95,6 @@ class OfflineDataSet(Dataset):
             self.n_groups_by_user_id = defaultdict(list)  # user => ids of games that user played
             for u, i in sorted(self.actions_df.indices.keys()):
                 self.n_groups_by_user_id[u].append(i)
-            print(self.n_groups_by_user_id)
 
         if self.config["combine_features"]:
             reviews_data = defaultdict(list)

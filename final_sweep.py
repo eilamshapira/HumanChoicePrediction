@@ -24,7 +24,7 @@ sweep_config = {
         "save_previous_games": {"values": [True]},
         "combine_features": {"values": [True]},
         "seed": {"values": [1, 2, 3]},
-        "feature_combination": {"values": ["EFs_GPT4", "EFs_BERT"]},
+        "feature_combination": {"values": [["EFs", "GPT4"], ["EFs", "BERT"]]},
         "transformer_nheads": {"values": [2, 4, 8]},
         "hidden_dim": {"values": [32, 64, 128]},
         "layers": {"values": [1, 2]},
