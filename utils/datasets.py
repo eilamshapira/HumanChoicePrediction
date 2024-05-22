@@ -134,6 +134,8 @@ class OfflineDataSet(Dataset):
         if self.config["save_previous_games"]:  # OUR IMPROVEMENT
             group = item + self.first_user
             user_games = self.actions_df.get_group(group).reset_index()
+            print(user_games)
+            assert False
             user_id = group
             n_rounds = len(user_games)
 
