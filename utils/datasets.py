@@ -95,7 +95,6 @@ class OfflineDataSet(Dataset):
             self.n_groups_by_user_id = defaultdict(list)  # user => ids of games that user played
             for u, i in sorted(self.actions_df.indices.keys()):
                 self.n_groups_by_user_id[u].append(i)
-
         if self.config["combine_features"]:
             reviews_data = defaultdict(list)
             for feature_name in self.config["feature_combination"]:
@@ -134,11 +133,8 @@ class OfflineDataSet(Dataset):
         if self.config["save_previous_games"]:  # OUR IMPROVEMENT
             group = item + self.first_user
             user_games = self.actions_df.get_group(group).reset_index()
-            print(user_games)
-            assert False
             user_id = group
             n_rounds = len(user_games)
-
             user_games["is_sample"] = np.ones(n_rounds).astype(bool)
             if n_rounds < self.max_user_rounds:
                 user_games = pd.concat([user_games] + [DATA_BLANK_ROW_DF(-1)] * (self.max_user_rounds - n_rounds),
