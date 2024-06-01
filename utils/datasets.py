@@ -308,7 +308,9 @@ class OnlineSimulationDataSet(Dataset):
             history_window = np.random.negative_binomial(2, 1 / 2) + np.random.randint(0, 2)
             quality_threshold = np.random.normal(8, 0.5)
             good_topics = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 13, 19, 28, 42]
+            good_topics = [str(t) for t in good_topics]
             bad_topics = [11, 20, 21, 22, 23, 24, 25, 26, 27, 36, 40]
+            bad_topics = [str(t) for t in bad_topics]
             if favorite_topic_method == "random":
                 positive_topics = np.random.choice(good_topics, 3)
                 negative_topics = np.random.choice(bad_topics, 3)

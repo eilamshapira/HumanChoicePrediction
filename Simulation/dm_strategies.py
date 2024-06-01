@@ -101,9 +101,9 @@ def topic_based(positive_topics, negative_topics, quality_threshold):
     def func(information):
         review_personal_score = information["bot_message"]
         for rank, topic in enumerate(positive_topics):
-            review_personal_score += int(information["review_features"][topic])*2/(rank+1)
+            review_personal_score += int(information["review_features"].loc[topic])*2/(rank+1)
         for rank, topic in enumerate(negative_topics):
-            review_personal_score -= int(information["review_features"][topic])*2/(rank+1)
+            review_personal_score -= int(information["review_features"].loc[topic])*2/(rank+1)
         if review_personal_score >= quality_threshold:  # good hotel from user's perspective
             return 1
         else:

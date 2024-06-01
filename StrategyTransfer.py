@@ -44,7 +44,7 @@ parser.add_argument('--human_train_size', type=int, default=210, help='Training 
 # Online Simulation
 parser.add_argument('--online_sim_type', type=str, default="before_epoch", help='Online simulation type')
 parser.add_argument('--basic_nature', type=int, default=12, help='Basic nature of simulation')
-parser.add_argument('--online_simulation_factor', type=int, default=4, help='Online simulation factor')
+parser.add_argument('--online_simulation_factor', type=float, default=4, help='Online simulation factor')
 parser.add_argument('--simulation_bot_per_user', type=int, default=6, help='Simulation bot per user')
 parser.add_argument('--simulation_signal_error', type=float, default=0.3, help='Simulation signal error')
 parser.add_argument('--simulation_user_improve', type=float, default=0.01,
