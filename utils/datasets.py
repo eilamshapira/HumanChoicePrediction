@@ -30,7 +30,7 @@ class OfflineDataSet(Dataset):
         if "X" in user_groups:  # Offline Human - training groups (E_A)
             self.actions_df = pd.read_csv(x_path)
             assert self.actions_df.user_id.max() + 1 == DATA_CLEAN_ACTION_PATH_X_NUMBER_OF_USERS
-        if "Y" in user_groups: # Offline Human - testing groups (E_B)
+        if "Y" in user_groups:  # Offline Human - testing groups (E_B)
             Y_dataset = pd.read_csv(y_path)
             assert Y_dataset.user_id.max() + 1 == DATA_CLEAN_ACTION_PATH_Y_NUMBER_OF_USERS
             Y_dataset.user_id += DATA_CLEAN_ACTION_PATH_X_NUMBER_OF_USERS
@@ -54,11 +54,12 @@ class OfflineDataSet(Dataset):
 
         if users is not None:
             self.actions_df = self.actions_df[self.actions_df["user_id"].isin(users.tolist())]
-            assert self.actions_df["user_id"].nunique() == len(users.tolist()), "some of the users that chosen to used"\
+            assert self.actions_df["user_id"].nunique() == len(users.tolist()), "some of the users that chosen to used" \
                                                                                 "are not exists in the dataset!"
 
         if "persona" in self.actions_df.columns:
-            print("user per persona:", self.actions_df[["persona", "user_id"]].drop_duplicates().groupby("persona").count())
+            print("user per persona:",
+                  self.actions_df[["persona", "user_id"]].drop_duplicates().groupby("persona").count())
 
         grouped_counts = self.actions_df.groupby(["user_id", "strategy_id"]).size().reset_index(name="N")
         self.actions_df = self.actions_df.merge(grouped_counts, on=["user_id", "strategy_id"], how="left")
@@ -248,8 +249,10 @@ class OnlineSimulationDataSet(Dataset):
                             3: ("topic based", basic_nature[2], user_strategies.topic_based(positive_topics,
                                                                                             negative_topics,
                                                                                             quality_threshold)),
-                            4: ("LLM stochastic (Language-based)",  basic_nature[3], user_strategies.LLM_based(is_stochastic=True)),
+                            4: ("LLM stochastic (Language-based)", basic_nature[3],
+                                user_strategies.LLM_based(is_stochastic=True)),
                             5: ("LLM deterministic", basic_nature[4], user_strategies.LLM_based(is_stochastic=False)),
+
                             }
             self.nature = np.random.rand(len(self.ACTIONS)) * np.array([v[1] for v in self.ACTIONS.values()])
             self.nature = self.nature / sum(self.nature)
@@ -260,11 +263,105 @@ class OnlineSimulationDataSet(Dataset):
             self.user_proba = self.nature.copy()
 
         def update_proba(self):
-            reduce_feelings = np.random.rand(len(self.ACTIONS) - 1) * self.user_improve * 10/9 - (self.user_improve / 10)
+            reduce_feelings = np.random.rand(len(self.ACTIONS) - 1) * self.user_improve * 10 / 9 - (
+                        self.user_improve / 10)
             total_reduced = self.user_proba[1:] * reduce_feelings
             self.user_proba[1:] -= total_reduced
             self.user_proba[1:] = np.maximum(0, self.user_proba[1:])
             self.user_proba[0] = 1 - self.user_proba[1:].sum()
+
+    class ImprovedSimulatedUser:
+        def __init__(self, config,basic_nature, favorite_topic_method, **args):
+            history_window = np.random.negative_binomial(2, 1 / 2) + np.random.randint(0, 2)
+            quality_threshold = np.random.normal(8, 0.5)
+            good_topics = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 13, 19, 28, 42]
+            good_topics = [str(t) for t in good_topics]
+            bad_topics = [11, 20, 21, 22, 23, 24, 25, 26, 27, 36, 40]
+            bad_topics = [str(t) for t in bad_topics]
+            if favorite_topic_method == "random":
+                positive_topics = np.random.choice(good_topics, 3)
+                negative_topics = np.random.choice(bad_topics, 3)
+            elif favorite_topic_method == "review":
+                review_features = args['favorite_review']
+                positive_topics = review_features[(review_features > 0) & review_features.index.isin(good_topics)].index
+                positive_topics = np.array(positive_topics)
+                np.random.shuffle(positive_topics)
+                negative_topics = review_features[(review_features > 0) & review_features.index.isin(bad_topics)].index
+                negative_topics = np.array(negative_topics)
+                np.random.shuffle(negative_topics)
+
+            self.ACTIONS = {0: ("1-eps correct - noisy oracle", 0, user_strategies.get_eps_incorrect_action(config['eps_incorrect'])),
+                            1: ("random", basic_nature[0], user_strategies.random_action),
+                            2: ("history_and_review_quality (Trustful)", basic_nature[1],
+                                user_strategies.history_and_review_quality(history_window, quality_threshold)),
+                            3: ("topic based", basic_nature[2], user_strategies.topic_based(positive_topics,
+                                                                                            negative_topics,
+                                                                                            quality_threshold)),
+                            4: ("LLM stochastic (Language-based)", basic_nature[3],
+                                user_strategies.LLM_based(is_stochastic=True)),
+                            5: ("LLM deterministic", basic_nature[4], user_strategies.LLM_based(is_stochastic=False)),
+                            6: ("Tit for Tat", 0, user_strategies.user_short_t4t),
+                            }
+
+            basic_nature_np = np.array([0]+basic_nature+[0]).astype('float64')
+            basic_nature_np += 1
+
+            self.init_weights = np.random.dirichlet(basic_nature_np / sum(basic_nature_np), 1).T
+            self.weights = self.init_weights.copy()
+            self.decisions_history = []
+            self.round_results = []
+            self.config = config
+
+        def return_to_init_weights(self):
+            self.weights = self.init_weights.copy()
+            self.decisions_history = []
+            self.round_results = []
+
+        def add_real_hotel_quality(self, result):
+            self.round_results += [[result]]
+        def model(self, predictions, weights):
+            return predictions @ weights
+
+        def update_weights(self):
+            Y = torch.Tensor(self.round_results[-10:])
+            X = torch.Tensor(self.decisions_history[-10:])
+            # set the initial learning rate
+            learning_rate = self.config['learning_rate_gb']
+            # set the number of iterations
+            num_iterations = 1
+            loss_fn = torch.nn.BCEWithLogitsLoss()
+            w = torch.Tensor(self.weights)
+            w.requires_grad = True
+            # perform gradient descent
+            for i in range(num_iterations):
+                # make a prediction
+                prediction = self.model(X, w)
+                # compute the loss
+                loss = loss_fn(prediction, Y)
+                # backpropagate the gradient
+                loss.backward()
+
+                # update the weights
+                with torch.no_grad():
+
+                    w -= learning_rate * w.grad
+
+                # zero the gradient
+                w.grad.zero_()
+            self.weights = w.detach().cpu().numpy()
+
+    def improved_play_round(self, bot_message, user, previous_rounds, hotel, review_id):
+        review_features = self.gcf[review_id]
+        information = {"bot_message": bot_message,
+                       "previous_rounds": previous_rounds,
+                       "hotel_value": hotel.mean(),
+                       "review_features": review_features,
+                       "review_id": review_id}
+        decision = tuple(user.ACTIONS[user_strategy][2](information) for user_strategy in range(len(user.ACTIONS)))
+
+        user.decisions_history += [decision]
+        decision = np.array(decision).reshape(1, -1)
+        return 1 if user.model(decision, user.weights) > .5 else 0
 
     def play_round(self, bot_message, user, previous_rounds, hotel, review_id):
         user_strategy = self.sample_from_probability_vector(user.user_proba)
@@ -332,22 +429,26 @@ class OnlineSimulationDataSet(Dataset):
                 options = [3, 0, 2, 5, 19, 59] + [132, 23, 107, 43, 17, 93]
                 return random.sample(options, self.bots_per_user)
 
-
     def new_user(self):
         user_id = self.next_user
         assert user_id < self.n_users
         args = {"favorite_review": self.get_review()}
-        user = self.SimulatedUser(user_improve=self.user_improve, basic_nature=self.basic_nature,
-                                  favorite_topic_method="review", **args)
+        # user = self.SimulatedUser(user_improve=self.user_improve, basic_nature=self.basic_nature,
+        #                           favorite_topic_method="review", **args)
+        user = self.ImprovedSimulatedUser(self.config,self.basic_nature, favorite_topic_method="review", **args)
         bots = self.sample_bots()
         game_id = 0
         for bot in bots:
-            user.return_to_init_proba()
+
+            # user.return_to_init_proba()
+            user.return_to_init_weights()
             bot_strategy = getattr(bot_strategies, f"strategy_{bot}")
             correct_answers = 0
             games_until_winning = 0
+            # while (correct_answers < self.SIMULATION_TH) and not (
+            #         self.user_improve == 0 and (games_until_winning == 100)):  # start a new game
             while (correct_answers < self.SIMULATION_TH) and not (
-                    self.user_improve == 0 and (games_until_winning == 100)):  # start a new game
+                            (games_until_winning == 100)):
                 correct_answers = 0
                 games_until_winning += 1
                 previous_rounds = []
@@ -365,8 +466,10 @@ class OnlineSimulationDataSet(Dataset):
                     review_id = self.get_review_id(hotel_id, np.argmax(hotel == bot_message))
 
                     signal_error = np.random.normal(0, self.SIMULATION_SIGNAL_EPSILON)
-                    user_action = self.play_round(bot_message + signal_error, user, previous_rounds,
-                                                  hotel, review_id)  # DM plays
+                    # user_action = self.play_round(bot_message + signal_error, user, previous_rounds,
+                    #                               hotel, review_id)  # DM plays
+                    user_action = self.improved_play_round(bot_message + signal_error, user, previous_rounds,
+                                                           hotel, review_id)
                     round_result = self.check_choice(hotel, user_action)  # round results
                     correct_answers += round_result
 
@@ -375,7 +478,9 @@ class OnlineSimulationDataSet(Dataset):
                     else:
                         self.n_dont_go += 1
 
-                    user.update_proba()  # update user vector
+                    # user.update_proba()  # update user vector
+                    user.add_real_hotel_quality(1 if hotel.mean() >= 8 else 0)
+                    user.update_weights()
                     previous_rounds += [(hotel, bot_message, user_action)]
 
                     last_didGo_True = last_didGo == 1
@@ -411,6 +516,7 @@ class OnlineSimulationDataSet(Dataset):
                     game.append(row)
                 self.add_game(user_id, game)
                 game_id += 1
+        # print(f"final_weights_({user_id})", user.weights)
         self.next_user += 1
         self.n_games_per_user[user_id] = game_id
         self.total_games_created += game_id

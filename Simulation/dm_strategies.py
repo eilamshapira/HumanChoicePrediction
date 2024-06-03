@@ -17,7 +17,21 @@ def correct_action(information):
         return 1
     else:
         return 0
+# random value
 
+def get_eps_incorrect_action(eps):
+    def epsilon_incorrect_action(information):
+        if np.random.rand() < 1-eps:
+            if information["hotel_value"] >= 8:
+                return 1
+            else:
+                return 0
+        else:
+            if information["hotel_value"] >= 8:
+                return 0
+            else:
+                return 1
+    return epsilon_incorrect_action
 
 def random_action(information):
     return np.random.randint(2)
