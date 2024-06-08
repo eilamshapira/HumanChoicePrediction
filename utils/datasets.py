@@ -264,14 +264,14 @@ class OnlineSimulationDataSet(Dataset):
 
         def update_proba(self):
             reduce_feelings = np.random.rand(len(self.ACTIONS) - 1) * self.user_improve * 10 / 9 - (
-                        self.user_improve / 10)
+                    self.user_improve / 10)
             total_reduced = self.user_proba[1:] * reduce_feelings
             self.user_proba[1:] -= total_reduced
             self.user_proba[1:] = np.maximum(0, self.user_proba[1:])
             self.user_proba[0] = 1 - self.user_proba[1:].sum()
 
     class ImprovedSimulatedUser:
-        def __init__(self, config,basic_nature, favorite_topic_method, **args):
+        def __init__(self, config, basic_nature, favorite_topic_method, **args):
             history_window = np.random.negative_binomial(2, 1 / 2) + np.random.randint(0, 2)
             quality_threshold = np.random.normal(8, 0.5)
             good_topics = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 13, 19, 28, 42]
@@ -290,7 +290,8 @@ class OnlineSimulationDataSet(Dataset):
                 negative_topics = np.array(negative_topics)
                 np.random.shuffle(negative_topics)
 
-            self.ACTIONS = {0: ("1-eps correct - noisy oracle", 0, user_strategies.get_eps_incorrect_action(config['eps_incorrect'])),
+            self.ACTIONS = {0: (
+            "eps incorrect - noisy oracle", 0, user_strategies.get_eps_incorrect_action(config['eps_incorrect'])),
                             1: ("random", basic_nature[0], user_strategies.random_action),
                             2: ("history_and_review_quality (Trustful)", basic_nature[1],
                                 user_strategies.history_and_review_quality(history_window, quality_threshold)),
@@ -303,24 +304,26 @@ class OnlineSimulationDataSet(Dataset):
                             6: ("Tit for Tat", 0, user_strategies.user_short_t4t),
                             }
 
-            basic_nature_np = np.array([0]+basic_nature+[0]).astype('float64')
-            basic_nature_np += 1
 
-            self.init_weights = np.random.dirichlet(basic_nature_np / sum(basic_nature_np), 1).T
+            self.init_weights = np.array([0]+list(np.random.randn(len(self.ACTIONS)-1))).reshape(-1,1)
+            self.init_bias = np.array([0])
             self.weights = self.init_weights.copy()
+            self.bias = self.init_bias.copy()
             self.decisions_history = []
             self.round_results = []
             self.config = config
 
         def return_to_init_weights(self):
             self.weights = self.init_weights.copy()
+            self.bias = self.init_bias.copy()
             self.decisions_history = []
             self.round_results = []
 
         def add_real_hotel_quality(self, result):
             self.round_results += [[result]]
-        def model(self, predictions, weights):
-            return predictions @ weights
+
+        def model(self, predictions, weights, bias):
+            return bias + predictions @ weights
 
         def update_weights(self):
             Y = torch.Tensor(self.round_results[-10:])
@@ -331,11 +334,13 @@ class OnlineSimulationDataSet(Dataset):
             num_iterations = 1
             loss_fn = torch.nn.BCEWithLogitsLoss()
             w = torch.Tensor(self.weights)
+            b = torch.Tensor(self.bias)
             w.requires_grad = True
+            b.requires_grad = True
             # perform gradient descent
             for i in range(num_iterations):
                 # make a prediction
-                prediction = self.model(X, w)
+                prediction = self.model(X, w, b)
                 # compute the loss
                 loss = loss_fn(prediction, Y)
                 # backpropagate the gradient
@@ -343,12 +348,15 @@ class OnlineSimulationDataSet(Dataset):
 
                 # update the weights
                 with torch.no_grad():
-
                     w -= learning_rate * w.grad
+                    b -= learning_rate * b.grad
 
                 # zero the gradient
                 w.grad.zero_()
+                b.grad.zero_()
+
             self.weights = w.detach().cpu().numpy()
+            self.bias = b.detach().cpu().numpy()
 
     def improved_play_round(self, bot_message, user, previous_rounds, hotel, review_id):
         review_features = self.gcf[review_id]
@@ -361,7 +369,7 @@ class OnlineSimulationDataSet(Dataset):
 
         user.decisions_history += [decision]
         decision = np.array(decision).reshape(1, -1)
-        return 1 if user.model(decision, user.weights) > .5 else 0
+        return 1 if user.model(decision, user.weights,user.bias) > 0 else 0
 
     def play_round(self, bot_message, user, previous_rounds, hotel, review_id):
         user_strategy = self.sample_from_probability_vector(user.user_proba)
@@ -435,7 +443,7 @@ class OnlineSimulationDataSet(Dataset):
         args = {"favorite_review": self.get_review()}
         # user = self.SimulatedUser(user_improve=self.user_improve, basic_nature=self.basic_nature,
         #                           favorite_topic_method="review", **args)
-        user = self.ImprovedSimulatedUser(self.config,self.basic_nature, favorite_topic_method="review", **args)
+        user = self.ImprovedSimulatedUser(self.config, self.basic_nature, favorite_topic_method="review", **args)
         bots = self.sample_bots()
         game_id = 0
         for bot in bots:
@@ -448,7 +456,7 @@ class OnlineSimulationDataSet(Dataset):
             # while (correct_answers < self.SIMULATION_TH) and not (
             #         self.user_improve == 0 and (games_until_winning == 100)):  # start a new game
             while (correct_answers < self.SIMULATION_TH) and not (
-                            (games_until_winning == 100)):
+                    (games_until_winning == 100)):
                 correct_answers = 0
                 games_until_winning += 1
                 previous_rounds = []

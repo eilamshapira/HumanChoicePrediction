@@ -21,24 +21,24 @@ sweep_config_1 = {
     },
     "parameters": {
         "seed": {"values": list(range(1, 6))},
-        "eps_incorrect": {"values": [0, 0.2, 0.4]}, # At the first sweep we ran with this line and at the second without this
+        "eps_incorrect": {"values": [0, 0.1, 0.2]}, # At the first sweep we ran with this line and at the second without this
         "learning_rate_gb": {"values": [0.5, 0.1, 0.02]}
     },
     "command": command
 }
-sweep_config_2 = {
-    "name": "LSTM: eps incorrect oracle for different agent learning rate",
-    "method": "grid",
-    "metric": {
-        "goal": "maximize",
-        "name": "AUC.test.max"
-    },
-    "parameters": {
-        "seed": {"values": list(range(1, 6))},
-        "learning_rate_gb": {"values": [0.5, 0.1, 0.02]}
-    },
-    "command": command
-}
+# sweep_config_2 = {
+#     "name": "LSTM: eps incorrect oracle for different agent learning rate",
+#     "method": "grid",
+#     "metric": {
+#         "goal": "maximize",
+#         "name": "AUC.test.max"
+#     },
+#     "parameters": {
+#         "seed": {"values": list(range(1, 6))},
+#         "learning_rate_gb": {"values": [0.5, 0.1, 0.02]}
+#     },
+#     "command": command
+# }
 
 # Initialize a new sweep
 # sweep_id = wandb.sweep(sweep=sweep_config, project=project)
