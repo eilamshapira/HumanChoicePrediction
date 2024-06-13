@@ -304,8 +304,10 @@ class OnlineSimulationDataSet(Dataset):
                             6: ("Tit for Tat", 0, user_strategies.user_short_t4t),
                             }
 
+            basic_nature_np = np.array([0] + basic_nature + [0]).astype('float64')
+            basic_nature_np += 1
 
-            self.init_weights = np.array([0]+list(np.random.randn(len(self.ACTIONS)-1))).reshape(-1,1)
+            self.init_weights = np.random.dirichlet(basic_nature_np / sum(basic_nature_np), 1).T
             self.init_bias = np.array([0])
             self.weights = self.init_weights.copy()
             self.bias = self.init_bias.copy()
@@ -326,12 +328,13 @@ class OnlineSimulationDataSet(Dataset):
             return bias + predictions @ weights
 
         def update_weights(self):
-            Y = torch.Tensor(self.round_results[-10:])
-            X = torch.Tensor(self.decisions_history[-10:])
+            look_back = self.config['num_look_back_rounds']
+            Y = torch.Tensor(self.round_results[-look_back:])
+            X = torch.Tensor(self.decisions_history[-look_back:])
             # set the initial learning rate
             learning_rate = self.config['learning_rate_gb']
             # set the number of iterations
-            num_iterations = 1
+            num_iterations = self.config['num_epoch_per_turn']
             loss_fn = torch.nn.BCEWithLogitsLoss()
             w = torch.Tensor(self.weights)
             b = torch.Tensor(self.bias)

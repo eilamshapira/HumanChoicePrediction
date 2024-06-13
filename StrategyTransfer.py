@@ -55,6 +55,8 @@ parser.add_argument('--SIMULATION_EFs_PATH', type=str, default="data/EFs_by_GPT3
 parser.add_argument('--favorite_topic_method', type=str, default="review", help='Favorite topic method')
 parser.add_argument('--eps_incorrect',type=float, default=0.1, help='W.p eps eps-incorrect strategy returns the incorrect value')
 parser.add_argument('--learning_rate_gb',type=float, default=0.1, help='Gradient based method lr')
+parser.add_argument('--num_epoch_per_turn',type=int, default=1, help='Number of epochs for training the weights per turn')
+parser.add_argument('--num_look_back_rounds',type=int, default=10, help='Number of previous rounds too look for, for training the weights')
 
 # Advanced Projects' Features
 parser.add_argument('--agent', type=str, default="modelbasedRL", help='Agent type')

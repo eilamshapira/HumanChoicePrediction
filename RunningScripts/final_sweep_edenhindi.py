@@ -12,38 +12,59 @@ command = [
     "${project}",
     "${args}"
 ]
+
+# The config for running the hyper parameter tuning sweep
 sweep_config_1 = {
-    "name": "LSTM: eps incorrect oracle for different agent learning rate",
+    "name": "HPT: eps incorrect oracle for different agent learning rate",
     "method": "grid",
     "metric": {
         "goal": "maximize",
         "name": "AUC.test.max"
     },
     "parameters": {
+        "ENV_HPT_mode": {"values": [True]},
         "seed": {"values": list(range(1, 6))},
-        "eps_incorrect": {"values": [0, 0.1, 0.2]}, # At the first sweep we ran with this line and at the second without this
+        "eps_incorrect": {"values": [0, 0.1, 0.2, 0.3]}, # At the first sweep we ran with this line and at the second without this
         "learning_rate_gb": {"values": [0.5, 0.1, 0.02]}
     },
     "command": command
 }
-# sweep_config_2 = {
-#     "name": "LSTM: eps incorrect oracle for different agent learning rate",
-#     "method": "grid",
-#     "metric": {
-#         "goal": "maximize",
-#         "name": "AUC.test.max"
-#     },
-#     "parameters": {
-#         "seed": {"values": list(range(1, 6))},
-#         "learning_rate_gb": {"values": [0.5, 0.1, 0.02]}
-#     },
-#     "command": command
-# }
 
-# Initialize a new sweep
-# sweep_id = wandb.sweep(sweep=sweep_config, project=project)
-# print("run this line to run your agent in a screen:")
-# print(f"screen -dmS \"sweep_agent\" wandb agent {YOUR_WANDB_USERNAME}/{project}/{sweep_id}")
+# The config for running the sweep that tested the configuration eps = 0.2, lr = 0.1
+sweep_config_2 = {
+    "name": "TEST: eps = 0.2, lr = 0.1",
+    "method": "grid",
+    "metric": {
+        "goal": "maximize",
+        "name": "AUC.test.max"
+    },
+    "parameters": {
+        "ENV_HPT_mode": {"values": [False]},
+        "seed": {"values": list(range(1, 6))},
+        "eps_incorrect": {"values": [0.2]}, # At the first sweep we ran with this line and at the second without this
+        "learning_rate_gb": {"values": [0.1]}
+    },
+    "command": command
+}
+
+# The config for running the sweep that tested the configuration eps = 0.3, lr = 0.1
+sweep_config_3 = {
+    "name": "TEST: eps = 0.3, lr = 0.1",
+    "method": "grid",
+    "metric": {
+        "goal": "maximize",
+        "name": "AUC.test.max"
+    },
+    "parameters": {
+        "ENV_HPT_mode": {"values": [False]},
+        "seed": {"values": list(range(1, 6))},
+        "eps_incorrect": {"values": [0.3]}, # At the first sweep we ran with this line and at the second without this
+        "learning_rate_gb": {"values": [0.1]}
+    },
+    "command": command
+}
+
+# Change the config to your purpose
 sweep_id = wandb.sweep(sweep=sweep_config_1, project=project)
 
 print("Run these lines to run your agent in a screen:")
