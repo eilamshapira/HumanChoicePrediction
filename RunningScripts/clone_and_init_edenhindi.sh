@@ -9,7 +9,9 @@ conda activate final_project_env
 
 wandb login
 # Your main sweep:
+
 python RunningScripts/final_sweep_edenhindi.py
+
 
 # More runs appear in your report:
 # python sweep_1.py

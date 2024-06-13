@@ -62,7 +62,7 @@ sweep_config_3 = {
         "learning_rate_gb": {"values": [0.1]}
     },
     "command": command
-}
+
 
 # Change the config to your purpose
 sweep_id = wandb.sweep(sweep=sweep_config_1, project=project)
