@@ -1,6 +1,6 @@
 import wandb
-YOUR_WANDB_USERNAME = "eilamshapira"
-project = "NLP2024_PROJECT_YOUR_UID"
+YOUR_WANDB_USERNAME = "bellatomer"
+project = "NLP2024_PROJECT_BellaPerel" #todo: rename in wandb to this (nm it created it by itself)
 
 command = [
         "${ENVIRONMENT_VARIABLE}",
@@ -16,13 +16,13 @@ sweep_config = {
     "metric": {
         "goal": "maximize",
         "name": "AUC.test.max"
-    },
+    }, #1*1*5*2*3
     "parameters": {
         "ENV_HPT_mode": {"values": [False]},
         "architecture": {"values": ["LSTM"]},
-        "seed": {"values": list(range(1, 6))},
-        "online_simulation_factor": {"values": [0, 4]},
-        "features": {"values": ["EFs", "GPT4", "BERT"]},
+        "seed": {"values": list(range(1, 2))},
+        "online_simulation_factor": {"values": [0]},
+        "features": {"values": ["EFs"]}, #todo: can add more parameters in ST
     },
     "command": command
 }

@@ -31,7 +31,7 @@ STRATEGIC_FEATURES_ORDER = ['roundNum', 'user_points', 'bot_points',
                             'last_didWin_True', 'last_didWin_False',
                             'last_last_didGo_True', 'last_last_didGo_False',
                             'last_last_didWin_True', 'last_last_didWin_False',
-                            "user_earned_more", "user_not_earned_more"]
+                            "user_earned_more", "user_not_earned_more", "new_feature"]
 if USING_REACTION_TIME:
     STRATEGIC_FEATURES_ORDER += reaction_time_columns_names
 
@@ -79,7 +79,8 @@ DATA_BLANK_ROW_DF = lambda s: pd.DataFrame.from_dict({"user_id": [-100],
                                                       "bot_points": [-1],
                                                       "is_sample": [False],
                                                       "weight": 0,
-                                                      "action_id": [-1]})
+                                                      "action_id": [-1],
+                                                      "new_feature": [0]})
 
 bot2strategy_X = {0: 3, 1: 0, 2: 2, 3: 5, 4: 59, 5: 19}
 bot2strategy_Y = {0: 132, 1: 23, 2: 107, 3: 43, 4: 17, 5: 93}

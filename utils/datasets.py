@@ -152,7 +152,8 @@ class OfflineDataSet(Dataset):
                   "review_vector": reviewId.apply(lambda r: self.review_reduced[r]).tolist(),
                   "is_sample": game["is_sample"].to_numpy(),
                   "weight": game["weight"].to_numpy(),
-                  "action_id": game["index"].to_numpy()}
+                  "action_id": game["index"].to_numpy(),
+                  "new_feature": game["new_feature"].to_numpy(),}
 
         for column_name, (lower, upper) in zip(reaction_time_columns_names, reaction_time_bins):
             sample[column_name] = (lower <= last_reaction_time) & (last_reaction_time < upper)
@@ -398,7 +399,8 @@ class OnlineSimulationDataSet(Dataset):
                            "last_last_didGo_False": last_last_didGo_False, "last_last_didGo_True": last_last_didGo_True,
                            "last_last_didWin_False": last_last_didWin_False,
                            "last_last_didWin_True": last_last_didWin_True,
-                           "user_points": user_points, "bot_points": bot_points, "weight": weight, "is_sample": True}
+                           "user_points": user_points, "bot_points": bot_points, "weight": weight, "is_sample": True,
+                           "new_feature": 1}
 
                     # if self.advanced_reaction_time:
                     #     last_reaction_time = self.get_reaction_time(row)
