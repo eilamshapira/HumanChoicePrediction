@@ -153,7 +153,16 @@ class OfflineDataSet(Dataset):
                   "is_sample": game["is_sample"].to_numpy(),
                   "weight": game["weight"].to_numpy(),
                   "action_id": game["index"].to_numpy(),
-                  "new_feature": game["new_feature"].to_numpy(),}
+                  'Staff (Pos)': game['Staff (Pos)'].to_numpy(),
+                  'Facilities (Pos)': game['Facilities (Pos)'].to_numpy(),
+                  'Cleanliness (Pos)': game['Cleanliness (Pos)'].to_numpy(),
+                  'Location (Pos)': game['Location (Pos)'].to_numpy(),
+                  'Food (Pos)': game['Food (Pos)'].to_numpy(),
+                  'Staff (Neg)': game['Staff (Neg)'].to_numpy(),
+                  'Facilities (Neg)': game['Facilities (Neg)'].to_numpy(),
+                  'Cleanliness (Neg)': game['Cleanliness (Neg)'].to_numpy(),
+                  'Location (Neg)': game['Location (Neg)'].to_numpy(),
+                  'Food (Neg)': game['Food (Neg)'].to_numpy(),}
 
         for column_name, (lower, upper) in zip(reaction_time_columns_names, reaction_time_bins):
             sample[column_name] = (lower <= last_reaction_time) & (last_reaction_time < upper)
@@ -400,7 +409,16 @@ class OnlineSimulationDataSet(Dataset):
                            "last_last_didWin_False": last_last_didWin_False,
                            "last_last_didWin_True": last_last_didWin_True,
                            "user_points": user_points, "bot_points": bot_points, "weight": weight, "is_sample": True,
-                           "new_feature": 1}
+                           'Staff (Pos)': 0,
+                           'Facilities (Pos)': 0,
+                           'Cleanliness (Pos)': 0,
+                           'Location (Pos)': 0,
+                           'Food (Pos)': 0,
+                           'Staff (Neg)': 0,
+                           'Facilities (Neg)': 0,
+                           'Cleanliness (Neg)': 0,
+                           'Location (Neg)': 0,
+                           'Food (Neg)': 0}
 
                     # if self.advanced_reaction_time:
                     #     last_reaction_time = self.get_reaction_time(row)
