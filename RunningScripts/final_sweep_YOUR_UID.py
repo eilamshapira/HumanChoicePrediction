@@ -19,7 +19,7 @@ sweep_config = {
     }, #1*1*5*2*3
     "parameters": {
         "ENV_HPT_mode": {"values": [False]},
-        "architecture": {"values": ["LSTM"]},
+        "architecture": {"values": ["CNN"]},
         "seed": {"values": list(range(1, 2))},
         "online_simulation_factor": {"values": [0]},
         "features": {"values": ["EFs"]}, #todo: can add more parameters in ST

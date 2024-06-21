@@ -31,7 +31,7 @@ parser.add_argument('--total_epochs', type=int, default=25, help='Number of epoc
 parser.add_argument('--features', type=str, default="EFs", help='Input features')
 
 # Architecture Features
-parser.add_argument('--architecture', type=str, default="LSTM", help='Model architecture')
+parser.add_argument('--architecture', type=str, default="CNN", help='Model architecture')
 parser.add_argument('--hidden_dim', type=int, default=32, help='Hidden dimensions')
 parser.add_argument('--layers', type=int, default=2, help='Number of layers')
 parser.add_argument('--transformer_nheads', type=int, default=4, help='Transformer heads')
@@ -76,7 +76,8 @@ meta_features_map = {"features": {"EFs": {"FEATURES_PATH": config["SIMULATION_EF
                                   "GPT4": {"FEATURES_PATH": "data/GPT4_PCA_36.csv", "REVIEW_DIM": 36},
                                   "BERT": {"FEATURES_PATH": "data/BERT_PCA_36.csv", "REVIEW_DIM": 36}},
                      "architecture": {"LSTM": {"use_user_vector": True},
-                                      "transformer": {"use_user_vector": False}}
+                                      "transformer": {"use_user_vector": False},
+                                      "CNN": {"use_user_vector": True}}
                      }
 
 for meta_feature, meta_feature_map in meta_features_map.items():
@@ -108,3 +109,5 @@ if config["architecture"] == "LSTM":
     env_model = environments.LSTM_env.LSTM_env(env_name, config=config)
 elif config["architecture"] == "transformer":
     env_model = environments.transformer_env.transformer_env(env_name, config=config)
+elif config["architecture"] == "CNN":
+    env_model = environments.CNN_env.CNN_env(env_name, config=config)

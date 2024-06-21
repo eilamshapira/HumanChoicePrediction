@@ -177,6 +177,10 @@ class Environment:
                         with torch.no_grad():
                             model_output = self.model(model_vectors)
                     output = model_output["output"]
+                    """
+                    print(f"Output shape before reshape: {output.shape}")
+                    print(f"Batch size: {batch_size}, DATA_ROUNDS_PER_GAME: {DATA_ROUNDS_PER_GAME}")
+                    """
                     mask = (batch["action_taken"] != -100).flatten()
                     relevant_predictions = output.reshape(batch_size * DATA_ROUNDS_PER_GAME, -1)[mask]
                     relevant_ground_truth = batch["action_taken"].flatten()[mask]
