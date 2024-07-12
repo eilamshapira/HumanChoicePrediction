@@ -209,3 +209,42 @@ final_grouped_df.to_csv(csv_path_avg, index=False)
 # Print the DataFrame
 print("Averaged DataFrame:")
 print(final_grouped_df)
+
+
+df = final_grouped_df
+display_HPT_cols = ['config_features', 'config_architecture', 'config_ENV_LEARNING_RATE', 'config_offline_train_test_datasets']
+# Identify the metric columns for "ENV_Test_proba_accuracy_per_mean_user_and_bot"
+proba_metric_columns = [col for col in df.columns if "ENV_Test_proba_accuracy_per_mean_user_and_bot" in col]
+print(f"Proba Metric columns: {proba_metric_columns}")
+
+# Get the top 3 rows with the highest values in the proba metric columns
+df['max_proba_accuracy'] = df[proba_metric_columns].max(axis=1)
+top_3_df = df.nlargest(3, 'max_proba_accuracy')
+
+# Identify the metric columns for "ENV_Test_accuracy_per_mean_user_and_bot"
+accuracy_metric_columns = [col for col in df.columns if "ENV_Test_accuracy_per_mean_user_and_bot" in col]
+print(f"Accuracy Metric columns: {accuracy_metric_columns}")
+
+# Prepare the data for plotting
+plot_data = top_3_df[HPT_cols + accuracy_metric_columns + proba_metric_columns]
+
+# Save the rows that give the top 3 max results in a new DataFrame
+top_3_results_df = plot_data.copy()
+csv_path_top3 = 'top_3_results.csv'
+top_3_results_df.to_csv(csv_path_top3, index=False)
+
+# Plotting the data
+plt.figure(figsize=(14, 7))
+for i, row in top_3_results_df.iterrows():
+    epochs = range(len(accuracy_metric_columns))
+    legend_label = ", ".join([f"{row[col]}" for col in display_HPT_cols])
+    plt.plot(epochs, row[accuracy_metric_columns], label=f"Accuracy ({legend_label})", marker='o')
+    plt.plot(epochs, row[proba_metric_columns], label=f"Proba Accuracy ({legend_label})", marker='o')
+
+plt.xlabel("Epoch")
+plt.ylabel("Accuracy")
+plt.title("Top 3 Accuracy and Proba Accuracy Over Epochs")
+plt.legend(loc='lower right', bbox_to_anchor=(1, 0))
+plt.grid(True)
+plt.tight_layout()
+plt.show()
