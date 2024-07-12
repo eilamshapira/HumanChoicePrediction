@@ -1,13 +1,36 @@
 import torch
 import pandas as pd
 import numpy as np
+import json
+
+class Configurations:
+    def __init__(self):
+        self.config = self.load_config()
+
+    def load_config(self):
+        with open('config.json', 'r') as f:
+            config = json.load(f)
+        return config
+
+    def get_config(self):
+        return self.config  # Access config here
+
+
+config_instance = Configurations()
+config = config_instance.get_config()
 
 DATA_GAME_REVIEWS_PATH = "data/game_reviews"
+if config.get("offline_train_test_datasets") == "key_word_tagging":
+    DATA_CLEAN_ACTION_PATH_X = "data/games_clean_X.csv"
+    DATA_CLEAN_ACTION_PATH_X_NUMBER_OF_USERS = 210
+    DATA_CLEAN_ACTION_PATH_Y_NUMBER_OF_USERS = 35
+    DATA_CLEAN_ACTION_PATH_Y = "data/games_clean_Y.csv"
+else:
+    DATA_CLEAN_ACTION_PATH_X = "data/games_clean_X_trans_tagging.csv"
+    DATA_CLEAN_ACTION_PATH_X_NUMBER_OF_USERS = 210
+    DATA_CLEAN_ACTION_PATH_Y_NUMBER_OF_USERS = 35
+    DATA_CLEAN_ACTION_PATH_Y = "data/games_clean_Y_trans_tagging.csv"
 
-DATA_CLEAN_ACTION_PATH_X = "data/games_clean_X.csv"
-DATA_CLEAN_ACTION_PATH_X_NUMBER_OF_USERS = 210
-DATA_CLEAN_ACTION_PATH_Y_NUMBER_OF_USERS = 35
-DATA_CLEAN_ACTION_PATH_Y = "data/games_clean_Y.csv"
 OFFLINE_SIM_DATA_PATH = "data/LLM_games_personas.csv"
 
 REVIEW_ENCODERS_PATH = "models/reviews_encoders"

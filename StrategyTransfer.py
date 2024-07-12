@@ -5,6 +5,7 @@ from utils.functions import *
 import wandb
 from utils import personas
 import argparse
+import json
 
 parser = argparse.ArgumentParser(description='Hyperparameter tuning with wandb.')
 def str2bool(v):
@@ -63,6 +64,9 @@ parser.add_argument('--offline_simulation_size', type=int, default=0,
 parser.add_argument('--OFFLINE_SIM_DATA_PATH', type=str, default="data/LLM_games_personas.csv", help='LLM data path')
 parser.add_argument('--personas_balanced', type=str2bool, default=True, help='Personas balanced flag')
 parser.add_argument('--personas_group_number', type=int, default=-1, help='Personas group number')
+parser.add_argument('--offline_train_test_datasets', type=str, default='key_word_tagging', help='dataset to use for offline training and testing')
+
+
 
 
 args = parser.parse_args()
@@ -72,7 +76,15 @@ config = wandb.config
 
 config.update(args.__dict__)
 
-meta_features_map = {"features": {"EFs": {"FEATURES_PATH": config["SIMULATION_EFs_PATH"], "REVIEW_DIM": 47},
+# Convert wandb config to dictionary
+config_dict = dict(config)
+
+# Save config to a JSON file
+with open('config.json', 'w') as f:
+    json.dump(config_dict, f)
+
+
+meta_features_map = {"features": {"EFs": {"FEATURES_PATH": config["SIMULATION_EFs_PATH"], "REVIEW_DIM": 37},
                                   "GPT4": {"FEATURES_PATH": "data/GPT4_PCA_36.csv", "REVIEW_DIM": 36},
                                   "BERT": {"FEATURES_PATH": "data/BERT_PCA_36.csv", "REVIEW_DIM": 36}},
                      "architecture": {"LSTM": {"use_user_vector": True},
@@ -104,6 +116,7 @@ all_bot_points = []
 hotels = utils.Hotels(config)
 
 env_name = config["wandb_run_id"]
+
 
 if config["architecture"] == "LSTM":
     env_model = environments.LSTM_env.LSTM_env(env_name, config=config)

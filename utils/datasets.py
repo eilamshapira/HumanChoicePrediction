@@ -501,7 +501,16 @@ class OnlineSimulationDataSet(Dataset):
                   "review_vector": reviewId.apply(lambda r: self.review_reduced[r]).tolist(),
                   "is_sample": game["is_sample"].to_numpy(),
                   "weight": weight,
-                  "action_id": action_ids}
+                  "action_id": action_ids,'Staff (Pos)': 0,
+                  'Facilities (Pos)': 0,
+                  'Cleanliness (Pos)': 0,
+                  'Location (Pos)': 0,
+                  'Food (Pos)': 0,
+                  'Staff (Neg)': 0,
+                  'Facilities (Neg)': 0,
+                  'Cleanliness (Neg)': 0,
+                  'Location (Neg)': 0,
+                  'Food (Neg)': 0}
 
         for column_name, (lower, upper) in zip(reaction_time_columns_names, reaction_time_bins):
             sample[column_name] = (lower <= last_reaction_time) & (last_reaction_time < upper)
