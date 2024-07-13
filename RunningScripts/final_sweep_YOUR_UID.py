@@ -21,12 +21,12 @@ sweep_config = {
     }, #1*1*5*2*3
     "parameters": {
         "ENV_HPT_mode": {"values": [False]},
-        "architecture": {"values": ["CNN", "LSTM"]},
+        "architecture": {"values": ["CNN"]},
         "seed": {"values": [0, 2, 4]},
         "online_simulation_factor": {"values": [0]},
-        "features": {"values": ["EFs", "GPT4", "BERT"]},
-        "ENV_LEARNING_RATE": {"values": [1e-3, 3e-3]},
-        "offline_train_test_datasets": {"values": ["key_word_tagging", "transformer_tagged"]} #todo: can add more parameters in ST
+        "features": {"values": ["EFs"]},
+        "ENV_LEARNING_RATE": {"values": [1e-3]},
+        "offline_train_test_datasets": {"values": ["original_data"]} #todo: can add more parameters in ST
     },
     "command": command
 }
@@ -41,12 +41,12 @@ sweep_config = {
     }, #1*1*5*2*3
     "parameters": {
         "ENV_HPT_mode": {"values": [False]},
-        "architecture": {"values": ["CNN"]},
-        "seed": {"values": [0]},
+        "architecture": {"values": ["CNN", "LSTM"]},
+        "seed": {"values": [0, 2, 4]},
         "online_simulation_factor": {"values": [0]},
-        "features": {"values": ["EFs"]},
-        "ENV_LEARNING_RATE": {"values": [1e-3]},
-        #"offline_train_test_datasets": {"values": ["LLM_tagged"]} #todo: can add more parameters in ST
+        "features": {"values": ["EFs", "GPT4", "BERT"]},
+        "ENV_LEARNING_RATE": {"values": [1e-3, 3e-3]},
+        "offline_train_test_datasets": {"values": ["key_word_tagging", "transformer_tagged"]} #todo: can add more parameters in ST
     },
     "command": command
 }

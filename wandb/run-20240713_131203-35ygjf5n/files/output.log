@@ -1,0 +1,26 @@
+
+Start training the environment...
+################
+# Epoch 0
+################
+Train:   0%|          | 0/2260 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\StrategyTransfer.py", line 126, in <module>
+    env_model = environments.CNN_env.CNN_env(env_name, config=config)
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\environments\environment.py", line 38, in __init__
+    self.train()
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\environments\environment.py", line 159, in train
+    for batch in tqdm(dataloader, desc=phase):
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\site-packages\tqdm\std.py", line 1195, in __iter__
+    for obj in iterable:
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\site-packages\torch\utils\data\dataloader.py", line 628, in __next__
+    data = self._next_data()
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\site-packages\torch\utils\data\dataloader.py", line 671, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\site-packages\torch\utils\data\_utils\fetch.py", line 58, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\site-packages\torch\utils\data\_utils\fetch.py", line 58, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\utils\datasets.py", line 182, in __getitem__
+    sample["review_vector"] = torch.stack(sample["review_vector"])
+KeyError: 'review_vector'

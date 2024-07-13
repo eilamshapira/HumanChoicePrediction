@@ -25,6 +25,11 @@ if config.get("offline_train_test_datasets") == "key_word_tagging":
     DATA_CLEAN_ACTION_PATH_X_NUMBER_OF_USERS = 210
     DATA_CLEAN_ACTION_PATH_Y_NUMBER_OF_USERS = 35
     DATA_CLEAN_ACTION_PATH_Y = "data/games_clean_Y.csv"
+elif config.get("offline_train_test_datasets") == "original_data":
+    DATA_CLEAN_ACTION_PATH_X = "data/games_clean_X_original.csv"
+    DATA_CLEAN_ACTION_PATH_X_NUMBER_OF_USERS = 210
+    DATA_CLEAN_ACTION_PATH_Y_NUMBER_OF_USERS = 35
+    DATA_CLEAN_ACTION_PATH_Y = "data/games_clean_Y_original.csv"
 else:
     DATA_CLEAN_ACTION_PATH_X = "data/games_clean_X_trans_tagging.csv"
     DATA_CLEAN_ACTION_PATH_X_NUMBER_OF_USERS = 210
@@ -49,12 +54,22 @@ reaction_time_bins = [(0, 400),
                       (20000, np.inf)]
 reaction_time_columns_names = [f"last_reaction_time_{lower}_{upper}" for lower, upper in reaction_time_bins]
 
-STRATEGIC_FEATURES_ORDER = ['roundNum', 'user_points', 'bot_points',
-                            'last_didGo_True', 'last_didGo_False',
-                            'last_didWin_True', 'last_didWin_False',
-                            'last_last_didGo_True', 'last_last_didGo_False',
-                            'last_last_didWin_True', 'last_last_didWin_False',
-                            "user_earned_more", "user_not_earned_more", 'Staff (Pos)', 'Facilities (Pos)', 'Cleanliness (Pos)', 'Location (Pos)', 'Food (Pos)', 'Staff (Neg)', 'Facilities (Neg)', 'Cleanliness (Neg)', 'Location (Neg)', 'Food (Neg)']
+if config.get("offline_train_test_datasets") == "original_data":
+    STRATEGIC_FEATURES_ORDER = ['roundNum', 'user_points', 'bot_points',
+                                'last_didGo_True', 'last_didGo_False',
+                                'last_didWin_True', 'last_didWin_False',
+                                'last_last_didGo_True', 'last_last_didGo_False',
+                                'last_last_didWin_True', 'last_last_didWin_False',
+                                "user_earned_more", "user_not_earned_more"]
+else:
+    STRATEGIC_FEATURES_ORDER = ['roundNum', 'user_points', 'bot_points',
+                                'last_didGo_True', 'last_didGo_False',
+                                'last_didWin_True', 'last_didWin_False',
+                                'last_last_didGo_True', 'last_last_didGo_False',
+                                'last_last_didWin_True', 'last_last_didWin_False',
+                                "user_earned_more", "user_not_earned_more", 'Staff (Pos)', 'Facilities (Pos)', 'Cleanliness (Pos)', 'Location (Pos)', 'Food (Pos)', 'Staff (Neg)', 'Facilities (Neg)', 'Cleanliness (Neg)', 'Location (Neg)', 'Food (Neg)']
+
+
 if USING_REACTION_TIME:
     STRATEGIC_FEATURES_ORDER += reaction_time_columns_names
 
@@ -137,9 +152,3 @@ merged_data.to_csv(output_file_path, index=False)
 
 print(f"Merged data saved to {output_file_path}")
 """
-
-df = pd.read_csv("game_reviews_EFs_extra_features.csv")
-
-last_10_columns = df.columns[-10:].tolist()
-
-print(last_10_columns)
