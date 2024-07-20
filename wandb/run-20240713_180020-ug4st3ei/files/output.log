@@ -1,0 +1,41 @@
+
+Start training the environment...
+################
+# Epoch 0
+################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Train: 100%|█████████▉| 2259/2260 [00:40<00:00, 56.18it/s]
+
+
+
+
+Test: 642it [00:08, 74.00it/s]
+Train:  10%|▉         | 217/2260 [00:04<00:40, 50.71it/s]
+proba_accuracy_per_mean_user_and_bot:  0.9682571964129013
+accuracy_per_mean_user_and_bot:  0.9791276571785336
+################
+# Epoch 1
+
+
+
+
+
+

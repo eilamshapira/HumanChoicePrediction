@@ -117,6 +117,8 @@ hotels = utils.Hotels(config)
 
 env_name = config["wandb_run_id"]
 
+#print all the configs it runs with
+print(config)
 
 if config["architecture"] == "LSTM":
     env_model = environments.LSTM_env.LSTM_env(env_name, config=config)
