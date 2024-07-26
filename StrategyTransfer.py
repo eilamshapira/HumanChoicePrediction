@@ -64,7 +64,7 @@ parser.add_argument('--offline_simulation_size', type=int, default=0,
 parser.add_argument('--OFFLINE_SIM_DATA_PATH', type=str, default="data/LLM_games_personas.csv", help='LLM data path')
 parser.add_argument('--personas_balanced', type=str2bool, default=True, help='Personas balanced flag')
 parser.add_argument('--personas_group_number', type=int, default=-1, help='Personas group number')
-parser.add_argument('--offline_train_test_datasets', type=str, default='original_data', help='dataset to use for offline training and testing')
+parser.add_argument('--offline_train_test_datasets', type=str, default='key_word_tagging', help='dataset to use for offline training and testing')
 
 
 
@@ -118,7 +118,7 @@ hotels = utils.Hotels(config)
 env_name = config["wandb_run_id"]
 
 #print all the configs it runs with
-print(config)
+#print(config)
 
 if config["architecture"] == "LSTM":
     env_model = environments.LSTM_env.LSTM_env(env_name, config=config)

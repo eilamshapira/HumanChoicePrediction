@@ -1,0 +1,9252 @@
+{'ENV_HPT_mode': False, 'seed': 1, 'task': 'off_policy', 'ENV_LEARNING_RATE': 0.001, 'loss_weight_type': 'None', 'save_artifacts': True, 'strategies': None, 'total_epochs': 25, 'features': 'EFs', 'architecture': 'CNN', 'hidden_dim': 32, 'layers': 2, 'transformer_nheads': 4, 'dropout': 0, 'human_train_size': 210, 'online_sim_type': 'before_epoch', 'basic_nature': 12, 'online_simulation_factor': 0, 'simulation_bot_per_user': 0, 'simulation_signal_error': 0.3, 'simulation_user_improve': 0.01, 'max_games': 4, 'zero_knowledge': True, 'bots_per_user': 6, 'SIMULATION_EFs_PATH': 'data/EFs_by_GPT35.csv', 'favorite_topic_method': 'review', 'agent': 'modelbasedRL', 'force_train': True, 'output_dim': 2, 'offline_simulation_size': 0, 'OFFLINE_SIM_DATA_PATH': 'data/LLM_games_personas.csv', 'personas_balanced': True, 'personas_group_number': -1, 'offline_train_test_datasets': 'original_data', 'FEATURES_PATH': 'data/EFs_by_GPT35.csv', 'REVIEW_DIM': 37, 'use_user_vector': True, 'online_simulation_size': 0, 'input_dim': 60, 'wandb_run_id': 'j9vhlwx8'}
+Start training the environment...
+################
+# Epoch 0
+################
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Train:   3%|▎         | 61/2260 [00:01<00:54, 40.57it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:   6%|▌         | 139/2260 [00:03<00:57, 36.93it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:   9%|▉         | 211/2260 [00:05<01:02, 32.75it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  12%|█▏        | 282/2260 [00:07<00:58, 34.00it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  16%|█▌        | 351/2260 [00:09<00:56, 33.82it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  18%|█▊        | 418/2260 [00:11<00:57, 32.11it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  22%|██▏       | 487/2260 [00:13<00:51, 34.29it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  25%|██▍       | 563/2260 [00:15<00:47, 35.72it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  28%|██▊       | 632/2260 [00:17<00:44, 36.73it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  31%|███▏      | 710/2260 [00:19<00:44, 34.79it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  35%|███▍      | 780/2260 [00:21<00:41, 35.77it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  37%|███▋      | 829/2260 [00:23<00:47, 30.26it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  40%|███▉      | 898/2260 [00:25<00:39, 34.60it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  43%|████▎     | 969/2260 [00:27<00:40, 32.05it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  46%|████▌     | 1043/2260 [00:29<00:33, 36.05it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  49%|████▉     | 1111/2260 [00:31<00:34, 33.18it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  52%|█████▏    | 1186/2260 [00:33<00:29, 36.72it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  55%|█████▌    | 1248/2260 [00:35<00:30, 33.24it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  58%|█████▊    | 1318/2260 [00:37<00:28, 33.18it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  61%|██████▏   | 1388/2260 [00:39<00:25, 34.10it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  65%|██████▍   | 1461/2260 [00:41<00:22, 35.92it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  68%|██████▊   | 1532/2260 [00:44<00:22, 32.41it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  70%|███████   | 1585/2260 [00:45<00:20, 33.11it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  73%|███████▎  | 1653/2260 [00:47<00:18, 32.29it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  76%|███████▌  | 1723/2260 [00:49<00:17, 30.64it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  79%|███████▉  | 1786/2260 [00:51<00:15, 30.54it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Train:  81%|████████  | 1828/2260 [00:52<00:12, 35.85it/s]wandb: 429 encountered (Filestream rate limit exceeded, retrying in 2.1 seconds.), retrying request
+Train:  82%|████████▏ | 1854/2260 [00:53<00:12, 32.70it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  85%|████████▍ | 1918/2260 [00:55<00:10, 32.43it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  88%|████████▊ | 1988/2260 [00:57<00:08, 31.60it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  91%|█████████ | 2056/2260 [00:59<00:05, 34.41it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  94%|█████████▍| 2121/2260 [01:01<00:04, 32.11it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  97%|█████████▋| 2190/2260 [01:04<00:02, 34.41it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Train: 100%|█████████▉| 2259/2260 [01:06<00:00, 34.23it/s]
+Test:   1%|          | 5/543 [00:00<00:12, 41.85it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+
+Test:  13%|█▎        | 68/543 [00:02<00:13, 35.65it/s]
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+
+Test:  26%|██▌       | 142/543 [00:03<00:09, 42.23it/s]
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+
+Test:  40%|███▉      | 215/543 [00:05<00:10, 31.37it/s]
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+
+Test:  55%|█████▍    | 297/543 [00:07<00:06, 37.29it/s]
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+
+Test:  68%|██████▊   | 368/543 [00:09<00:04, 38.34it/s]
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+
+Test:  83%|████████▎ | 451/543 [00:11<00:02, 43.78it/s]
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+
+Test: 566it [00:13, 87.83it/s]
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+
+Test: 642it [00:14, 43.51it/s]
+proba_accuracy_per_mean_user_and_bot:  0.9743501139520454
+accuracy_per_mean_user_and_bot:  0.9835590517559702
+################
+# Epoch 1
+################
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Train:  11%|█         | 240/2260 [00:06<00:53, 37.58it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  13%|█▎        | 299/2260 [00:08<00:53, 36.84it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  16%|█▋        | 368/2260 [00:10<00:55, 33.99it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  19%|█▉        | 434/2260 [00:12<00:59, 30.57it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  22%|██▏       | 506/2260 [00:14<00:51, 34.21it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  25%|██▌       | 576/2260 [00:16<00:46, 36.28it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  29%|██▊       | 646/2260 [00:18<00:46, 34.70it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  32%|███▏      | 722/2260 [00:20<00:44, 34.58it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  35%|███▌      | 793/2260 [00:22<00:40, 35.80it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  38%|███▊      | 858/2260 [00:24<00:40, 34.43it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  41%|████      | 930/2260 [00:26<00:36, 36.19it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  44%|████▍     | 999/2260 [00:28<00:32, 39.10it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  47%|████▋     | 1068/2260 [00:30<00:35, 33.56it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  50%|████▉     | 1120/2260 [00:32<00:34, 33.41it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  52%|█████▏    | 1185/2260 [00:34<00:32, 33.25it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  56%|█████▌    | 1257/2260 [00:36<00:27, 36.27it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  59%|█████▉    | 1328/2260 [00:38<00:24, 37.73it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  62%|██████▏   | 1397/2260 [00:40<00:25, 33.96it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  65%|██████▍   | 1461/2260 [00:42<00:24, 33.05it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  68%|██████▊   | 1529/2260 [00:44<00:20, 36.13it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  70%|███████   | 1586/2260 [00:46<00:26, 25.78it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  73%|███████▎  | 1647/2260 [00:48<00:21, 28.33it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  76%|███████▌  | 1712/2260 [00:50<00:16, 33.06it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  79%|███████▊  | 1776/2260 [00:52<00:17, 28.46it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  82%|████████▏ | 1847/2260 [00:54<00:11, 34.98it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  84%|████████▍ | 1900/2260 [00:56<00:10, 34.65it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  87%|████████▋ | 1963/2260 [00:58<00:09, 30.12it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  90%|████████▉ | 2032/2260 [01:00<00:06, 33.28it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  93%|█████████▎| 2092/2260 [01:02<00:06, 26.36it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  95%|█████████▍| 2141/2260 [01:04<00:05, 23.41it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  97%|█████████▋| 2197/2260 [01:06<00:02, 29.09it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train: 100%|█████████▉| 2259/2260 [01:08<00:00, 32.94it/s]
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Test:   9%|▉         | 50/543 [00:02<00:18, 27.22it/s]
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+
+Test:  16%|█▋        | 89/543 [00:04<00:34, 13.07it/s]
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+
+Test:  28%|██▊       | 154/543 [00:06<00:11, 33.82it/s]
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+
+Test:  40%|████      | 219/543 [00:08<00:09, 34.78it/s]
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+
+Test:  56%|█████▌    | 302/543 [00:10<00:06, 34.96it/s]
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+
+Test:  68%|██████▊   | 368/543 [00:12<00:05, 31.81it/s]
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+
+Test:  78%|███████▊  | 423/543 [00:13<00:03, 37.31it/s]
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+
+
+Test: 642it [00:17, 37.23it/s]
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Stage: Testing
+No data leakage detected.
+Train:   7%|▋         | 162/2260 [00:04<01:04, 32.42it/s]
+proba_accuracy_per_mean_user_and_bot:  0.9709518582710618
+accuracy_per_mean_user_and_bot:  0.9786454696402214
+################
+# Epoch 2
+################
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  10%|█         | 230/2260 [00:06<00:57, 35.08it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+
+Train:  16%|█▋        | 372/2260 [00:10<00:54, 34.56it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  19%|█▉        | 437/2260 [00:12<00:54, 33.60it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  22%|██▏       | 486/2260 [00:14<01:19, 22.18it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  23%|██▎       | 531/2260 [00:16<01:27, 19.67it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  26%|██▌       | 585/2260 [00:18<01:10, 23.79it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  29%|██▉       | 653/2260 [00:20<00:45, 34.99it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  32%|███▏      | 723/2260 [00:22<00:43, 35.16it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  35%|███▌      | 794/2260 [00:24<00:50, 29.02it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  38%|███▊      | 860/2260 [00:26<00:49, 28.41it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  40%|████      | 907/2260 [00:28<00:47, 28.27it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  42%|████▏     | 957/2260 [00:30<00:54, 23.73it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+
+Train:  47%|████▋     | 1059/2260 [00:35<00:50, 24.01it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  49%|████▉     | 1104/2260 [00:37<00:52, 22.05it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  51%|█████     | 1153/2260 [00:39<00:42, 26.09it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  53%|█████▎    | 1192/2260 [00:40<00:42, 25.16it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  56%|█████▌    | 1255/2260 [00:43<00:42, 23.45it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  58%|█████▊    | 1302/2260 [00:45<00:40, 23.94it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  59%|█████▉    | 1338/2260 [00:46<00:40, 22.99it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  61%|██████▏   | 1386/2260 [00:48<00:36, 23.98it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  64%|██████▎   | 1437/2260 [00:50<00:32, 25.10it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  66%|██████▌   | 1490/2260 [00:52<00:31, 24.13it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  68%|██████▊   | 1537/2260 [00:54<00:32, 22.31it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  70%|███████   | 1582/2260 [00:56<00:28, 23.46it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  72%|███████▏  | 1627/2260 [00:59<00:34, 18.53it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  74%|███████▎  | 1666/2260 [01:01<00:28, 20.74it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  75%|███████▌  | 1705/2260 [01:03<00:32, 17.03it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  77%|███████▋  | 1741/2260 [01:05<00:29, 17.73it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  79%|███████▉  | 1780/2260 [01:07<00:28, 16.65it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  80%|████████  | 1815/2260 [01:09<00:28, 15.45it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+
+Train:  83%|████████▎ | 1865/2260 [01:13<01:07,  5.84it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  83%|████████▎ | 1883/2260 [01:15<00:31, 11.82it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  85%|████████▍ | 1911/2260 [01:17<00:25, 13.53it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  86%|████████▌ | 1938/2260 [01:19<00:21, 15.06it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  87%|████████▋ | 1957/2260 [01:21<00:21, 14.17it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  88%|████████▊ | 1982/2260 [01:23<00:14, 18.69it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  89%|████████▉ | 2018/2260 [01:25<00:16, 15.00it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+
+Train:  90%|█████████ | 2040/2260 [01:26<00:13, 16.49it/s]
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training
+Stage: Training

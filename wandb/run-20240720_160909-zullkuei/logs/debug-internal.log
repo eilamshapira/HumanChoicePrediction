@@ -1,0 +1,76 @@
+2024-07-20 16:09:09,236 INFO    StreamThr :600 [internal.py:wandb_internal():86] W&B internal server running at pid: 600, started at: 2024-07-20 16:09:09.236588
+2024-07-20 16:09:09,238 DEBUG   HandlerThread:600 [handler.py:handle_request():146] handle_request: status
+2024-07-20 16:09:09,241 INFO    WriterThread:600 [datastore.py:open_for_write():87] open: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240720_160909-zullkuei\run-zullkuei.wandb
+2024-07-20 16:09:09,242 DEBUG   SenderThread:600 [sender.py:send():379] send: header
+2024-07-20 16:09:09,283 DEBUG   SenderThread:600 [sender.py:send():379] send: run
+2024-07-20 16:09:09,747 INFO    SenderThread:600 [dir_watcher.py:__init__():211] watching files in: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240720_160909-zullkuei\files
+2024-07-20 16:09:09,747 INFO    SenderThread:600 [sender.py:_start_run_threads():1124] run started: zullkuei with start time 1721480949.237586
+2024-07-20 16:09:09,757 DEBUG   HandlerThread:600 [handler.py:handle_request():146] handle_request: check_version
+2024-07-20 16:09:09,757 DEBUG   SenderThread:600 [sender.py:send_request():406] send_request: check_version
+2024-07-20 16:09:10,045 DEBUG   HandlerThread:600 [handler.py:handle_request():146] handle_request: run_start
+2024-07-20 16:09:10,056 DEBUG   HandlerThread:600 [system_info.py:__init__():26] System info init
+2024-07-20 16:09:10,056 DEBUG   HandlerThread:600 [system_info.py:__init__():41] System info init done
+2024-07-20 16:09:10,056 INFO    HandlerThread:600 [system_monitor.py:start():194] Starting system monitor
+2024-07-20 16:09:10,057 INFO    SystemMonitor:600 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-20 16:09:10,057 INFO    HandlerThread:600 [system_monitor.py:probe():214] Collecting system info
+2024-07-20 16:09:10,065 INFO    SystemMonitor:600 [interfaces.py:start():190] Started cpu monitoring
+2024-07-20 16:09:10,065 DEBUG   HandlerThread:600 [system_info.py:probe():150] Probing system
+2024-07-20 16:09:10,065 INFO    SystemMonitor:600 [interfaces.py:start():190] Started disk monitoring
+2024-07-20 16:09:10,066 INFO    SystemMonitor:600 [interfaces.py:start():190] Started memory monitoring
+2024-07-20 16:09:10,076 INFO    SystemMonitor:600 [interfaces.py:start():190] Started network monitoring
+2024-07-20 16:09:10,082 DEBUG   HandlerThread:600 [system_info.py:_probe_git():135] Probing git
+2024-07-20 16:09:10,159 DEBUG   HandlerThread:600 [system_info.py:_probe_git():143] Probing git done
+2024-07-20 16:09:10,160 DEBUG   HandlerThread:600 [system_info.py:probe():198] Probing system done
+2024-07-20 16:09:10,160 DEBUG   HandlerThread:600 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.19045-SP0', 'python': '3.9.19', 'heartbeatAt': '2024-07-20T13:09:10.065390', 'startedAt': '2024-07-20T13:09:09.227587', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'C:\\Users\\Bella Perel\\PycharmProjects\\nlp_project_eilam\\HumanChoicePrediction\\StrategyTransfer.py', 'codePathLocal': 'StrategyTransfer.py', 'codePath': 'StrategyTransfer.py', 'git': {'remote': 'https://github.com/BellaPerel/HumanChoicePrediction.git', 'commit': 'aef1da439ee30d74f99062941223dbc5f9819ddd'}, 'email': '81310709+BellaPerel@users.noreply.github.com', 'root': 'C:/Users/Bella Perel/PycharmProjects/nlp_project_eilam/HumanChoicePrediction', 'host': 'LAPTOP-AJ1T6PPE', 'username': 'Bella Perel', 'executable': 'C:\\ProgramData\\Anaconda3\\envs\\Pokemon\\python.exe', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2803.0, 'min': 0.0, 'max': 2803.0}, 'cpu_freq_per_core': [{'current': 2803.0, 'min': 0.0, 'max': 2803.0}], 'disk': {'/': {'total': 475.69237899780273, 'used': 469.8071479797363}}, 'memory': {'total': 15.804008483886719}}
+2024-07-20 16:09:10,160 INFO    HandlerThread:600 [system_monitor.py:probe():224] Finished collecting system info
+2024-07-20 16:09:10,160 INFO    HandlerThread:600 [system_monitor.py:probe():227] Publishing system info
+2024-07-20 16:09:10,160 DEBUG   HandlerThread:600 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-07-20 16:09:10,163 ERROR   HandlerThread:600 [system_info.py:_save_conda():221] Error saving conda packages: [WinError 2] The system cannot find the file specified
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\site-packages\wandb\sdk\internal\system\system_info.py", line 214, in _save_conda
+    subprocess.call(
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\subprocess.py", line 349, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\subprocess.py", line 1436, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+2024-07-20 16:09:10,166 DEBUG   HandlerThread:600 [system_info.py:_save_conda():222] Saving conda packages done
+2024-07-20 16:09:10,168 INFO    HandlerThread:600 [system_monitor.py:probe():229] Finished publishing system info
+2024-07-20 16:09:10,183 DEBUG   SenderThread:600 [sender.py:send():379] send: files
+2024-07-20 16:09:10,183 INFO    SenderThread:600 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-07-20 16:09:10,632 DEBUG   HandlerThread:600 [handler.py:handle_request():146] handle_request: python_packages
+2024-07-20 16:09:10,633 DEBUG   SenderThread:600 [sender.py:send_request():406] send_request: python_packages
+2024-07-20 16:09:10,633 DEBUG   HandlerThread:600 [handler.py:handle_request():146] handle_request: stop_status
+2024-07-20 16:09:10,635 DEBUG   SenderThread:600 [sender.py:send_request():406] send_request: stop_status
+2024-07-20 16:09:10,636 DEBUG   HandlerThread:600 [handler.py:handle_request():146] handle_request: internal_messages
+2024-07-20 16:09:10,762 INFO    Thread-16 :600 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240720_160909-zullkuei\files\requirements.txt
+2024-07-20 16:09:10,763 INFO    Thread-16 :600 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240720_160909-zullkuei\files\conda-environment.yaml
+2024-07-20 16:09:10,763 INFO    Thread-16 :600 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240720_160909-zullkuei\files\wandb-metadata.json
+2024-07-20 16:09:10,886 INFO    wandb-upload_0:600 [upload_job.py:push():131] Uploaded file C:\Users\BELLAP~1\AppData\Local\Temp\tmpvurrhq5awandb\w5aio4mc-wandb-metadata.json
+2024-07-20 16:09:10,913 DEBUG   SenderThread:600 [sender.py:send():379] send: telemetry
+2024-07-20 16:09:10,913 DEBUG   SenderThread:600 [sender.py:send():379] send: config
+2024-07-20 16:09:10,913 DEBUG   SenderThread:600 [sender.py:send():379] send: telemetry
+2024-07-20 16:09:10,913 DEBUG   SenderThread:600 [sender.py:send():379] send: config
+2024-07-20 16:09:10,913 DEBUG   SenderThread:600 [sender.py:send():379] send: config
+2024-07-20 16:09:10,913 DEBUG   SenderThread:600 [sender.py:send():379] send: config
+2024-07-20 16:09:10,913 DEBUG   SenderThread:600 [sender.py:send():379] send: config
+2024-07-20 16:09:10,913 DEBUG   SenderThread:600 [sender.py:send():379] send: config
+2024-07-20 16:09:10,913 DEBUG   SenderThread:600 [sender.py:send():379] send: config
+2024-07-20 16:09:11,768 INFO    Thread-16 :600 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240720_160909-zullkuei\files\output.log
+2024-07-20 16:09:14,495 DEBUG   HandlerThread:600 [handler.py:handle_request():146] handle_request: status_report
+2024-07-20 16:09:15,799 INFO    Thread-16 :600 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240720_160909-zullkuei\files\output.log
+2024-07-20 16:09:19,496 DEBUG   HandlerThread:600 [handler.py:handle_request():146] handle_request: status_report
+2024-07-20 16:09:19,850 INFO    Thread-16 :600 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240720_160909-zullkuei\files\output.log
+2024-07-20 16:09:21,864 INFO    Thread-16 :600 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240720_160909-zullkuei\files\output.log
+2024-07-20 16:09:23,880 INFO    Thread-16 :600 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240720_160909-zullkuei\files\output.log
+2024-07-20 16:09:24,496 DEBUG   HandlerThread:600 [handler.py:handle_request():146] handle_request: status_report
+2024-07-20 16:09:25,649 DEBUG   HandlerThread:600 [handler.py:handle_request():146] handle_request: internal_messages
+2024-07-20 16:09:25,649 DEBUG   HandlerThread:600 [handler.py:handle_request():146] handle_request: stop_status
+2024-07-20 16:09:25,651 DEBUG   SenderThread:600 [sender.py:send_request():406] send_request: stop_status
+2024-07-20 16:09:25,898 INFO    Thread-16 :600 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240720_160909-zullkuei\files\output.log
+2024-07-20 16:09:27,922 INFO    Thread-16 :600 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240720_160909-zullkuei\files\output.log
+2024-07-20 16:09:29,528 DEBUG   HandlerThread:600 [handler.py:handle_request():146] handle_request: status_report
+2024-07-20 16:09:29,943 INFO    Thread-16 :600 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240720_160909-zullkuei\files\output.log
+2024-07-20 16:09:31,959 INFO    Thread-16 :600 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240720_160909-zullkuei\files\output.log

@@ -1,4 +1,4 @@
-import pandas as pd 
+import pandas as pd
 import wandb
 from tqdm import tqdm
 import requests
@@ -9,7 +9,7 @@ import sklearn
 from sklearn import metrics
 
 class wandb_results:
-    def __init__(self, project_id, wandb_username="eilamshapira"): 
+    def __init__(self, project_id, wandb_username="eilamshapira"):
         self.api = wandb.Api(timeout=60)
         self.project_id = project_id
         self.wandb_username = wandb_username
@@ -25,7 +25,7 @@ class wandb_results:
         if read_csv_if_exist and os.path.exists(path):
             return pd.read_csv(path, index_col=0)
         summary_list, config_list, name_list = [], [], []
-        for run in tqdm(runs): 
+        for run in tqdm(runs):
             summary_list.append(run.summary._json_dict)
             config_list.append(
                 {k: v for k,v in run.config.items()
@@ -45,13 +45,13 @@ class wandb_results:
         hpt = [c for c in config_cols.columns if c not in ["config_seed", "config_run_hash"]]
         if save_to_csv: runs_df.to_csv(path)
         return runs_df
-    
+
     def get_sweeps_results(self, sweeps, metric="accuracy_all", best_epoch=False, get_servers=False,  read_csv_if_exist=True, save_to_csv=True):
         print("Total number of sweeps:", len(sweeps))
         j = pd.concat([self.get_sweep_results(sweep, metric=metric, best_epoch=best_epoch,  get_servers=get_servers, save_to_csv=save_to_csv, read_csv_if_exist=read_csv_if_exist) for sweep in sweeps])
         j = j.reset_index(drop=True)
         return j
-    
+
     def reset_api(self):
         self.api = wandb.Api()
 
@@ -67,12 +67,10 @@ def result_metric(sweeps, group_name, drop_list=[0], drop_HPT=False, metric="acc
         df = df.drop([c for c in HPT_cols if not c in ["config_LLM_SIM_SIZE", "config_seed"]], axis=1)
         HPT_cols = ["config_LLM_SIM_SIZE", "config_seed"]
 
-    # Remove non-numeric columns before computing mean and std
     numeric_cols = df.select_dtypes(include=np.number).columns
     df_numeric = df[numeric_cols]
     print(f"Numeric columns: {numeric_cols}")
 
-    # Check if the columns to group by exist in df_numeric
     groupby_cols = [c for c in HPT_cols if c in df_numeric.columns and c != "config_seed"]
     print(f"Grouping by columns: {groupby_cols}")
 
@@ -84,12 +82,10 @@ def result_metric(sweeps, group_name, drop_list=[0], drop_HPT=False, metric="acc
     mean_df = grouped.mean()
     std_df = grouped.std()
 
-    # Re-add non-numeric columns before computing best_col
     for col in config_cols:
         if col not in mean_df.columns:
             mean_df[col] = df[col]
 
-    # Print columns that include the metric
     if epoch == "best":
         metric_columns = [c for c in mean_df.columns if metric in c]
         print(f"Metric columns that include '{metric}': {metric_columns}")
@@ -142,22 +138,18 @@ def result_metric(sweeps, group_name, metric="accuracy_per_mean_user_and_bot"):
     HPT_cols = ['config_seed', 'config_features', 'config_input_dim', 'config_REVIEW_DIM', 'config_architecture', 'config_FEATURES_PATH', 'config_ENV_LEARNING_RATE', 'config_offline_train_test_datasets']
     print(f"Hyperparameter columns (HPT_cols): {HPT_cols}")
 
-    # Check if the columns to group by exist in df
     groupby_cols = [c for c in HPT_cols if c in df.columns]
     print(f"Grouping by columns: {groupby_cols}")
 
     if not groupby_cols:
         raise KeyError("None of the HPT columns are present in the DataFrame")
 
-    # Extract metric columns for all epochs
     metric_columns = [col for col in df.columns if metric in col]
     print(f"Metric columns: {metric_columns}")
 
-    # Select relevant columns
     selected_cols = groupby_cols + metric_columns
     df_selected = df[selected_cols]
 
-    # Group by all hyperparameters including seed
     grouped_df = df_selected.groupby(groupby_cols).mean().reset_index()
 
     return grouped_df
@@ -171,69 +163,68 @@ def bootstrap_ci(data, n_bootstrap=1000, ci=0.95):
     upper_bound = np.percentile(bootstrapped_means, (1 + ci) / 2 * 100)
     return lower_bound, upper_bound
 
-# Example usage
-sweeps = ["e1rtm6h3"]  # Replace with your actual sweeps IDs
+
+sweeps = ["sv9z59on"]
 group_name = "Group"
 result_df = result_metric(sweeps, group_name, metric="accuracy_per_mean_user_and_bot")
 
-# Save the DataFrame to a CSV file
 csv_path = 'all_epochs_params.csv'
 result_df.to_csv(csv_path, index=False)
 
-# Print the DataFrame
 print("DataFrame with all configs and all epochs:")
 print(result_df)
 
 import pandas as pd
 
-# Define the hyperparameter columns
 HPT_cols = ['config_features', 'config_input_dim', 'config_REVIEW_DIM', 'config_architecture', 'config_FEATURES_PATH', 'config_ENV_LEARNING_RATE', 'config_offline_train_test_datasets']
 
-# Read the CSV file
 df = pd.read_csv('all_epochs_params.csv')
 
-# Identify the metric columns that contain "accuracy_per_mean_user_and_bot"
 metric_columns = [col for col in df.columns if "accuracy_per_mean_user_and_bot" in col]
 print(f"Metric columns: {metric_columns}")
 
-# Group by the specified hyperparameters (excluding seed) and calculate the mean for each group
 grouped_df = df.groupby(HPT_cols + ['config_seed'])[metric_columns].mean().reset_index()
 
-# Group again by the specified hyperparameters to average over seeds
 final_grouped_df = grouped_df.groupby(HPT_cols)[metric_columns].mean().reset_index()
 
-# Save the averaged DataFrame to a new CSV file
 csv_path_avg = 'averaged_params.csv'
 final_grouped_df.to_csv(csv_path_avg, index=False)
 
-# Print the DataFrame
 print("Averaged DataFrame:")
 print(final_grouped_df)
 
 
 df = final_grouped_df
 display_HPT_cols = ['config_features', 'config_architecture', 'config_ENV_LEARNING_RATE', 'config_offline_train_test_datasets']
-# Identify the metric columns for "ENV_Test_proba_accuracy_per_mean_user_and_bot"
 proba_metric_columns = [col for col in df.columns if "ENV_Test_proba_accuracy_per_mean_user_and_bot" in col]
 print(f"Proba Metric columns: {proba_metric_columns}")
-
-# Get the top 3 rows with the highest values in the proba metric columns
-df['max_proba_accuracy'] = df[proba_metric_columns].max(axis=1)
-top_3_df = df.nlargest(3, 'max_proba_accuracy')
-
-# Identify the metric columns for "ENV_Test_accuracy_per_mean_user_and_bot"
 accuracy_metric_columns = [col for col in df.columns if "ENV_Test_accuracy_per_mean_user_and_bot" in col]
-print(f"Accuracy Metric columns: {accuracy_metric_columns}")
+print(df.columns)
 
-# Prepare the data for plotting
+
+# Function to extract epoch number from column name
+def extract_epoch_number(col_name):
+    try:
+        return int(col_name.split('_')[-1][5:])
+    except (IndexError, ValueError):
+        return float('inf')  # Assign a large number if parsing fails to sort it at the end
+
+# Extract and sort the proba and accuracy metric columns by epoch number
+proba_metric_columns = sorted([col for col in df.columns if "ENV_Test_proba_accuracy_per_mean_user_and_bot" in col and "epoch" in col], key=extract_epoch_number)
+accuracy_metric_columns = sorted([col for col in df.columns if "ENV_Test_accuracy_per_mean_user_and_bot" in col and "epoch" in col], key=extract_epoch_number)
+
+
+
+
+df['max_proba_accuracy'] = df[accuracy_metric_columns].max(axis=1)
+top_3_df = df.nlargest(3, 'max_proba_accuracy')
+print(f"Accuracy Metric columns: {accuracy_metric_columns}")
 plot_data = top_3_df[HPT_cols + accuracy_metric_columns + proba_metric_columns]
 
-# Save the rows that give the top 3 max results in a new DataFrame
 top_3_results_df = plot_data.copy()
 csv_path_top3 = 'top_3_results.csv'
 top_3_results_df.to_csv(csv_path_top3, index=False)
 
-# Plotting the data
 plt.figure(figsize=(14, 7))
 for i, row in top_3_results_df.iterrows():
     epochs = range(len(accuracy_metric_columns))
@@ -241,10 +232,89 @@ for i, row in top_3_results_df.iterrows():
     plt.plot(epochs, row[accuracy_metric_columns], label=f"Accuracy ({legend_label})", marker='o')
     plt.plot(epochs, row[proba_metric_columns], label=f"Proba Accuracy ({legend_label})", marker='o')
 
+    #max_accuracy = row[accuracy_metric_columns].max()
+    #max_epoch = row[accuracy_metric_columns].idxmax()
+    #plt.annotate(f'{max_accuracy:.2f}', xy=(max_epoch, max_accuracy), xytext=(max_epoch, max_accuracy + 0.01),
+    #        arrowprops=dict(facecolor='black', shrink=0.05))
+
 plt.xlabel("Epoch")
 plt.ylabel("Accuracy")
 plt.title("Top 3 Accuracy and Proba Accuracy Over Epochs")
 plt.legend(loc='lower right', bbox_to_anchor=(1, 0))
 plt.grid(True)
+plt.tight_layout()
+plt.show()
+
+table_data = []
+
+for i, row in top_3_results_df.iterrows():
+    max_accuracy = row[accuracy_metric_columns].max()
+    max_epoch_index = row[accuracy_metric_columns].idxmax()
+    max_epoch = int(max_epoch_index.split('_')[-1][5:])
+    std_over_epochs = row[accuracy_metric_columns].std()
+
+    config_data = {col: row[col] for col in display_HPT_cols}
+    config_data['Max Epoch'] = max_epoch
+    config_data['Max Accuracy'] = max_accuracy
+    config_data['Std Over Epochs'] = std_over_epochs
+
+    table_data.append(config_data)
+
+top_3_table_df = pd.DataFrame(table_data)
+
+print(top_3_table_df)
+
+csv_path_table = 'top_3_table.csv'
+top_3_table_df.to_csv(csv_path_table, index=False)
+
+######################
+df = pd.read_csv('all_epochs_params.csv')
+
+# Define display_HPT_cols and metric columns again for clarity
+display_HPT_cols = ['config_features', 'config_architecture', 'config_ENV_LEARNING_RATE', 'config_offline_train_test_datasets']
+
+# Function to extract epoch number from column name
+def extract_epoch_number(col_name):
+    try:
+        return int(col_name.split('_')[-1][5:])
+    except (IndexError, ValueError):
+        return float('inf')  # Assign a large number if parsing fails to sort it at the end
+
+# Extract and sort the proba and accuracy metric columns by epoch number
+proba_metric_columns = sorted([col for col in df.columns if "ENV_Test_proba_accuracy_per_mean_user_and_bot" in col and "epoch" in col], key=extract_epoch_number)
+accuracy_metric_columns = sorted([col for col in df.columns if "ENV_Test_accuracy_per_mean_user_and_bot" in col and "epoch" in col], key=extract_epoch_number)
+
+# Compute max proba accuracy for each configuration and select the top 3 configurations
+df['max_proba_accuracy'] = df[accuracy_metric_columns].max(axis=1)
+top_3_df = df.nlargest(3, 'max_proba_accuracy')
+
+# Get the top 3 configurations
+top_3_configs = top_3_df[display_HPT_cols]
+
+# Plot Accuracy per Epoch for the Best 3 Variations without grouping by seeds
+plt.figure(figsize=(14, 21))  # Adjust the size for multiple subplots
+
+for idx, (config_index, config_row) in enumerate(top_3_configs.iterrows(), 1):
+    # Filter the original DataFrame to get the data for each of the top 3 configurations
+    config_filter = (df[display_HPT_cols] == config_row).all(axis=1)
+    filtered_df = df[config_filter]
+
+    plt.subplot(3, 1, idx)
+
+    for i, row in filtered_df.iterrows():
+        epochs = list(range(len(accuracy_metric_columns)))  # List of epochs based on number of accuracy columns
+        legend_label = f"Seed {row['config_seed']}"
+
+        # Plot accuracy values for each seed within the configuration
+        plt.plot(epochs, row[accuracy_metric_columns], label=legend_label, marker='o')
+
+    # Add labels and title
+    config_title = ", ".join([f"{config_row[col]}" for col in display_HPT_cols])
+    plt.xlabel("Epoch")
+    plt.ylabel("Accuracy")
+    plt.title(f"Accuracy per Epoch for Configuration {idx}: {config_title}")
+    plt.legend(loc='lower right', bbox_to_anchor=(1, 0))
+    plt.grid(True)
+
 plt.tight_layout()
 plt.show()

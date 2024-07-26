@@ -1,0 +1,10 @@
+
+{'ENV_HPT_mode': False, 'seed': 1, 'task': 'off_policy', 'ENV_LEARNING_RATE': 0.001, 'loss_weight_type': 'None', 'save_artifacts': True, 'strategies': None, 'total_epochs': 25, 'features': 'EFs', 'architecture': 'CNN', 'hidden_dim': 32, 'layers': 2, 'transformer_nheads': 4, 'dropout': 0, 'human_train_size': 210, 'online_sim_type': 'before_epoch', 'basic_nature': 12, 'online_simulation_factor': 0, 'simulation_bot_per_user': 0, 'simulation_signal_error': 0.3, 'simulation_user_improve': 0.01, 'max_games': 4, 'zero_knowledge': True, 'bots_per_user': 6, 'SIMULATION_EFs_PATH': 'data/EFs_by_GPT35.csv', 'favorite_topic_method': 'review', 'agent': 'modelbasedRL', 'force_train': True, 'output_dim': 2, 'offline_simulation_size': 0, 'OFFLINE_SIM_DATA_PATH': 'data/LLM_games_personas.csv', 'personas_balanced': True, 'personas_group_number': -1, 'offline_train_test_datasets': 'original_data', 'FEATURES_PATH': 'data/EFs_by_GPT35.csv', 'REVIEW_DIM': 37, 'use_user_vector': True, 'online_simulation_size': 0, 'input_dim': 60, 'wandb_run_id': 'bujwg0sm'}
+Traceback (most recent call last):
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\StrategyTransfer.py", line 128, in <module>
+    env_model = environments.CNN_env.CNN_env(env_name, config=config)
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\environments\environment.py", line 25, in __init__
+    self.init_model_arc(config=config)
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\environments\CNN_env.py", line 22, in init_model_arc
+    self.model = CNN_env_ARC(input_dim=config['input_dim'], output_dim=config["output_dim"], dropout=config["dropout"]).double()
+TypeError: __init__() got an unexpected keyword argument 'input_dim'

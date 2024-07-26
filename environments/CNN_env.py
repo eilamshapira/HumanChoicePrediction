@@ -40,4 +40,3 @@ class CNN_env(environment.Environment):
 
     def get_curr_vectors(self):
         return {"user_vector": self.currentDM, "game_vector": self.currentGame}
-b

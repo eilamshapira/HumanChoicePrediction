@@ -13,20 +13,19 @@ command = [
     ]
 
 sweep_config = {
-    "name": "LSTM: SimFactor=0/4 for any features representation",
+    "name": "CNN vs LSTM & Features Tagging Additions",
     "method": "grid",
     "metric": {
         "goal": "maximize",
-        "name": "AUC.test.max"
+        "name": "ENV_Test_accuracy_per_mean_user_and_bot"
     }, #1*1*5*2*3
     "parameters": {
         "ENV_HPT_mode": {"values": [False]},
-        "architecture": {"values": ["CNN"]},
+        "architecture": {"values": ["CNN", "LSTM"]},
         "seed": {"values": [0, 2, 4]},
-        "online_simulation_factor": {"values": [0]},
         "features": {"values": ["EFs"]},
-        "ENV_LEARNING_RATE": {"values": [1e-3]},
-        "offline_train_test_datasets": {"values": ["original_data"]} #todo: can add more parameters in ST
+        "ENV_LEARNING_RATE": {"values": [1e-3, 3e-3]},
+        "offline_train_test_datasets": {"values": ["key_word_tagging", "trans_tagging", "original_data"]} #todo: can add more parameters in ST
     },
     "command": command
 }

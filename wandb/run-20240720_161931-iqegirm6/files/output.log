@@ -1,0 +1,4293 @@
+{'ENV_HPT_mode': False, 'seed': 1, 'task': 'off_policy', 'ENV_LEARNING_RATE': 0.001, 'loss_weight_type': 'None', 'save_artifacts': True, 'strategies': None, 'total_epochs': 25, 'features': 'EFs', 'architecture': 'CNN', 'hidden_dim': 32, 'layers': 2, 'transformer_nheads': 4, 'dropout': 0, 'human_train_size': 210, 'online_sim_type': 'before_epoch', 'basic_nature': 12, 'online_simulation_factor': 0, 'simulation_bot_per_user': 0, 'simulation_signal_error': 0.3, 'simulation_user_improve': 0.01, 'max_games': 4, 'zero_knowledge': True, 'bots_per_user': 6, 'SIMULATION_EFs_PATH': 'data/EFs_by_GPT35.csv', 'favorite_topic_method': 'review', 'agent': 'modelbasedRL', 'force_train': True, 'output_dim': 2, 'offline_simulation_size': 0, 'OFFLINE_SIM_DATA_PATH': 'data/LLM_games_personas.csv', 'personas_balanced': True, 'personas_group_number': -1, 'offline_train_test_datasets': 'original_data', 'FEATURES_PATH': 'data/EFs_by_GPT35.csv', 'REVIEW_DIM': 37, 'use_user_vector': True, 'online_simulation_size': 0, 'input_dim': 60, 'wandb_run_id': 'iqegirm6'}
+Start training the environment...
+################
+# Epoch 0
+################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Train: 100%|█████████▉| 2259/2260 [01:07<00:00, 33.24it/s]
+Test:   0%|          | 0/543 [00:00<?, ?it/s]
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+
+Test:  10%|█         | 55/543 [00:02<00:16, 30.11it/s]
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+
+Test:  23%|██▎       | 127/543 [00:04<00:10, 40.29it/s]
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+
+Test:  31%|███▏      | 170/543 [00:06<00:23, 15.68it/s]
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+
+Test:  40%|███▉      | 216/543 [00:07<00:10, 32.29it/s]
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+
+Test:  54%|█████▍    | 292/543 [00:09<00:06, 37.76it/s]
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+
+Test:  66%|██████▌   | 358/543 [00:11<00:06, 29.13it/s]
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+
+Test:  81%|████████  | 439/543 [00:13<00:02, 37.48it/s]
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+
+Test:  98%|█████████▊| 533/543 [00:16<00:00, 62.52it/s]
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+
+Test: 642it [00:17, 37.37it/s]
+proba_accuracy_per_mean_user_and_bot:  0.9743501139520454
+accuracy_per_mean_user_and_bot:  0.9835590517559702
+################
+# Epoch 1
+################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Train: 100%|█████████▉| 2259/2260 [01:05<00:00, 34.41it/s]
+Test:   2%|▏         | 13/543 [00:00<00:16, 32.33it/s]
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+No data leakage detected.
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 0
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+No data leakage detected.
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+
+Test:  13%|█▎        | 73/543 [00:02<00:13, 33.75it/s]
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+No data leakage detected.
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+No data leakage detected.
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 9
+No data leakage detected.
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+No data leakage detected.
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+Overlap found in batch 2, sequence 9
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 3, sequence 0
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+
+Test:  28%|██▊       | 150/543 [00:04<00:12, 30.73it/s]
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 9
+No data leakage detected.
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+No data leakage detected.
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+No data leakage detected.
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 9
+
+Test:  40%|███▉      | 216/543 [00:06<00:10, 32.56it/s]
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 9
+No data leakage detected.
+No data leakage detected.
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+No data leakage detected.
+No data leakage detected.
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+No data leakage detected.
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+
+Test:  54%|█████▍    | 295/543 [00:08<00:06, 35.57it/s]
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 9
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+No data leakage detected.
+No data leakage detected.
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+No data leakage detected.
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+No data leakage detected.
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+No data leakage detected.
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+
+Test:  65%|██████▌   | 354/543 [00:10<00:07, 26.71it/s]
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+No data leakage detected.
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+No data leakage detected.
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+No data leakage detected.
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+No data leakage detected.
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+No data leakage detected.
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+No data leakage detected.
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+
+Test:  78%|███████▊  | 424/543 [00:12<00:03, 33.27it/s]
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+No data leakage detected.
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+No data leakage detected.
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+No data leakage detected.
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+No data leakage detected.
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+No data leakage detected.
+No data leakage detected.
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+No data leakage detected.
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+No data leakage detected.
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+No data leakage detected.
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 9
+No data leakage detected.
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+No data leakage detected.
+No data leakage detected.
+Overlap found in batch 2, sequence 2
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+No data leakage detected.
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 9
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 3
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 9
+No data leakage detected.
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+
+Test:  94%|█████████▎| 508/543 [00:14<00:00, 41.33it/s]
+Overlap found in batch 2, sequence 4
+Overlap found in batch 2, sequence 5
+Overlap found in batch 2, sequence 6
+Overlap found in batch 2, sequence 7
+Overlap found in batch 2, sequence 8
+Overlap found in batch 2, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+No data leakage detected.
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 0, sequence 9
+No data leakage detected.
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 1, sequence 5
+Overlap found in batch 1, sequence 6
+Overlap found in batch 1, sequence 7
+Overlap found in batch 1, sequence 8
+Overlap found in batch 1, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+No data leakage detected.
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+No data leakage detected.
+No data leakage detected.
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+No data leakage detected.
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+No data leakage detected.
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+No data leakage detected.
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+No data leakage detected.
+No data leakage detected.
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+No data leakage detected.
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+No data leakage detected.
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+No data leakage detected.
+No data leakage detected.
+No data leakage detected.
+Overlap found in batch 0, sequence 7
+Overlap found in batch 0, sequence 8
+Overlap found in batch 0, sequence 9
+
+Test: 642it [00:16, 39.04it/s]
+proba_accuracy_per_mean_user_and_bot:  0.9709518582710618
+accuracy_per_mean_user_and_bot:  0.9786454696402214
+################
+# Epoch 2
+################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Train: 100%|██████████| 2260/2260 [01:02<00:00, 36.19it/s]
+Test:   0%|          | 0/543 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\StrategyTransfer.py", line 128, in <module>
+    env_model = environments.CNN_env.CNN_env(env_name, config=config)
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\environments\environment.py", line 38, in __init__
+    self.train()
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\environments\environment.py", line 178, in train
+    model_output = self.model(model_vectors)
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\site-packages\torch\nn\modules\module.py", line 1190, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\environments\CNN_env.py", line 8, in forward
+    data = super().forward(vectors["x"], vectors["game_vector"], vectors["user_vector"])
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\SpecialCNN.py", line 59, in forward
+    if torch.equal(input_vec[i, j], self.last_train_input[i, j]):
+IndexError: index 3 is out of bounds for dimension 0 with size 3
