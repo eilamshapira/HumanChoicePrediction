@@ -641,3 +641,43 @@ FileNotFoundError: [WinError 2] The system cannot find the file specified
 2024-07-26 18:58:24,395 DEBUG   SenderThread:26060 [sender.py:send_request():406] send_request: stop_status
 2024-07-26 18:58:24,706 DEBUG   HandlerThread:26060 [handler.py:handle_request():146] handle_request: status_report
 2024-07-26 18:58:29,752 DEBUG   HandlerThread:26060 [handler.py:handle_request():146] handle_request: status_report
+2024-07-26 18:58:34,798 DEBUG   HandlerThread:26060 [handler.py:handle_request():146] handle_request: status_report
+2024-07-26 18:58:38,174 DEBUG   SenderThread:26060 [sender.py:send():379] send: stats
+2024-07-26 18:58:39,408 DEBUG   HandlerThread:26060 [handler.py:handle_request():146] handle_request: stop_status
+2024-07-26 18:58:39,408 DEBUG   HandlerThread:26060 [handler.py:handle_request():146] handle_request: internal_messages
+2024-07-26 18:58:39,408 DEBUG   SenderThread:26060 [sender.py:send_request():406] send_request: stop_status
+2024-07-26 18:58:40,622 DEBUG   HandlerThread:26060 [handler.py:handle_request():146] handle_request: status_report
+2024-07-26 18:58:43,798 INFO    Thread-21 :26060 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240726_183536-t4ckjhmc\files\output.log
+2024-07-26 18:58:46,462 DEBUG   HandlerThread:26060 [handler.py:handle_request():146] handle_request: status_report
+2024-07-26 18:58:51,570 DEBUG   HandlerThread:26060 [handler.py:handle_request():146] handle_request: status_report
+2024-07-26 18:58:54,419 DEBUG   HandlerThread:26060 [handler.py:handle_request():146] handle_request: internal_messages
+2024-07-26 18:58:54,419 DEBUG   HandlerThread:26060 [handler.py:handle_request():146] handle_request: stop_status
+2024-07-26 18:58:54,420 DEBUG   SenderThread:26060 [sender.py:send_request():406] send_request: stop_status
+2024-07-26 18:58:56,630 DEBUG   HandlerThread:26060 [handler.py:handle_request():146] handle_request: status_report
+2024-07-26 18:59:01,682 DEBUG   HandlerThread:26060 [handler.py:handle_request():146] handle_request: status_report
+2024-07-26 18:59:06,725 DEBUG   HandlerThread:26060 [handler.py:handle_request():146] handle_request: status_report
+2024-07-26 18:59:08,184 DEBUG   SenderThread:26060 [sender.py:send():379] send: stats
+2024-07-26 18:59:09,424 DEBUG   HandlerThread:26060 [handler.py:handle_request():146] handle_request: internal_messages
+2024-07-26 18:59:09,439 DEBUG   HandlerThread:26060 [handler.py:handle_request():146] handle_request: stop_status
+2024-07-26 18:59:09,440 DEBUG   SenderThread:26060 [sender.py:send_request():406] send_request: stop_status
+2024-07-26 18:59:11,733 DEBUG   HandlerThread:26060 [handler.py:handle_request():146] handle_request: status_report
+2024-07-26 18:59:16,778 DEBUG   HandlerThread:26060 [handler.py:handle_request():146] handle_request: status_report
+2024-07-26 18:59:21,832 DEBUG   HandlerThread:26060 [handler.py:handle_request():146] handle_request: status_report
+2024-07-26 18:59:24,441 DEBUG   HandlerThread:26060 [handler.py:handle_request():146] handle_request: internal_messages
+2024-07-26 18:59:24,456 DEBUG   HandlerThread:26060 [handler.py:handle_request():146] handle_request: stop_status
+2024-07-26 18:59:24,457 DEBUG   SenderThread:26060 [sender.py:send_request():406] send_request: stop_status
+2024-07-26 18:59:27,708 DEBUG   HandlerThread:26060 [handler.py:handle_request():146] handle_request: status_report
+2024-07-26 18:59:32,771 DEBUG   HandlerThread:26060 [handler.py:handle_request():146] handle_request: status_report
+2024-07-26 18:59:37,828 DEBUG   HandlerThread:26060 [handler.py:handle_request():146] handle_request: status_report
+2024-07-26 18:59:38,190 DEBUG   SenderThread:26060 [sender.py:send():379] send: stats
+2024-07-26 18:59:39,451 DEBUG   HandlerThread:26060 [handler.py:handle_request():146] handle_request: internal_messages
+2024-07-26 18:59:39,466 DEBUG   HandlerThread:26060 [handler.py:handle_request():146] handle_request: stop_status
+2024-07-26 18:59:39,467 DEBUG   SenderThread:26060 [sender.py:send_request():406] send_request: stop_status
+2024-07-26 18:59:43,765 DEBUG   HandlerThread:26060 [handler.py:handle_request():146] handle_request: status_report
+2024-07-26 18:59:48,822 DEBUG   HandlerThread:26060 [handler.py:handle_request():146] handle_request: status_report
+2024-07-26 18:59:53,016 INFO    cpu       :26060 [interfaces.py:monitor():140] Process cpu has exited.
+2024-07-26 18:59:53,017 DEBUG   SystemMonitor:26060 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-07-26 18:59:53,017 DEBUG   SystemMonitor:26060 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-07-26 18:59:53,018 DEBUG   SenderThread:26060 [sender.py:send():379] send: stats
+2024-07-26 18:59:53,693 INFO    MainThread:26060 [internal.py:handle_exit():76] Internal process exited
+2024-07-26 18:59:54,033 DEBUG   HandlerThread:26060 [handler.py:handle_request():146] handle_request: status_report

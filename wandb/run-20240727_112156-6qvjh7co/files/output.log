@@ -1,0 +1,24 @@
+
+Start training the environment...
+################
+# Epoch 0
+################
+Train:   0%|          | 0/2260 [00:00<?, ?it/s]
+Stage: Training
+Input vector shape: torch.Size([4, 10, 70])
+Permuted input vector shape: torch.Size([4, 70, 10])
+Expanded game vector shape: torch.Size([4, 128, 10])
+Expanded user vector shape: torch.Size([4, 128, 10])
+Combined vector shape (should be [batch_size, total_input_dim, seq_length]): torch.Size([4, 326, 10])
+Conv output shape: torch.Size([4, 256, 10])
+Reshaped conv output shape: torch.Size([40, 256])
+
+Train:   0%|          | 1/2260 [05:28<206:00:52, 328.31s/it]
+Stage: Training
+Input vector shape: torch.Size([4, 10, 70])
+Permuted input vector shape: torch.Size([4, 70, 10])
+Expanded game vector shape: torch.Size([4, 128, 10])
+Expanded user vector shape: torch.Size([4, 128, 10])
+Combined vector shape (should be [batch_size, total_input_dim, seq_length]): torch.Size([4, 326, 10])
+Conv output shape: torch.Size([4, 256, 10])
+Reshaped conv output shape: torch.Size([40, 256])

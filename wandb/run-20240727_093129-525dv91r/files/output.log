@@ -1,0 +1,36 @@
+
+Start training the environment...
+################
+# Epoch 0
+################
+Stage: Training
+Input vector shape: torch.Size([4, 10, 70])
+Permuted input vector shape: torch.Size([4, 70, 10])
+Combined vector shape (should be [batch_size, total_input_dim, seq_length]): torch.Size([4, 326, 10])
+Train:   0%|          | 0/2260 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\StrategyTransfer.py", line 128, in <module>
+    env_model = environments.CNN_env.CNN_env(env_name, config=config)
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\environments\environment.py", line 38, in __init__
+    self.train()
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\environments\environment.py", line 175, in train
+    model_output = self.model(model_vectors)
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\site-packages\torch\nn\modules\module.py", line 1190, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\environments\CNN_env.py", line 8, in forward
+    data = super().forward(vectors["x"], vectors["game_vector"], vectors["user_vector"])
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\SpecialCNN.py", line 63, in forward
+    conv_output = self.conv_layer(combined_vec)
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\site-packages\torch\nn\modules\module.py", line 1190, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\site-packages\torch\nn\modules\container.py", line 204, in forward
+    input = module(input)
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\site-packages\torch\nn\modules\module.py", line 1190, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\SpecialCNN.py", line 9, in forward
+    return super().forward(x)
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\site-packages\torch\nn\modules\conv.py", line 313, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\site-packages\torch\nn\modules\conv.py", line 309, in _conv_forward
+    return F.conv1d(input, weight, bias, self.stride,
+RuntimeError: Given groups=1, weight of size [256, 198, 3], expected input[4, 326, 12] to have 198 channels, but got 326 channels instead

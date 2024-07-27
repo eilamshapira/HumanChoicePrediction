@@ -209,11 +209,8 @@ def extract_epoch_number(col_name):
     except (IndexError, ValueError):
         return float('inf')  # Assign a large number if parsing fails to sort it at the end
 
-# Extract and sort the proba and accuracy metric columns by epoch number
 proba_metric_columns = sorted([col for col in df.columns if "ENV_Test_proba_accuracy_per_mean_user_and_bot" in col and "epoch" in col], key=extract_epoch_number)
 accuracy_metric_columns = sorted([col for col in df.columns if "ENV_Test_accuracy_per_mean_user_and_bot" in col and "epoch" in col], key=extract_epoch_number)
-
-
 
 
 df['max_proba_accuracy'] = df[accuracy_metric_columns].max(axis=1)
@@ -270,32 +267,25 @@ top_3_table_df.to_csv(csv_path_table, index=False)
 ######################
 df = pd.read_csv('all_epochs_params.csv')
 
-# Define display_HPT_cols and metric columns again for clarity
 display_HPT_cols = ['config_features', 'config_architecture', 'config_ENV_LEARNING_RATE', 'config_offline_train_test_datasets']
 
-# Function to extract epoch number from column name
 def extract_epoch_number(col_name):
     try:
         return int(col_name.split('_')[-1][5:])
     except (IndexError, ValueError):
         return float('inf')  # Assign a large number if parsing fails to sort it at the end
 
-# Extract and sort the proba and accuracy metric columns by epoch number
 proba_metric_columns = sorted([col for col in df.columns if "ENV_Test_proba_accuracy_per_mean_user_and_bot" in col and "epoch" in col], key=extract_epoch_number)
 accuracy_metric_columns = sorted([col for col in df.columns if "ENV_Test_accuracy_per_mean_user_and_bot" in col and "epoch" in col], key=extract_epoch_number)
 
-# Compute max proba accuracy for each configuration and select the top 3 configurations
 df['max_proba_accuracy'] = df[accuracy_metric_columns].max(axis=1)
 top_3_df = df.nlargest(3, 'max_proba_accuracy')
 
-# Get the top 3 configurations
 top_3_configs = top_3_df[display_HPT_cols]
 
-# Plot Accuracy per Epoch for the Best 3 Variations without grouping by seeds
 plt.figure(figsize=(14, 21))  # Adjust the size for multiple subplots
 
 for idx, (config_index, config_row) in enumerate(top_3_configs.iterrows(), 1):
-    # Filter the original DataFrame to get the data for each of the top 3 configurations
     config_filter = (df[display_HPT_cols] == config_row).all(axis=1)
     filtered_df = df[config_filter]
 
@@ -315,6 +305,54 @@ for idx, (config_index, config_row) in enumerate(top_3_configs.iterrows(), 1):
     plt.title(f"Accuracy per Epoch for Configuration {idx}: {config_title}")
     plt.legend(loc='lower right', bbox_to_anchor=(1, 0))
     plt.grid(True)
+
+plt.tight_layout()
+plt.show()
+
+#############################################
+
+df = pd.read_csv('all_epochs_params.csv')
+
+display_HPT_cols = ['config_features', 'config_architecture', 'config_ENV_LEARNING_RATE', 'config_offline_train_test_datasets']
+
+def extract_epoch_number(col_name):
+    try:
+        return int(col_name.split('_')[-1][5:])
+    except (IndexError, ValueError):
+        return float('inf')  # Assign a large number if parsing fails to sort it at the end
+
+accuracy_metric_columns = sorted([col for col in df.columns if "ENV_Test_accuracy_per_mean_user_and_bot" in col and "epoch" in col], key=extract_epoch_number)
+
+results = []
+grouped = df.groupby(display_HPT_cols)
+
+for config, group in grouped:
+    max_accuracy = -float('inf')
+    max_seed = None
+    max_epoch = None
+
+    for _, row in group.iterrows():
+        for col in accuracy_metric_columns:
+            if row[col] > max_accuracy:
+                max_accuracy = row[col]
+                max_seed = row['config_seed']
+                max_epoch = extract_epoch_number(col)
+
+
+    result = {
+        'Configuration': config,
+        'Max Accuracy': max_accuracy,
+        'Seed': max_seed,
+        'Epoch': max_epoch
+    }
+    results.append(result)
+
+max_results_df = pd.DataFrame(results)
+
+
+print(max_results_df)
+
+max_results_df.to_csv("max_results.csv", index=False)
 
 plt.tight_layout()
 plt.show()
