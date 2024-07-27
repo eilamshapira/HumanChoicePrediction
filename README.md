@@ -3,8 +3,11 @@
 If you would like to create and tag data files by keyword and by transformers, please follow these steps:
 
 Run keywordstag.py
+
 Run NLP_tag.py
+
 Run concat_reviews.py
+
 Run joined_file.py 
 
 ## Getting Started
