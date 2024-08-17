@@ -2,7 +2,7 @@
 git clone https://github.com/BellaPerel/HumanChoicePrediction.git
 
 # Your main sweep:
-python final_sweep_BellaPerel.py
+python RunningScripts/final_sweep_BellaPerel.py
 
 # More runs appear in your report:
 # python sweep_1.py
