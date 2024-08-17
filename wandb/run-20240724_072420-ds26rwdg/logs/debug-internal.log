@@ -1,0 +1,296 @@
+2024-07-24 07:24:20,713 INFO    StreamThr :11788 [internal.py:wandb_internal():86] W&B internal server running at pid: 11788, started at: 2024-07-24 07:24:20.712459
+2024-07-24 07:24:20,715 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: status
+2024-07-24 07:24:20,727 INFO    WriterThread:11788 [datastore.py:open_for_write():87] open: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\run-ds26rwdg.wandb
+2024-07-24 07:24:20,728 DEBUG   SenderThread:11788 [sender.py:send():379] send: header
+2024-07-24 07:24:20,763 DEBUG   SenderThread:11788 [sender.py:send():379] send: run
+2024-07-24 07:24:21,209 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: check_version
+2024-07-24 07:24:21,214 INFO    SenderThread:11788 [dir_watcher.py:__init__():211] watching files in: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files
+2024-07-24 07:24:21,214 INFO    SenderThread:11788 [sender.py:_start_run_threads():1124] run started: ds26rwdg with start time 1721795060.713478
+2024-07-24 07:24:21,214 DEBUG   SenderThread:11788 [sender.py:send_request():406] send_request: check_version
+2024-07-24 07:24:21,575 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: run_start
+2024-07-24 07:24:21,588 DEBUG   HandlerThread:11788 [system_info.py:__init__():26] System info init
+2024-07-24 07:24:21,588 DEBUG   HandlerThread:11788 [system_info.py:__init__():41] System info init done
+2024-07-24 07:24:21,588 INFO    HandlerThread:11788 [system_monitor.py:start():194] Starting system monitor
+2024-07-24 07:24:21,589 INFO    SystemMonitor:11788 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-24 07:24:21,589 INFO    HandlerThread:11788 [system_monitor.py:probe():214] Collecting system info
+2024-07-24 07:24:21,589 DEBUG   HandlerThread:11788 [system_info.py:probe():150] Probing system
+2024-07-24 07:24:21,595 INFO    SystemMonitor:11788 [interfaces.py:start():190] Started cpu monitoring
+2024-07-24 07:24:21,596 INFO    SystemMonitor:11788 [interfaces.py:start():190] Started disk monitoring
+2024-07-24 07:24:21,597 INFO    SystemMonitor:11788 [interfaces.py:start():190] Started memory monitoring
+2024-07-24 07:24:21,606 INFO    SystemMonitor:11788 [interfaces.py:start():190] Started network monitoring
+2024-07-24 07:24:21,611 DEBUG   HandlerThread:11788 [system_info.py:_probe_git():135] Probing git
+2024-07-24 07:24:21,677 DEBUG   HandlerThread:11788 [system_info.py:_probe_git():143] Probing git done
+2024-07-24 07:24:21,677 DEBUG   HandlerThread:11788 [system_info.py:probe():198] Probing system done
+2024-07-24 07:24:21,677 DEBUG   HandlerThread:11788 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.19045-SP0', 'python': '3.9.19', 'heartbeatAt': '2024-07-24T04:24:21.589358', 'startedAt': '2024-07-24T04:24:20.693621', 'docker': None, 'cuda': None, 'args': ('--ENV_HPT_mode=False', '--ENV_LEARNING_RATE=0.001', '--architecture=LSTM', '--features=EFs', '--offline_train_test_datasets=trans_tagging', '--seed=4'), 'state': 'running', 'program': 'C:\\Users\\Bella Perel\\PycharmProjects\\nlp_project_eilam\\HumanChoicePrediction\\StrategyTransfer.py', 'codePathLocal': 'StrategyTransfer.py', 'codePath': 'StrategyTransfer.py', 'git': {'remote': 'https://github.com/BellaPerel/HumanChoicePrediction.git', 'commit': 'aef1da439ee30d74f99062941223dbc5f9819ddd'}, 'email': '81310709+BellaPerel@users.noreply.github.com', 'root': 'C:/Users/Bella Perel/PycharmProjects/nlp_project_eilam/HumanChoicePrediction', 'host': 'LAPTOP-AJ1T6PPE', 'username': 'Bella Perel', 'executable': 'C:\\ProgramData\\Anaconda3\\envs\\Pokemon\\python.exe', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2803.0, 'min': 0.0, 'max': 2803.0}, 'cpu_freq_per_core': [{'current': 2803.0, 'min': 0.0, 'max': 2803.0}], 'disk': {'/': {'total': 475.69237899780273, 'used': 472.1512260437012}}, 'memory': {'total': 15.804008483886719}}
+2024-07-24 07:24:21,677 INFO    HandlerThread:11788 [system_monitor.py:probe():224] Finished collecting system info
+2024-07-24 07:24:21,677 INFO    HandlerThread:11788 [system_monitor.py:probe():227] Publishing system info
+2024-07-24 07:24:21,677 DEBUG   HandlerThread:11788 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-07-24 07:24:21,679 ERROR   HandlerThread:11788 [system_info.py:_save_conda():221] Error saving conda packages: [WinError 2] The system cannot find the file specified
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\site-packages\wandb\sdk\internal\system\system_info.py", line 214, in _save_conda
+    subprocess.call(
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\subprocess.py", line 349, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\subprocess.py", line 1436, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+2024-07-24 07:24:21,681 DEBUG   HandlerThread:11788 [system_info.py:_save_conda():222] Saving conda packages done
+2024-07-24 07:24:21,681 INFO    HandlerThread:11788 [system_monitor.py:probe():229] Finished publishing system info
+2024-07-24 07:24:21,693 DEBUG   SenderThread:11788 [sender.py:send():379] send: files
+2024-07-24 07:24:21,693 INFO    SenderThread:11788 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-07-24 07:24:22,192 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: python_packages
+2024-07-24 07:24:22,192 DEBUG   SenderThread:11788 [sender.py:send_request():406] send_request: python_packages
+2024-07-24 07:24:22,193 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: stop_status
+2024-07-24 07:24:22,194 DEBUG   SenderThread:11788 [sender.py:send_request():406] send_request: stop_status
+2024-07-24 07:24:22,196 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: internal_messages
+2024-07-24 07:24:22,223 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\wandb-metadata.json
+2024-07-24 07:24:22,224 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\conda-environment.yaml
+2024-07-24 07:24:22,225 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\requirements.txt
+2024-07-24 07:24:22,439 DEBUG   SenderThread:11788 [sender.py:send():379] send: telemetry
+2024-07-24 07:24:22,440 DEBUG   SenderThread:11788 [sender.py:send():379] send: config
+2024-07-24 07:24:22,440 DEBUG   SenderThread:11788 [sender.py:send():379] send: telemetry
+2024-07-24 07:24:22,441 DEBUG   SenderThread:11788 [sender.py:send():379] send: config
+2024-07-24 07:24:22,441 DEBUG   SenderThread:11788 [sender.py:send():379] send: config
+2024-07-24 07:24:22,441 DEBUG   SenderThread:11788 [sender.py:send():379] send: config
+2024-07-24 07:24:22,441 DEBUG   SenderThread:11788 [sender.py:send():379] send: config
+2024-07-24 07:24:22,441 DEBUG   SenderThread:11788 [sender.py:send():379] send: config
+2024-07-24 07:24:22,441 DEBUG   SenderThread:11788 [sender.py:send():379] send: config
+2024-07-24 07:24:22,665 INFO    wandb-upload_0:11788 [upload_job.py:push():131] Uploaded file C:\Users\BELLAP~1\AppData\Local\Temp\tmp8tv42mkzwandb\m522qi9d-wandb-metadata.json
+2024-07-24 07:24:23,232 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:24:25,250 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:24:25,762 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: status_report
+2024-07-24 07:24:29,291 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:24:30,768 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: status_report
+2024-07-24 07:24:31,314 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:24:33,331 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:24:35,353 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:24:35,907 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: status_report
+2024-07-24 07:24:37,190 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: internal_messages
+2024-07-24 07:24:37,203 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: stop_status
+2024-07-24 07:24:37,204 DEBUG   SenderThread:11788 [sender.py:send_request():406] send_request: stop_status
+2024-07-24 07:24:37,375 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:24:39,397 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:24:40,959 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: status_report
+2024-07-24 07:24:41,419 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:24:43,439 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:24:45,463 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:24:45,992 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: status_report
+2024-07-24 07:24:47,485 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:24:49,509 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:24:51,015 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: status_report
+2024-07-24 07:24:51,530 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:24:51,531 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\config.yaml
+2024-07-24 07:24:52,199 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: internal_messages
+2024-07-24 07:24:52,210 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: stop_status
+2024-07-24 07:24:52,210 DEBUG   SenderThread:11788 [sender.py:send_request():406] send_request: stop_status
+2024-07-24 07:24:53,547 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:24:55,564 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:24:56,351 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: status_report
+2024-07-24 07:24:57,580 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:24:59,605 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:25:01,442 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: status_report
+2024-07-24 07:25:01,617 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:25:02,634 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:25:04,650 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:25:06,554 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: status_report
+2024-07-24 07:25:06,668 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:25:07,188 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: internal_messages
+2024-07-24 07:25:07,253 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: stop_status
+2024-07-24 07:25:07,253 DEBUG   SenderThread:11788 [sender.py:send_request():406] send_request: stop_status
+2024-07-24 07:25:08,683 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:25:10,700 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:25:11,649 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: status_report
+2024-07-24 07:25:12,723 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:25:14,740 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:25:16,745 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: status_report
+2024-07-24 07:25:16,764 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:25:18,789 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:25:20,805 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:25:21,616 DEBUG   SystemMonitor:11788 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-07-24 07:25:21,617 DEBUG   SenderThread:11788 [sender.py:send():379] send: stats
+2024-07-24 07:25:21,747 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: status_report
+2024-07-24 07:25:22,194 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: internal_messages
+2024-07-24 07:25:22,243 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: stop_status
+2024-07-24 07:25:22,244 DEBUG   SenderThread:11788 [sender.py:send_request():406] send_request: stop_status
+2024-07-24 07:25:22,826 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:25:24,849 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:25:26,830 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: status_report
+2024-07-24 07:25:26,863 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:25:28,881 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:25:30,914 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:25:31,928 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: status_report
+2024-07-24 07:25:32,936 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:25:34,954 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:25:36,931 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: status_report
+2024-07-24 07:25:36,976 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:25:37,217 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: internal_messages
+2024-07-24 07:25:37,241 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: stop_status
+2024-07-24 07:25:37,241 DEBUG   SenderThread:11788 [sender.py:send_request():406] send_request: stop_status
+2024-07-24 07:25:38,996 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:25:41,018 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:25:42,012 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: status_report
+2024-07-24 07:25:43,045 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:25:45,065 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:25:47,087 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:25:47,096 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: status_report
+2024-07-24 07:25:49,103 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:25:51,119 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:25:51,630 DEBUG   SenderThread:11788 [sender.py:send():379] send: stats
+2024-07-24 07:25:52,212 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: status_report
+2024-07-24 07:25:52,242 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: internal_messages
+2024-07-24 07:25:52,250 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: stop_status
+2024-07-24 07:25:52,251 DEBUG   SenderThread:11788 [sender.py:send_request():406] send_request: stop_status
+2024-07-24 07:25:53,140 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:25:55,157 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:25:57,179 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:25:57,237 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: status_report
+2024-07-24 07:25:59,203 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:26:01,224 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:26:02,378 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: status_report
+2024-07-24 07:26:03,238 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:26:05,254 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:26:07,250 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: internal_messages
+2024-07-24 07:26:07,276 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:26:07,277 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: stop_status
+2024-07-24 07:26:07,278 DEBUG   SenderThread:11788 [sender.py:send_request():406] send_request: stop_status
+2024-07-24 07:26:07,494 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: status_report
+2024-07-24 07:26:09,295 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:26:09,849 DEBUG   SenderThread:11788 [sender.py:send():379] send: exit
+2024-07-24 07:26:09,849 INFO    SenderThread:11788 [sender.py:send_exit():586] handling exit code: 1
+2024-07-24 07:26:09,849 INFO    SenderThread:11788 [sender.py:send_exit():588] handling runtime: 108
+2024-07-24 07:26:09,850 INFO    SenderThread:11788 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-07-24 07:26:09,850 INFO    SenderThread:11788 [sender.py:send_exit():594] send defer
+2024-07-24 07:26:09,850 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: defer
+2024-07-24 07:26:09,850 INFO    HandlerThread:11788 [handler.py:handle_request_defer():172] handle defer: 0
+2024-07-24 07:26:09,850 DEBUG   SenderThread:11788 [sender.py:send_request():406] send_request: defer
+2024-07-24 07:26:09,851 INFO    SenderThread:11788 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-07-24 07:26:09,851 INFO    SenderThread:11788 [sender.py:transition_state():614] send defer: 1
+2024-07-24 07:26:09,851 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: defer
+2024-07-24 07:26:09,851 INFO    HandlerThread:11788 [handler.py:handle_request_defer():172] handle defer: 1
+2024-07-24 07:26:09,851 DEBUG   SenderThread:11788 [sender.py:send_request():406] send_request: defer
+2024-07-24 07:26:09,851 INFO    SenderThread:11788 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-07-24 07:26:09,851 INFO    SenderThread:11788 [sender.py:transition_state():614] send defer: 2
+2024-07-24 07:26:09,852 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: defer
+2024-07-24 07:26:09,852 INFO    HandlerThread:11788 [handler.py:handle_request_defer():172] handle defer: 2
+2024-07-24 07:26:09,852 INFO    HandlerThread:11788 [system_monitor.py:finish():203] Stopping system monitor
+2024-07-24 07:26:09,852 DEBUG   SystemMonitor:11788 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-07-24 07:26:09,852 DEBUG   SystemMonitor:11788 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-07-24 07:26:09,852 INFO    HandlerThread:11788 [interfaces.py:finish():202] Joined cpu monitor
+2024-07-24 07:26:09,854 INFO    HandlerThread:11788 [interfaces.py:finish():202] Joined disk monitor
+2024-07-24 07:26:09,854 INFO    HandlerThread:11788 [interfaces.py:finish():202] Joined memory monitor
+2024-07-24 07:26:09,854 INFO    HandlerThread:11788 [interfaces.py:finish():202] Joined network monitor
+2024-07-24 07:26:09,854 DEBUG   SenderThread:11788 [sender.py:send_request():406] send_request: defer
+2024-07-24 07:26:09,854 INFO    SenderThread:11788 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-07-24 07:26:09,854 INFO    SenderThread:11788 [sender.py:transition_state():614] send defer: 3
+2024-07-24 07:26:09,854 DEBUG   SenderThread:11788 [sender.py:send():379] send: stats
+2024-07-24 07:26:09,854 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: defer
+2024-07-24 07:26:09,855 INFO    HandlerThread:11788 [handler.py:handle_request_defer():172] handle defer: 3
+2024-07-24 07:26:09,855 DEBUG   SenderThread:11788 [sender.py:send_request():406] send_request: defer
+2024-07-24 07:26:09,855 INFO    SenderThread:11788 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-07-24 07:26:09,855 INFO    SenderThread:11788 [sender.py:transition_state():614] send defer: 4
+2024-07-24 07:26:09,855 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: defer
+2024-07-24 07:26:09,855 INFO    HandlerThread:11788 [handler.py:handle_request_defer():172] handle defer: 4
+2024-07-24 07:26:09,855 DEBUG   SenderThread:11788 [sender.py:send_request():406] send_request: defer
+2024-07-24 07:26:09,855 INFO    SenderThread:11788 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-07-24 07:26:09,855 INFO    SenderThread:11788 [sender.py:transition_state():614] send defer: 5
+2024-07-24 07:26:09,855 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: defer
+2024-07-24 07:26:09,855 INFO    HandlerThread:11788 [handler.py:handle_request_defer():172] handle defer: 5
+2024-07-24 07:26:09,856 DEBUG   SenderThread:11788 [sender.py:send():379] send: summary
+2024-07-24 07:26:09,856 INFO    SenderThread:11788 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-07-24 07:26:09,856 DEBUG   SenderThread:11788 [sender.py:send_request():406] send_request: defer
+2024-07-24 07:26:09,856 INFO    SenderThread:11788 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-07-24 07:26:09,856 INFO    SenderThread:11788 [sender.py:transition_state():614] send defer: 6
+2024-07-24 07:26:09,856 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: defer
+2024-07-24 07:26:09,857 INFO    HandlerThread:11788 [handler.py:handle_request_defer():172] handle defer: 6
+2024-07-24 07:26:09,857 DEBUG   SenderThread:11788 [sender.py:send_request():406] send_request: defer
+2024-07-24 07:26:09,857 INFO    SenderThread:11788 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-07-24 07:26:09,857 INFO    SenderThread:11788 [sender.py:transition_state():614] send defer: 7
+2024-07-24 07:26:09,857 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: status_report
+2024-07-24 07:26:09,857 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: defer
+2024-07-24 07:26:09,857 INFO    HandlerThread:11788 [handler.py:handle_request_defer():172] handle defer: 7
+2024-07-24 07:26:09,857 DEBUG   SenderThread:11788 [sender.py:send_request():406] send_request: defer
+2024-07-24 07:26:09,857 INFO    SenderThread:11788 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-07-24 07:26:10,310 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\wandb-summary.json
+2024-07-24 07:26:10,854 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: poll_exit
+2024-07-24 07:26:11,325 INFO    Thread-16 :11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:26:12,772 INFO    SenderThread:11788 [sender.py:transition_state():614] send defer: 8
+2024-07-24 07:26:12,772 DEBUG   SenderThread:11788 [sender.py:send_request():406] send_request: poll_exit
+2024-07-24 07:26:12,772 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: defer
+2024-07-24 07:26:12,773 INFO    HandlerThread:11788 [handler.py:handle_request_defer():172] handle defer: 8
+2024-07-24 07:26:12,774 DEBUG   SenderThread:11788 [sender.py:send_request():406] send_request: defer
+2024-07-24 07:26:12,774 INFO    SenderThread:11788 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-07-24 07:26:12,774 INFO    SenderThread:11788 [sender.py:transition_state():614] send defer: 9
+2024-07-24 07:26:12,774 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: defer
+2024-07-24 07:26:12,774 INFO    HandlerThread:11788 [handler.py:handle_request_defer():172] handle defer: 9
+2024-07-24 07:26:12,775 DEBUG   SenderThread:11788 [sender.py:send_request():406] send_request: defer
+2024-07-24 07:26:12,775 INFO    SenderThread:11788 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-07-24 07:26:12,775 INFO    SenderThread:11788 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-07-24 07:26:12,879 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: poll_exit
+2024-07-24 07:26:13,346 INFO    SenderThread:11788 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:26:13,348 INFO    SenderThread:11788 [dir_watcher.py:finish():388] scan: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files
+2024-07-24 07:26:13,349 INFO    SenderThread:11788 [dir_watcher.py:finish():402] scan save: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\conda-environment.yaml conda-environment.yaml
+2024-07-24 07:26:13,350 INFO    SenderThread:11788 [dir_watcher.py:finish():402] scan save: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\config.yaml config.yaml
+2024-07-24 07:26:13,350 INFO    SenderThread:11788 [dir_watcher.py:finish():402] scan save: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log output.log
+2024-07-24 07:26:13,356 INFO    SenderThread:11788 [dir_watcher.py:finish():402] scan save: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\requirements.txt requirements.txt
+2024-07-24 07:26:13,363 INFO    SenderThread:11788 [dir_watcher.py:finish():402] scan save: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\wandb-metadata.json wandb-metadata.json
+2024-07-24 07:26:13,364 INFO    SenderThread:11788 [dir_watcher.py:finish():402] scan save: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\wandb-summary.json wandb-summary.json
+2024-07-24 07:26:13,370 INFO    SenderThread:11788 [sender.py:transition_state():614] send defer: 10
+2024-07-24 07:26:13,370 DEBUG   SenderThread:11788 [sender.py:send_request():406] send_request: poll_exit
+2024-07-24 07:26:13,371 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: defer
+2024-07-24 07:26:13,374 INFO    HandlerThread:11788 [handler.py:handle_request_defer():172] handle defer: 10
+2024-07-24 07:26:13,376 DEBUG   SenderThread:11788 [sender.py:send_request():406] send_request: defer
+2024-07-24 07:26:13,376 INFO    SenderThread:11788 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-07-24 07:26:13,376 INFO    SenderThread:11788 [file_pusher.py:finish():172] shutting down file pusher
+2024-07-24 07:26:13,864 INFO    wandb-upload_0:11788 [upload_job.py:push():131] Uploaded file C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\config.yaml
+2024-07-24 07:26:13,908 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: poll_exit
+2024-07-24 07:26:13,909 DEBUG   SenderThread:11788 [sender.py:send_request():406] send_request: poll_exit
+2024-07-24 07:26:14,031 INFO    wandb-upload_2:11788 [upload_job.py:push():131] Uploaded file C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\requirements.txt
+2024-07-24 07:26:14,138 INFO    wandb-upload_3:11788 [upload_job.py:push():131] Uploaded file C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\wandb-summary.json
+2024-07-24 07:26:14,151 INFO    wandb-upload_1:11788 [upload_job.py:push():131] Uploaded file C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\files\output.log
+2024-07-24 07:26:14,360 INFO    Thread-15 :11788 [sender.py:transition_state():614] send defer: 11
+2024-07-24 07:26:14,360 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: defer
+2024-07-24 07:26:14,361 INFO    HandlerThread:11788 [handler.py:handle_request_defer():172] handle defer: 11
+2024-07-24 07:26:14,362 DEBUG   SenderThread:11788 [sender.py:send_request():406] send_request: defer
+2024-07-24 07:26:14,362 INFO    SenderThread:11788 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-07-24 07:26:14,362 INFO    SenderThread:11788 [file_pusher.py:join():178] waiting for file pusher
+2024-07-24 07:26:14,363 INFO    SenderThread:11788 [sender.py:transition_state():614] send defer: 12
+2024-07-24 07:26:14,363 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: defer
+2024-07-24 07:26:14,363 INFO    HandlerThread:11788 [handler.py:handle_request_defer():172] handle defer: 12
+2024-07-24 07:26:14,364 DEBUG   SenderThread:11788 [sender.py:send_request():406] send_request: defer
+2024-07-24 07:26:14,364 INFO    SenderThread:11788 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-07-24 07:26:14,364 INFO    SenderThread:11788 [file_stream.py:finish():614] file stream finish called
+2024-07-24 07:26:14,918 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: poll_exit
+2024-07-24 07:26:14,967 INFO    SenderThread:11788 [file_stream.py:finish():618] file stream finish is done
+2024-07-24 07:26:14,967 INFO    SenderThread:11788 [sender.py:transition_state():614] send defer: 13
+2024-07-24 07:26:14,968 DEBUG   SenderThread:11788 [sender.py:send_request():406] send_request: poll_exit
+2024-07-24 07:26:14,968 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: defer
+2024-07-24 07:26:14,968 INFO    HandlerThread:11788 [handler.py:handle_request_defer():172] handle defer: 13
+2024-07-24 07:26:14,969 DEBUG   SenderThread:11788 [sender.py:send_request():406] send_request: defer
+2024-07-24 07:26:14,969 INFO    SenderThread:11788 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-07-24 07:26:14,969 INFO    SenderThread:11788 [sender.py:transition_state():614] send defer: 14
+2024-07-24 07:26:14,970 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: defer
+2024-07-24 07:26:14,970 DEBUG   SenderThread:11788 [sender.py:send():379] send: final
+2024-07-24 07:26:14,970 INFO    HandlerThread:11788 [handler.py:handle_request_defer():172] handle defer: 14
+2024-07-24 07:26:14,971 DEBUG   SenderThread:11788 [sender.py:send():379] send: footer
+2024-07-24 07:26:14,971 DEBUG   SenderThread:11788 [sender.py:send_request():406] send_request: defer
+2024-07-24 07:26:14,971 INFO    SenderThread:11788 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-07-24 07:26:14,972 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: poll_exit
+2024-07-24 07:26:14,973 DEBUG   SenderThread:11788 [sender.py:send_request():406] send_request: poll_exit
+2024-07-24 07:26:14,974 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: poll_exit
+2024-07-24 07:26:14,975 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: server_info
+2024-07-24 07:26:14,975 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: get_summary
+2024-07-24 07:26:14,975 DEBUG   SenderThread:11788 [sender.py:send_request():406] send_request: poll_exit
+2024-07-24 07:26:14,976 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: sampled_history
+2024-07-24 07:26:14,976 DEBUG   SenderThread:11788 [sender.py:send_request():406] send_request: server_info
+2024-07-24 07:26:14,976 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: internal_messages
+2024-07-24 07:26:15,184 INFO    MainThread:11788 [wandb_run.py:_footer_history_summary_info():3920] rendering history
+2024-07-24 07:26:15,184 INFO    MainThread:11788 [wandb_run.py:_footer_history_summary_info():3952] rendering summary
+2024-07-24 07:26:15,184 INFO    MainThread:11788 [wandb_run.py:_footer_sync_info():3879] logging synced files
+2024-07-24 07:26:15,187 DEBUG   HandlerThread:11788 [handler.py:handle_request():146] handle_request: shutdown
+2024-07-24 07:26:15,187 INFO    HandlerThread:11788 [handler.py:finish():866] shutting down handler
+2024-07-24 07:26:15,976 INFO    WriterThread:11788 [datastore.py:close():296] close: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240724_072420-ds26rwdg\run-ds26rwdg.wandb
+2024-07-24 07:26:16,193 INFO    SenderThread:11788 [sender.py:finish():1546] shutting down sender
+2024-07-24 07:26:16,194 INFO    SenderThread:11788 [file_pusher.py:finish():172] shutting down file pusher
+2024-07-24 07:26:16,194 INFO    SenderThread:11788 [file_pusher.py:join():178] waiting for file pusher

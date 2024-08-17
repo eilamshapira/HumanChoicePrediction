@@ -1,0 +1,16 @@
+wandb_version: 1
+
+ENV_HPT_mode:
+  value: false
+ENV_LEARNING_RATE:
+  value: 0.003
+architecture:
+  value: LSTM
+features:
+  value: GPT4
+offline_train_test_datasets:
+  value: transformer_tagged
+online_simulation_factor:
+  value: 0
+seed:
+  value: 0

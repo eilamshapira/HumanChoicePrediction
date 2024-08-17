@@ -1,0 +1,43 @@
+2024-07-23 20:22:39,817 INFO    MainThread:46900 [wandb_setup.py:_flush():76] Current SDK version is 0.16.5
+2024-07-23 20:22:39,817 INFO    MainThread:46900 [wandb_setup.py:_flush():76] Configure stats pid to 46900
+2024-07-23 20:22:39,817 INFO    MainThread:46900 [wandb_setup.py:_flush():76] Loading settings from C:\Users\Bella Perel\.config\wandb\settings
+2024-07-23 20:22:39,817 INFO    MainThread:46900 [wandb_setup.py:_flush():76] Loading settings from C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\settings
+2024-07-23 20:22:39,817 WARNING MainThread:46900 [wandb_setup.py:_flush():76] Unknown environment variable: WANDB_SERVICE
+2024-07-23 20:22:39,818 INFO    MainThread:46900 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'entity': 'bellatomer', 'project': 'NLP2024_PROJECT_BellaPerel', 'sweep_id': 'cr7n5lky', 'root_dir': 'C:\\Users\\Bella Perel\\PycharmProjects\\nlp_project_eilam\\HumanChoicePrediction', 'run_id': '3tvtodr6', 'sweep_param_path': 'C:\\Users\\Bella Perel\\PycharmProjects\\nlp_project_eilam\\HumanChoicePrediction\\wandb\\sweep-cr7n5lky\\config-3tvtodr6.yaml'}
+2024-07-23 20:22:39,818 INFO    MainThread:46900 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-07-23 20:22:39,818 INFO    MainThread:46900 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'StrategyTransfer.py', 'program_abspath': 'C:\\Users\\Bella Perel\\PycharmProjects\\nlp_project_eilam\\HumanChoicePrediction\\StrategyTransfer.py', 'program': 'C:\\Users\\Bella Perel\\PycharmProjects\\nlp_project_eilam\\HumanChoicePrediction\\StrategyTransfer.py'}
+2024-07-23 20:22:39,818 INFO    MainThread:46900 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-07-23 20:22:39,818 INFO    MainThread:46900 [wandb_init.py:_log_setup():527] Logging user logs to C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240723_202239-3tvtodr6\logs\debug.log
+2024-07-23 20:22:39,818 INFO    MainThread:46900 [wandb_init.py:_log_setup():528] Logging internal logs to C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240723_202239-3tvtodr6\logs\debug-internal.log
+2024-07-23 20:22:39,818 INFO    MainThread:46900 [wandb_init.py:init():567] calling init triggers
+2024-07-23 20:22:39,819 INFO    MainThread:46900 [wandb_init.py:init():574] wandb.init called with sweep_config: {'ENV_HPT_mode': False, 'ENV_LEARNING_RATE': 0.001, 'architecture': 'CNN', 'features': 'EFs', 'offline_train_test_datasets': 'trans_tagging', 'online_simulation_factor': 0, 'seed': 0}
+config: {}
+2024-07-23 20:22:39,819 INFO    MainThread:46900 [wandb_init.py:init():617] starting backend
+2024-07-23 20:22:39,819 INFO    MainThread:46900 [wandb_init.py:init():621] setting up manager
+2024-07-23 20:22:39,832 INFO    MainThread:46900 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-07-23 20:22:39,835 INFO    MainThread:46900 [wandb_init.py:init():629] backend started and connected
+2024-07-23 20:22:39,861 INFO    MainThread:46900 [wandb_run.py:_config_callback():1347] config_cb None None {'ENV_HPT_mode': False, 'ENV_LEARNING_RATE': 0.001, 'architecture': 'CNN', 'features': 'EFs', 'offline_train_test_datasets': 'trans_tagging', 'online_simulation_factor': 0, 'seed': 0}
+2024-07-23 20:22:39,863 INFO    MainThread:46900 [wandb_init.py:init():721] updated telemetry
+2024-07-23 20:22:39,932 INFO    MainThread:46900 [wandb_init.py:init():754] communicating run to backend with 90.0 second timeout
+2024-07-23 20:22:40,438 INFO    MainThread:46900 [wandb_run.py:_on_init():2344] communicating current version
+2024-07-23 20:22:40,724 INFO    MainThread:46900 [wandb_run.py:_on_init():2353] got version response upgrade_message: "wandb version 0.17.5 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-07-23 20:22:40,724 INFO    MainThread:46900 [wandb_init.py:init():805] starting run threads in backend
+2024-07-23 20:22:42,069 INFO    MainThread:46900 [wandb_run.py:_console_start():2323] atexit reg
+2024-07-23 20:22:42,069 INFO    MainThread:46900 [wandb_run.py:_redirect():2178] redirect: wrap_raw
+2024-07-23 20:22:42,069 INFO    MainThread:46900 [wandb_run.py:_redirect():2243] Wrapping output streams.
+2024-07-23 20:22:42,070 INFO    MainThread:46900 [wandb_run.py:_redirect():2268] Redirects installed.
+2024-07-23 20:22:42,072 INFO    MainThread:46900 [wandb_init.py:init():848] run started, returning control to user process
+2024-07-23 20:22:42,092 INFO    MainThread:46900 [wandb_run.py:_config_callback():1347] config_cb None None {'task': 'off_policy', 'loss_weight_type': 'None', 'save_artifacts': True, 'strategies': None, 'total_epochs': 25, 'hidden_dim': 32, 'layers': 2, 'transformer_nheads': 4, 'dropout': 0, 'human_train_size': 210, 'online_sim_type': 'before_epoch', 'basic_nature': 12, 'simulation_bot_per_user': 6, 'simulation_signal_error': 0.3, 'simulation_user_improve': 0.01, 'max_games': 4, 'zero_knowledge': True, 'bots_per_user': 6, 'SIMULATION_EFs_PATH': 'data/EFs_by_GPT35.csv', 'favorite_topic_method': 'review', 'agent': 'modelbasedRL', 'force_train': True, 'output_dim': 2, 'offline_simulation_size': 0, 'OFFLINE_SIM_DATA_PATH': 'data/LLM_games_personas.csv', 'personas_balanced': True, 'personas_group_number': -1}
+2024-07-23 20:22:42,096 INFO    MainThread:46900 [wandb_config.py:__setitem__():151] config set FEATURES_PATH = data/EFs_by_GPT35.csv - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x000002EC6B5165E0>>
+2024-07-23 20:22:42,097 INFO    MainThread:46900 [wandb_run.py:_config_callback():1347] config_cb FEATURES_PATH data/EFs_by_GPT35.csv None
+2024-07-23 20:22:42,098 INFO    MainThread:46900 [wandb_config.py:__setitem__():151] config set REVIEW_DIM = 37 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x000002EC6B5165E0>>
+2024-07-23 20:22:42,099 INFO    MainThread:46900 [wandb_run.py:_config_callback():1347] config_cb REVIEW_DIM 37 None
+2024-07-23 20:22:42,100 INFO    MainThread:46900 [wandb_config.py:__setitem__():151] config set use_user_vector = True - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x000002EC6B5165E0>>
+2024-07-23 20:22:42,100 INFO    MainThread:46900 [wandb_run.py:_config_callback():1347] config_cb use_user_vector True None
+2024-07-23 20:22:42,100 INFO    MainThread:46900 [wandb_config.py:__setitem__():151] config set online_simulation_size = 0 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x000002EC6B5165E0>>
+2024-07-23 20:22:42,100 INFO    MainThread:46900 [wandb_run.py:_config_callback():1347] config_cb online_simulation_size 0 None
+2024-07-23 20:22:42,101 INFO    MainThread:46900 [wandb_config.py:__setitem__():151] config set input_dim = 70 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x000002EC6B5165E0>>
+2024-07-23 20:22:42,101 INFO    MainThread:46900 [wandb_run.py:_config_callback():1347] config_cb input_dim 70 None
+2024-07-23 20:22:42,101 INFO    MainThread:46900 [wandb_config.py:__setitem__():151] config set wandb_run_id = 3tvtodr6 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x000002EC6B5165E0>>
+2024-07-23 20:22:42,102 INFO    MainThread:46900 [wandb_run.py:_config_callback():1347] config_cb wandb_run_id 3tvtodr6 None

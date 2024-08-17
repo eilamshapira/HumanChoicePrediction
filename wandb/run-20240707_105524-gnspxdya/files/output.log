@@ -1,0 +1,183 @@
+
+Start training the environment...
+wandb: WARNING Config item 'ENV_HPT_mode' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'seed' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'ENV_LEARNING_RATE' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'features' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'architecture' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'online_simulation_factor' was locked by 'sweep' (ignored update).
+################
+# Epoch 0
+################
+ ... (more hidden) ...
+ ... (more hidden) ...
+proba_accuracy_per_mean_user_and_bot:  0.5031309491486882
+accuracy_per_mean_user_and_bot:  0.5244598662942596
+################
+# Epoch 1
+################
+ ... (more hidden) ...
+ ... (more hidden) ...
+ ... (more hidden) ...
+proba_accuracy_per_mean_user_and_bot:  0.5150136112431456
+accuracy_per_mean_user_and_bot:  0.5280902120157872
+################
+# Epoch 2
+################
+ ... (more hidden) ...
+proba_accuracy_per_mean_user_and_bot:  0.5384091633232843
+accuracy_per_mean_user_and_bot:  0.6615826829556698
+################
+# Epoch 3
+################
+ ... (more hidden) ...
+ ... (more hidden) ...
+proba_accuracy_per_mean_user_and_bot:  0.5695712716429798
+accuracy_per_mean_user_and_bot:  0.753861232289529
+################
+# Epoch 4
+################
+ ... (more hidden) ...
+ ... (more hidden) ...
+proba_accuracy_per_mean_user_and_bot:  0.5966869496323173
+accuracy_per_mean_user_and_bot:  0.7713634695453431
+################
+# Epoch 5
+################
+ ... (more hidden) ...
+ ... (more hidden) ...
+proba_accuracy_per_mean_user_and_bot:  0.6157283233195815
+accuracy_per_mean_user_and_bot:  0.7765698898324795
+################
+# Epoch 6
+################
+ ... (more hidden) ...
+ ... (more hidden) ...
+proba_accuracy_per_mean_user_and_bot:  0.6283945650965366
+accuracy_per_mean_user_and_bot:  0.7788669070842854
+################
+# Epoch 7
+################
+ ... (more hidden) ...
+ ... (more hidden) ...
+proba_accuracy_per_mean_user_and_bot:  0.6372449716088997
+accuracy_per_mean_user_and_bot:  0.7814571566217163
+################
+# Epoch 8
+################
+ ... (more hidden) ...
+ ... (more hidden) ...
+proba_accuracy_per_mean_user_and_bot:  0.6460376163799836
+accuracy_per_mean_user_and_bot:  0.7842100564237725
+################
+# Epoch 9
+################
+ ... (more hidden) ...
+ ... (more hidden) ...
+proba_accuracy_per_mean_user_and_bot:  0.6530813317437354
+accuracy_per_mean_user_and_bot:  0.7843414374589238
+################
+# Epoch 10
+################
+ ... (more hidden) ...
+ ... (more hidden) ...
+proba_accuracy_per_mean_user_and_bot:  0.6605549598017777
+accuracy_per_mean_user_and_bot:  0.7850067429864919
+################
+# Epoch 11
+################
+ ... (more hidden) ...
+ ... (more hidden) ...
+proba_accuracy_per_mean_user_and_bot:  0.668727249621055
+accuracy_per_mean_user_and_bot:  0.7860639993064977
+################
+# Epoch 12
+################
+ ... (more hidden) ...
+ ... (more hidden) ...
+proba_accuracy_per_mean_user_and_bot:  0.67290198491971
+accuracy_per_mean_user_and_bot:  0.7871362381880176
+################
+# Epoch 13
+################
+ ... (more hidden) ...
+ ... (more hidden) ...
+proba_accuracy_per_mean_user_and_bot:  0.6779441216507949
+accuracy_per_mean_user_and_bot:  0.7906727583921441
+################
+# Epoch 14
+################
+ ... (more hidden) ...
+ ... (more hidden) ...
+proba_accuracy_per_mean_user_and_bot:  0.6792471438253295
+accuracy_per_mean_user_and_bot:  0.7880878085831704
+################
+# Epoch 15
+################
+ ... (more hidden) ...
+ ... (more hidden) ...
+proba_accuracy_per_mean_user_and_bot:  0.6848122970901429
+accuracy_per_mean_user_and_bot:  0.7950828120063178
+################
+# Epoch 16
+################
+ ... (more hidden) ...
+ ... (more hidden) ...
+proba_accuracy_per_mean_user_and_bot:  0.6859150492286853
+accuracy_per_mean_user_and_bot:  0.7911563216035371
+################
+# Epoch 17
+################
+ ... (more hidden) ...
+ ... (more hidden) ...
+proba_accuracy_per_mean_user_and_bot:  0.689789832638886
+accuracy_per_mean_user_and_bot:  0.7972807435510298
+################
+# Epoch 18
+################
+ ... (more hidden) ...
+ ... (more hidden) ...
+proba_accuracy_per_mean_user_and_bot:  0.6896735341614457
+accuracy_per_mean_user_and_bot:  0.7941074262947027
+################
+# Epoch 19
+################
+ ... (more hidden) ...
+ ... (more hidden) ...
+proba_accuracy_per_mean_user_and_bot:  0.6930177048761117
+accuracy_per_mean_user_and_bot:  0.797069982263114
+################
+# Epoch 20
+################
+ ... (more hidden) ...
+ ... (more hidden) ...
+proba_accuracy_per_mean_user_and_bot:  0.6965322774609176
+accuracy_per_mean_user_and_bot:  0.8001025753087772
+################
+# Epoch 21
+################
+ ... (more hidden) ...
+ ... (more hidden) ...
+proba_accuracy_per_mean_user_and_bot:  0.6990122409219022
+accuracy_per_mean_user_and_bot:  0.8018047281604944
+################
+# Epoch 22
+################
+ ... (more hidden) ...
+ ... (more hidden) ...
+proba_accuracy_per_mean_user_and_bot:  0.7006569386836894
+accuracy_per_mean_user_and_bot:  0.8020822857896088
+################
+# Epoch 23
+################
+ ... (more hidden) ...
+ ... (more hidden) ...
+proba_accuracy_per_mean_user_and_bot:  0.7022250578464937
+accuracy_per_mean_user_and_bot:  0.8048032853674377
+################
+# Epoch 24
+################
+ ... (more hidden) ...
+ ... (more hidden) ...
+proba_accuracy_per_mean_user_and_bot:  0.7044714097150645
+accuracy_per_mean_user_and_bot:  0.805037323255802

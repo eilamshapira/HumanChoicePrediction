@@ -1,0 +1,1235 @@
+{'ENV_HPT_mode': False, 'seed': 1, 'task': 'off_policy', 'ENV_LEARNING_RATE': 0.001, 'loss_weight_type': 'None', 'save_artifacts': True, 'strategies': None, 'total_epochs': 25, 'features': 'EFs', 'architecture': 'CNN', 'hidden_dim': 32, 'layers': 2, 'transformer_nheads': 4, 'dropout': 0, 'human_train_size': 210, 'online_sim_type': 'before_epoch', 'basic_nature': 12, 'online_simulation_factor': 0, 'simulation_bot_per_user': 0, 'simulation_signal_error': 0.3, 'simulation_user_improve': 0.01, 'max_games': 4, 'zero_knowledge': True, 'bots_per_user': 6, 'SIMULATION_EFs_PATH': 'data/EFs_by_GPT35.csv', 'favorite_topic_method': 'review', 'agent': 'modelbasedRL', 'force_train': True, 'output_dim': 2, 'offline_simulation_size': 0, 'OFFLINE_SIM_DATA_PATH': 'data/LLM_games_personas.csv', 'personas_balanced': True, 'personas_group_number': -1, 'offline_train_test_datasets': 'original_data', 'FEATURES_PATH': 'data/EFs_by_GPT35.csv', 'REVIEW_DIM': 37, 'use_user_vector': True, 'online_simulation_size': 0, 'input_dim': 70, 'wandb_run_id': '9hfw769l'}
+Start training the environment...
+################
+# Epoch 0
+################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Train: 100%|█████████▉| 2259/2260 [01:03<00:00, 35.47it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+Test: 642it [00:22, 28.40it/s]
+Train:   6%|▋         | 145/2260 [00:04<01:13, 28.67it/s]
+proba_accuracy_per_mean_user_and_bot:  0.7709862006588022
+accuracy_per_mean_user_and_bot:  0.8289119274621356
+################
+# Epoch 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Train: 100%|█████████▉| 2259/2260 [01:27<00:00, 25.75it/s]
+
+
+
+
+
+
+
+
+
+
+
+Test: 642it [00:23, 27.09it/s]
+proba_accuracy_per_mean_user_and_bot:  0.7881323871637286
+accuracy_per_mean_user_and_bot:  0.843987724410534
+################
+# Epoch 2
+################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Train: 100%|██████████| 2260/2260 [01:23<00:00, 26.92it/s]
+
+
+
+
+
+
+
+
+Test: 642it [00:15, 41.14it/s]
+proba_accuracy_per_mean_user_and_bot:  0.791836577875687
+accuracy_per_mean_user_and_bot:  0.8493452546034991
+################
+# Epoch 3
+################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Train: 100%|█████████▉| 2259/2260 [01:15<00:00, 29.99it/s]
+
+
+
+
+
+
+
+Test: 642it [00:15, 40.63it/s]
+proba_accuracy_per_mean_user_and_bot:  0.8036855065268304
+accuracy_per_mean_user_and_bot:  0.8503368529099367
+################
+# Epoch 4
+################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Train: 100%|██████████| 2260/2260 [01:16<00:00, 29.71it/s]
+
+
+
+
+
+
+
+Test: 642it [00:15, 41.03it/s]
+Train:   5%|▌         | 121/2260 [00:03<01:19, 26.94it/s]
+proba_accuracy_per_mean_user_and_bot:  0.7949583276137909
+accuracy_per_mean_user_and_bot:  0.8459545689584163
+################
+# Epoch 5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Train: 100%|█████████▉| 2259/2260 [01:24<00:00, 26.72it/s]
+
+
+
+
+
+
+
+Test: 642it [00:15, 40.84it/s]
+Train:   6%|▌         | 126/2260 [00:03<00:59, 35.62it/s]
+proba_accuracy_per_mean_user_and_bot:  0.8098086650288319
+accuracy_per_mean_user_and_bot:  0.8522096684702798
+################
+# Epoch 6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Train: 100%|█████████▉| 2259/2260 [01:16<00:00, 29.37it/s]
+
+
+
+
+
+
+
+Test: 642it [00:15, 41.08it/s]
+Train:   5%|▌         | 124/2260 [00:03<00:58, 36.40it/s]
+proba_accuracy_per_mean_user_and_bot:  0.7921005610733347
+accuracy_per_mean_user_and_bot:  0.8432438532248985
+################
+# Epoch 7
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Train: 100%|█████████▉| 2259/2260 [01:17<00:00, 29.02it/s]
+
+
+
+
+
+
+
+
+Test: 642it [00:16, 40.07it/s]
+Train:   6%|▋         | 144/2260 [00:04<01:08, 31.06it/s]
+proba_accuracy_per_mean_user_and_bot:  0.8048407392887151
+accuracy_per_mean_user_and_bot:  0.848138503896491
+################
+# Epoch 8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Train: 100%|█████████▉| 2259/2260 [01:16<00:00, 29.50it/s]
+
+
+
+
+
+
+
+
+Test: 642it [00:15, 40.64it/s]
+Train:   6%|▌         | 130/2260 [00:03<01:05, 32.71it/s]
+proba_accuracy_per_mean_user_and_bot:  0.8020257357246153
+accuracy_per_mean_user_and_bot:  0.8421182875895709
+################
+# Epoch 9
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Train: 100%|█████████▉| 2259/2260 [01:17<00:00, 29.27it/s]
+
+
+
+
+
+
+
+
+Test: 642it [00:17, 37.49it/s]
+proba_accuracy_per_mean_user_and_bot:  0.8108548830354518
+accuracy_per_mean_user_and_bot:  0.8430569402798
+################
+# Epoch 10
+################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Train: 2261it [01:17, 29.19it/s]
+
+
+
+
+
+
+
+
+Test: 642it [00:16, 39.77it/s]
+proba_accuracy_per_mean_user_and_bot:  0.8102859041177011
+accuracy_per_mean_user_and_bot:  0.844931561891156
+################
+# Epoch 11
+################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Train: 100%|█████████▉| 2259/2260 [01:15<00:00, 29.80it/s]
+
+
+
+
+
+
+
+
+Test: 642it [00:15, 41.61it/s]
+Train:   5%|▌         | 124/2260 [00:03<01:04, 33.05it/s]
+proba_accuracy_per_mean_user_and_bot:  0.8092836003987478
+accuracy_per_mean_user_and_bot:  0.843077265695633
+################
+# Epoch 12
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Train: 100%|█████████▉| 2259/2260 [01:16<00:00, 29.67it/s]
+
+
+
+
+
+
+
+
+Test: 642it [00:15, 40.88it/s]
+Train:   5%|▌         | 123/2260 [00:03<01:07, 31.52it/s]
+proba_accuracy_per_mean_user_and_bot:  0.8091039335473723
+accuracy_per_mean_user_and_bot:  0.8402274538088804
+################
+# Epoch 13
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Train: 100%|█████████▉| 2259/2260 [01:16<00:00, 29.46it/s]
+
+
+
+
+
+
+
+
+Test: 642it [00:16, 40.00it/s]
+proba_accuracy_per_mean_user_and_bot:  0.8087707332169051
+accuracy_per_mean_user_and_bot:  0.8394300628308548
+################
+# Epoch 14
+################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Train: 100%|█████████▉| 2259/2260 [01:14<00:00, 30.19it/s]
+
+
+
+
+
+
+
+Test: 642it [00:15, 41.45it/s]
+proba_accuracy_per_mean_user_and_bot:  0.8113631852290124
+accuracy_per_mean_user_and_bot:  0.8367021476014341
+################
+# Epoch 15
+################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Train: 100%|█████████▉| 2259/2260 [01:15<00:00, 29.83it/s]
+
+
+
+
+
+
+
+
+Test: 642it [00:15, 41.63it/s]
+proba_accuracy_per_mean_user_and_bot:  0.8123233630561103
+accuracy_per_mean_user_and_bot:  0.8322081052713975
+################
+# Epoch 16
+################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Train: 100%|██████████| 2260/2260 [01:14<00:00, 30.48it/s]
+
+
+
+
+
+
+
+Test: 642it [00:15, 42.20it/s]
+proba_accuracy_per_mean_user_and_bot:  0.8073686545775125
+accuracy_per_mean_user_and_bot:  0.831092021402992
+################
+# Epoch 17
+################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Train: 100%|█████████▉| 2259/2260 [01:14<00:00, 30.25it/s]
+
+
+
+
+
+
+
+Test: 642it [00:15, 41.82it/s]
+proba_accuracy_per_mean_user_and_bot:  0.8046551227716822
+accuracy_per_mean_user_and_bot:  0.8223235667156501
+################
+# Epoch 18
+################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Train: 100%|█████████▉| 2259/2260 [01:14<00:00, 30.32it/s]
+
+
+
+
+
+
+
+Test: 642it [00:15, 41.22it/s]
+Train:   7%|▋         | 158/2260 [00:04<01:06, 31.44it/s]
+proba_accuracy_per_mean_user_and_bot:  0.8112761227477211
+accuracy_per_mean_user_and_bot:  0.8300243606233212
+################
+# Epoch 19
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Train: 100%|██████████| 2260/2260 [01:13<00:00, 30.63it/s]
+
+
+
+
+
+
+
+
+
+
+Test: 642it [00:19, 32.90it/s]
+Train:   5%|▍         | 110/2260 [00:03<01:01, 35.17it/s]
+proba_accuracy_per_mean_user_and_bot:  0.8134691970058906
+accuracy_per_mean_user_and_bot:  0.8268340371073221
+################
+# Epoch 20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Train: 100%|█████████▉| 2259/2260 [01:21<00:00, 27.64it/s]
+
+
+
+
+
+
+Test: 642it [00:13, 49.18it/s]
+proba_accuracy_per_mean_user_and_bot:  0.812900183997833
+accuracy_per_mean_user_and_bot:  0.8303031565902099
+################
+# Epoch 21
+################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Train: 100%|█████████▉| 2259/2260 [01:09<00:00, 32.46it/s]
+
+
+
+
+
+
+
+
+Test: 642it [00:16, 37.91it/s]
+Train:  11%|█         | 249/2260 [00:08<01:16, 26.42it/s]
+proba_accuracy_per_mean_user_and_bot:  0.8119756522443432
+accuracy_per_mean_user_and_bot:  0.8247309594485634
+################
+# Epoch 22
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Train: 100%|█████████▉| 2259/2260 [01:01<00:00, 36.72it/s]
+
+
+
+
+
+
+Test: 642it [00:12, 50.11it/s]
+Train:  11%|█         | 253/2260 [00:06<00:56, 35.57it/s]
+proba_accuracy_per_mean_user_and_bot:  0.8028514245194612
+accuracy_per_mean_user_and_bot:  0.8187738330900813
+################
+# Epoch 23
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Train: 100%|█████████▉| 2259/2260 [00:58<00:00, 38.33it/s]
+
+
+
+
+
+
+Test: 642it [00:11, 55.68it/s]
+Train:   7%|▋         | 152/2260 [00:03<00:52, 39.79it/s]
+proba_accuracy_per_mean_user_and_bot:  0.8109989237723848
+accuracy_per_mean_user_and_bot:  0.826829206037635
+################
+# Epoch 24
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Train: 100%|██████████| 2260/2260 [00:58<00:00, 38.83it/s]
+
+
+
+
+
+Test: 642it [00:11, 57.72it/s]
+proba_accuracy_per_mean_user_and_bot:  0.81105050881181
+accuracy_per_mean_user_and_bot:  0.822959181348738

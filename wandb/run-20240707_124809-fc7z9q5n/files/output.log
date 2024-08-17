@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\StrategyTransfer.py", line 1, in <module>
+    import utils
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\utils\__init__.py", line 3, in <module>
+    from consts import *
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\consts.py", line 4, in <module>
+    import StrategyTransfer as ST
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\StrategyTransfer.py", line 109, in <module>
+    config["input_dim"] = config['REVIEW_DIM'] + STRATEGY_DIM
+NameError: name 'STRATEGY_DIM' is not defined

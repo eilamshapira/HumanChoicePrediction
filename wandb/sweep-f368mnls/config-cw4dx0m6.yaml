@@ -1,0 +1,14 @@
+wandb_version: 1
+
+ENV_HPT_mode:
+  value: false
+ENV_LEARNING_RATE:
+  value: 0.001
+architecture:
+  value: LSTM
+features:
+  value: EFs
+offline_train_test_datasets:
+  value: trans_tagging
+seed:
+  value: 2

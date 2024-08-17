@@ -1,0 +1,283 @@
+2024-06-21 17:06:12,834 INFO    StreamThr :27832 [internal.py:wandb_internal():86] W&B internal server running at pid: 27832, started at: 2024-06-21 17:06:12.831935
+2024-06-21 17:06:12,842 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status
+2024-06-21 17:06:12,853 INFO    WriterThread:27832 [datastore.py:open_for_write():87] open: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240621_170612-9e0kvfuq\run-9e0kvfuq.wandb
+2024-06-21 17:06:12,873 DEBUG   SenderThread:27832 [sender.py:send():379] send: header
+2024-06-21 17:06:12,952 DEBUG   SenderThread:27832 [sender.py:send():379] send: run
+2024-06-21 17:06:13,569 INFO    SenderThread:27832 [dir_watcher.py:__init__():211] watching files in: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240621_170612-9e0kvfuq\files
+2024-06-21 17:06:13,571 INFO    SenderThread:27832 [sender.py:_start_run_threads():1124] run started: 9e0kvfuq with start time 1718978772.835434
+2024-06-21 17:06:13,627 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: check_version
+2024-06-21 17:06:13,627 DEBUG   SenderThread:27832 [sender.py:send_request():406] send_request: check_version
+2024-06-21 17:06:14,041 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: run_start
+2024-06-21 17:06:14,069 DEBUG   HandlerThread:27832 [system_info.py:__init__():26] System info init
+2024-06-21 17:06:14,069 DEBUG   HandlerThread:27832 [system_info.py:__init__():41] System info init done
+2024-06-21 17:06:14,070 INFO    HandlerThread:27832 [system_monitor.py:start():194] Starting system monitor
+2024-06-21 17:06:14,071 INFO    SystemMonitor:27832 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-21 17:06:14,071 INFO    HandlerThread:27832 [system_monitor.py:probe():214] Collecting system info
+2024-06-21 17:06:14,082 INFO    SystemMonitor:27832 [interfaces.py:start():190] Started cpu monitoring
+2024-06-21 17:06:14,082 DEBUG   HandlerThread:27832 [system_info.py:probe():150] Probing system
+2024-06-21 17:06:14,084 INFO    SystemMonitor:27832 [interfaces.py:start():190] Started disk monitoring
+2024-06-21 17:06:14,086 INFO    SystemMonitor:27832 [interfaces.py:start():190] Started memory monitoring
+2024-06-21 17:06:14,098 INFO    SystemMonitor:27832 [interfaces.py:start():190] Started network monitoring
+2024-06-21 17:06:14,110 DEBUG   HandlerThread:27832 [system_info.py:_probe_git():135] Probing git
+2024-06-21 17:06:14,322 DEBUG   HandlerThread:27832 [system_info.py:_probe_git():143] Probing git done
+2024-06-21 17:06:14,323 DEBUG   HandlerThread:27832 [system_info.py:probe():198] Probing system done
+2024-06-21 17:06:14,323 DEBUG   HandlerThread:27832 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.19045-SP0', 'python': '3.9.7', 'heartbeatAt': '2024-06-21T14:06:14.083068', 'startedAt': '2024-06-21T14:06:12.809703', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'C:/Users/Bella Perel/PycharmProjects/nlp_project_eilam/HumanChoicePrediction/StrategyTransfer.py', 'codePathLocal': 'StrategyTransfer.py', 'codePath': 'StrategyTransfer.py', 'git': {'remote': 'https://github.com/BellaPerel/HumanChoicePrediction.git', 'commit': 'a989666ed20b59d4ad75cd792bf8841f14eac238'}, 'email': '81310709+BellaPerel@users.noreply.github.com', 'root': 'C:/Users/Bella Perel/PycharmProjects/nlp_project_eilam/HumanChoicePrediction', 'host': 'LAPTOP-AJ1T6PPE', 'username': 'Bella Perel', 'executable': 'C:\\ProgramData\\Anaconda3\\envs\\Pokemon\\python.exe', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2803.0, 'min': 0.0, 'max': 2803.0}, 'cpu_freq_per_core': [{'current': 2803.0, 'min': 0.0, 'max': 2803.0}], 'disk': {'/': {'total': 475.69237899780273, 'used': 472.0032081604004}}, 'memory': {'total': 15.804008483886719}}
+2024-06-21 17:06:14,323 INFO    HandlerThread:27832 [system_monitor.py:probe():224] Finished collecting system info
+2024-06-21 17:06:14,323 INFO    HandlerThread:27832 [system_monitor.py:probe():227] Publishing system info
+2024-06-21 17:06:14,324 DEBUG   HandlerThread:27832 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-06-21 17:06:14,329 ERROR   HandlerThread:27832 [system_info.py:_save_conda():221] Error saving conda packages: [WinError 2] The system cannot find the file specified
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\site-packages\wandb\sdk\internal\system\system_info.py", line 214, in _save_conda
+    subprocess.call(
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\subprocess.py", line 349, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\subprocess.py", line 1420, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_bundle\pydev_monkey.py", line 575, in new_CreateProcess
+    return getattr(_subprocess, original_name)(app_name, patch_arg_str_win(cmd_line), *args)
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+2024-06-21 17:06:14,335 DEBUG   HandlerThread:27832 [system_info.py:_save_conda():222] Saving conda packages done
+2024-06-21 17:06:14,337 INFO    HandlerThread:27832 [system_monitor.py:probe():229] Finished publishing system info
+2024-06-21 17:06:14,397 DEBUG   SenderThread:27832 [sender.py:send():379] send: files
+2024-06-21 17:06:14,398 INFO    SenderThread:27832 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-06-21 17:06:14,591 INFO    Thread-21 :27832 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240621_170612-9e0kvfuq\files\wandb-metadata.json
+2024-06-21 17:06:14,592 INFO    Thread-21 :27832 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240621_170612-9e0kvfuq\files\conda-environment.yaml
+2024-06-21 17:06:15,241 INFO    wandb-upload_0:27832 [upload_job.py:push():131] Uploaded file C:\Users\BELLAP~1\AppData\Local\Temp\tmp3jknxu86wandb\rs7tb789-wandb-metadata.json
+2024-06-21 17:06:16,494 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: python_packages
+2024-06-21 17:06:16,494 DEBUG   SenderThread:27832 [sender.py:send_request():406] send_request: python_packages
+2024-06-21 17:06:16,495 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-21 17:06:16,497 DEBUG   SenderThread:27832 [sender.py:send_request():406] send_request: stop_status
+2024-06-21 17:06:16,506 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-21 17:06:16,596 INFO    Thread-21 :27832 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240621_170612-9e0kvfuq\files\requirements.txt
+2024-06-21 17:06:16,752 DEBUG   SenderThread:27832 [sender.py:send():379] send: telemetry
+2024-06-21 17:06:16,752 DEBUG   SenderThread:27832 [sender.py:send():379] send: config
+2024-06-21 17:06:16,753 DEBUG   SenderThread:27832 [sender.py:send():379] send: telemetry
+2024-06-21 17:06:16,753 DEBUG   SenderThread:27832 [sender.py:send():379] send: config
+2024-06-21 17:06:16,753 DEBUG   SenderThread:27832 [sender.py:send():379] send: config
+2024-06-21 17:06:16,754 DEBUG   SenderThread:27832 [sender.py:send():379] send: config
+2024-06-21 17:06:16,754 DEBUG   SenderThread:27832 [sender.py:send():379] send: config
+2024-06-21 17:06:16,754 DEBUG   SenderThread:27832 [sender.py:send():379] send: config
+2024-06-21 17:06:16,755 DEBUG   SenderThread:27832 [sender.py:send():379] send: config
+2024-06-21 17:06:17,610 INFO    Thread-21 :27832 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240621_170612-9e0kvfuq\files\output.log
+2024-06-21 17:06:18,786 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:06:23,841 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:06:28,861 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:06:31,511 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-21 17:06:31,512 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-21 17:06:31,513 DEBUG   SenderThread:27832 [sender.py:send_request():406] send_request: stop_status
+2024-06-21 17:06:34,775 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:06:39,793 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:06:44,831 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:06:45,874 INFO    Thread-21 :27832 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240621_170612-9e0kvfuq\files\config.yaml
+2024-06-21 17:06:46,522 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-21 17:06:46,536 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-21 17:06:46,537 DEBUG   SenderThread:27832 [sender.py:send_request():406] send_request: stop_status
+2024-06-21 17:06:50,897 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:06:55,950 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:07:00,975 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:07:01,532 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-21 17:07:01,543 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-21 17:07:01,543 DEBUG   SenderThread:27832 [sender.py:send_request():406] send_request: stop_status
+2024-06-21 17:07:06,861 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:07:11,897 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:07:14,100 DEBUG   SystemMonitor:27832 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-21 17:07:14,104 DEBUG   SenderThread:27832 [sender.py:send():379] send: stats
+2024-06-21 17:07:16,541 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-21 17:07:16,560 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-21 17:07:16,563 DEBUG   SenderThread:27832 [sender.py:send_request():406] send_request: stop_status
+2024-06-21 17:07:17,868 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:07:22,933 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:07:27,980 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:07:31,544 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-21 17:07:31,571 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-21 17:07:31,572 DEBUG   SenderThread:27832 [sender.py:send_request():406] send_request: stop_status
+2024-06-21 17:07:33,861 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:07:38,894 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:07:43,930 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:07:44,119 DEBUG   SenderThread:27832 [sender.py:send():379] send: stats
+2024-06-21 17:07:46,552 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-21 17:07:46,565 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-21 17:07:46,566 DEBUG   SenderThread:27832 [sender.py:send_request():406] send_request: stop_status
+2024-06-21 17:07:49,794 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:07:53,518 INFO    Thread-21 :27832 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240621_170612-9e0kvfuq\files\output.log
+2024-06-21 17:07:54,974 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:08:00,004 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:08:01,565 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-21 17:08:01,565 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-21 17:08:01,567 DEBUG   SenderThread:27832 [sender.py:send_request():406] send_request: stop_status
+2024-06-21 17:08:05,878 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:08:10,925 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:08:14,136 DEBUG   SenderThread:27832 [sender.py:send():379] send: stats
+2024-06-21 17:08:16,171 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:08:16,577 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-21 17:08:16,578 DEBUG   SenderThread:27832 [sender.py:send_request():406] send_request: stop_status
+2024-06-21 17:08:16,586 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-21 17:08:21,920 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:08:26,985 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:08:31,586 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-21 17:08:31,586 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-21 17:08:31,588 DEBUG   SenderThread:27832 [sender.py:send_request():406] send_request: stop_status
+2024-06-21 17:08:32,804 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:08:37,848 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:08:42,873 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:08:44,146 DEBUG   SenderThread:27832 [sender.py:send():379] send: stats
+2024-06-21 17:08:46,586 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-21 17:08:46,589 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-21 17:08:46,593 DEBUG   SenderThread:27832 [sender.py:send_request():406] send_request: stop_status
+2024-06-21 17:08:47,891 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:08:52,925 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:08:57,959 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:09:01,587 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-21 17:09:01,588 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-21 17:09:01,588 DEBUG   SenderThread:27832 [sender.py:send_request():406] send_request: stop_status
+2024-06-21 17:09:03,836 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:09:08,872 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:09:13,903 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:09:14,157 DEBUG   SenderThread:27832 [sender.py:send():379] send: stats
+2024-06-21 17:09:16,615 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-21 17:09:16,616 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-21 17:09:16,617 DEBUG   SenderThread:27832 [sender.py:send_request():406] send_request: stop_status
+2024-06-21 17:09:18,928 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:09:23,958 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:09:29,001 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:09:31,624 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-21 17:09:31,625 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-21 17:09:31,626 DEBUG   SenderThread:27832 [sender.py:send_request():406] send_request: stop_status
+2024-06-21 17:09:34,923 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:09:39,958 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:09:44,160 DEBUG   SenderThread:27832 [sender.py:send():379] send: stats
+2024-06-21 17:09:45,176 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:09:46,627 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-21 17:09:46,628 DEBUG   SenderThread:27832 [sender.py:send_request():406] send_request: stop_status
+2024-06-21 17:09:46,640 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-21 17:09:50,946 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:09:55,972 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:10:01,030 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:10:01,632 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-21 17:10:01,633 DEBUG   SenderThread:27832 [sender.py:send_request():406] send_request: stop_status
+2024-06-21 17:10:01,647 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-21 17:10:06,960 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:10:11,990 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:10:14,174 DEBUG   SenderThread:27832 [sender.py:send():379] send: stats
+2024-06-21 17:10:16,626 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-21 17:10:16,627 DEBUG   SenderThread:27832 [sender.py:send_request():406] send_request: stop_status
+2024-06-21 17:10:16,656 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-21 17:10:17,952 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:10:22,993 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:10:28,031 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:10:31,640 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-21 17:10:31,641 DEBUG   SenderThread:27832 [sender.py:send_request():406] send_request: stop_status
+2024-06-21 17:10:31,666 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-21 17:10:33,924 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:10:38,962 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:10:43,980 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:10:44,179 DEBUG   SenderThread:27832 [sender.py:send():379] send: stats
+2024-06-21 17:10:46,645 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-21 17:10:46,648 DEBUG   SenderThread:27832 [sender.py:send_request():406] send_request: stop_status
+2024-06-21 17:10:46,678 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-21 17:10:49,896 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:10:54,941 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:10:59,973 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:11:01,658 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-21 17:11:01,658 DEBUG   SenderThread:27832 [sender.py:send_request():406] send_request: stop_status
+2024-06-21 17:11:01,670 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-21 17:11:05,969 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:11:10,992 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:11:14,187 DEBUG   SenderThread:27832 [sender.py:send():379] send: stats
+2024-06-21 17:11:16,195 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:11:16,662 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-21 17:11:16,662 DEBUG   SenderThread:27832 [sender.py:send_request():406] send_request: stop_status
+2024-06-21 17:11:16,677 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-21 17:11:22,049 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:11:27,079 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:11:31,660 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-21 17:11:31,661 DEBUG   SenderThread:27832 [sender.py:send_request():406] send_request: stop_status
+2024-06-21 17:11:31,692 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-21 17:11:32,942 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:11:37,976 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:11:43,003 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:11:44,198 DEBUG   SenderThread:27832 [sender.py:send():379] send: stats
+2024-06-21 17:11:46,667 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-21 17:11:46,667 DEBUG   SenderThread:27832 [sender.py:send_request():406] send_request: stop_status
+2024-06-21 17:11:46,714 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-21 17:11:48,953 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:11:53,995 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:11:59,020 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:12:01,673 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-21 17:12:01,674 DEBUG   SenderThread:27832 [sender.py:send_request():406] send_request: stop_status
+2024-06-21 17:12:01,705 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-21 17:12:04,997 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:12:10,032 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:12:14,203 DEBUG   SenderThread:27832 [sender.py:send():379] send: stats
+2024-06-21 17:12:15,209 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:12:16,681 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-21 17:12:16,683 DEBUG   SenderThread:27832 [sender.py:send_request():406] send_request: stop_status
+2024-06-21 17:12:16,710 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-21 17:12:20,949 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:12:25,985 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:12:31,013 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:12:31,681 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-21 17:12:31,683 DEBUG   SenderThread:27832 [sender.py:send_request():406] send_request: stop_status
+2024-06-21 17:12:31,729 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-21 17:12:35,467 INFO    Thread-21 :27832 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240621_170612-9e0kvfuq\files\output.log
+2024-06-21 17:12:36,238 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:12:41,285 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:12:44,225 DEBUG   SenderThread:27832 [sender.py:send():379] send: stats
+2024-06-21 17:12:46,647 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:12:46,691 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-21 17:12:46,692 DEBUG   SenderThread:27832 [sender.py:send_request():406] send_request: stop_status
+2024-06-21 17:12:46,727 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-21 17:12:51,987 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:12:57,021 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:13:01,717 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-21 17:13:01,718 DEBUG   SenderThread:27832 [sender.py:send_request():406] send_request: stop_status
+2024-06-21 17:13:01,732 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-21 17:13:02,992 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:13:08,032 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:13:13,066 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:13:14,228 DEBUG   SenderThread:27832 [sender.py:send():379] send: stats
+2024-06-21 17:13:16,720 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-21 17:13:16,720 DEBUG   SenderThread:27832 [sender.py:send_request():406] send_request: stop_status
+2024-06-21 17:13:16,748 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-21 17:13:18,798 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:13:20,978 INFO    Thread-21 :27832 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240621_170612-9e0kvfuq\files\output.log
+2024-06-21 17:13:23,837 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:13:28,865 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:13:31,721 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-21 17:13:31,722 DEBUG   SenderThread:27832 [sender.py:send_request():406] send_request: stop_status
+2024-06-21 17:13:31,760 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-21 17:13:34,065 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:13:39,099 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:13:44,146 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:13:44,238 DEBUG   SenderThread:27832 [sender.py:send():379] send: stats
+2024-06-21 17:13:46,726 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-21 17:13:46,728 DEBUG   SenderThread:27832 [sender.py:send_request():406] send_request: stop_status
+2024-06-21 17:13:46,751 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-21 17:13:49,977 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:13:55,011 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:14:00,069 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:14:01,781 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-21 17:14:01,781 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-21 17:14:01,783 DEBUG   SenderThread:27832 [sender.py:send_request():406] send_request: stop_status
+2024-06-21 17:14:05,112 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:14:10,167 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:14:14,251 DEBUG   SenderThread:27832 [sender.py:send():379] send: stats
+2024-06-21 17:14:15,262 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:14:16,794 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-21 17:14:16,796 DEBUG   SenderThread:27832 [sender.py:send_request():406] send_request: stop_status
+2024-06-21 17:14:16,796 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-21 17:14:21,133 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:14:26,184 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:14:31,211 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:14:31,802 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-21 17:14:31,802 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-21 17:14:31,803 DEBUG   SenderThread:27832 [sender.py:send_request():406] send_request: stop_status
+2024-06-21 17:14:37,194 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:14:42,257 DEBUG   HandlerThread:27832 [handler.py:handle_request():146] handle_request: status_report
+2024-06-21 17:14:42,696 INFO    memory    :27832 [interfaces.py:monitor():140] Process proc.memory.rssMB has exited.
+2024-06-21 17:14:42,696 DEBUG   SystemMonitor:27832 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-21 17:14:42,697 DEBUG   SystemMonitor:27832 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-21 17:14:42,702 DEBUG   SenderThread:27832 [sender.py:send():379] send: stats
+2024-06-21 17:14:43,942 INFO    MainThread:27832 [internal.py:handle_exit():76] Internal process exited

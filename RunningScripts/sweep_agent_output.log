@@ -1,0 +1,40 @@
+wandb: Starting wandb agent \U0001f575\ufe0f
+2024-07-27 18:04:32,664 - wandb.wandb_agent - INFO - Running runs: []
+2024-07-27 18:04:33,031 - wandb.wandb_agent - INFO - Agent received command: run
+2024-07-27 18:04:33,031 - wandb.wandb_agent - INFO - Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: EFs
+	offline_train_test_datasets: key_word_tagging
+	seed: 0
+2024-07-27 18:04:33,032 - wandb.wandb_agent - INFO - About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=EFs --offline_train_test_datasets=key_word_tagging --seed=0
+python: can't open file 'C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\RunningScripts\StrategyTransfer.py': [Errno 2] No such file or directory
+2024-07-27 18:04:38,039 - wandb.wandb_agent - INFO - Running runs: ['0531kxc8']
+2024-07-27 18:04:38,040 - wandb.wandb_agent - INFO - Cleaning up finished run: 0531kxc8
+2024-07-27 18:04:38,412 - wandb.wandb_agent - INFO - Agent received command: run
+2024-07-27 18:04:38,412 - wandb.wandb_agent - INFO - Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: EFs
+	offline_train_test_datasets: key_word_tagging
+	seed: 2
+2024-07-27 18:04:38,414 - wandb.wandb_agent - INFO - About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=EFs --offline_train_test_datasets=key_word_tagging --seed=2
+python: can't open file 'C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\RunningScripts\StrategyTransfer.py': [Errno 2] No such file or directory
+2024-07-27 18:04:43,422 - wandb.wandb_agent - INFO - Running runs: ['a3w6wk3v']
+2024-07-27 18:04:43,422 - wandb.wandb_agent - INFO - Cleaning up finished run: a3w6wk3v
+2024-07-27 18:04:43,748 - wandb.wandb_agent - INFO - Agent received command: run
+2024-07-27 18:04:43,748 - wandb.wandb_agent - INFO - Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: EFs
+	offline_train_test_datasets: key_word_tagging
+	seed: 4
+2024-07-27 18:04:43,753 - wandb.wandb_agent - INFO - About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=EFs --offline_train_test_datasets=key_word_tagging --seed=4
+python: can't open file 'C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\RunningScripts\StrategyTransfer.py': [Errno 2] No such file or directory
+2024-07-27 18:04:48,770 - wandb.wandb_agent - INFO - Running runs: ['87gscj6d']
+2024-07-27 18:04:48,771 - wandb.wandb_agent - ERROR - Detected 3 failed runs in the first 60 seconds, shutting down.
+2024-07-27 18:04:48,771 - wandb.wandb_agent - INFO - To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+wandb: Terminating and syncing runs. Press ctrl-c to kill.

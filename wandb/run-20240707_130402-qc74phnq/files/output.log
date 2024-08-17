@@ -1,0 +1,110 @@
+wandb: WARNING Config item 'ENV_HPT_mode' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'seed' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'ENV_LEARNING_RATE' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'features' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'architecture' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'online_simulation_factor' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'offline_train_test_datasets' was locked by 'sweep' (ignored update).
+Start training the environment...
+Train:   2%|███                                                                                                                                                                                      | 38/2260 [00:00<00:34, 64.24it/s]
+################
+# Epoch 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Train: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉| 2259/2260 [01:01<00:00, 36.48it/s]
+
+
+
+
+
+
+
+
+Test: 642it [00:16, 37.90it/s]
+proba_accuracy_per_mean_user_and_bot:  0.8041431558973899
+accuracy_per_mean_user_and_bot:  0.8543418981608232
+################
+# Epoch 1
+################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Train: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉| 2259/2260 [01:07<00:00, 33.62it/s]
+
+
+
+
+
+
+
+
+Test: 642it [00:14, 43.21it/s]
+proba_accuracy_per_mean_user_and_bot:  0.8070800931339464
+accuracy_per_mean_user_and_bot:  0.8668924431684234
+################
+# Epoch 2
+################
+
+
+
+
+
+
+
+Train:  29%|██████████████████████████████████████████████████████                                                                                                                                  | 664/2260 [00:16<00:41, 38.45it/s]

@@ -1,0 +1,31 @@
+2024-07-07 11:37:12,526 INFO    MainThread:38948 [wandb_setup.py:_flush():76] Current SDK version is 0.16.5
+2024-07-07 11:37:12,526 INFO    MainThread:38948 [wandb_setup.py:_flush():76] Configure stats pid to 38948
+2024-07-07 11:37:12,526 INFO    MainThread:38948 [wandb_setup.py:_flush():76] Loading settings from C:\Users\Bella Perel\.config\wandb\settings
+2024-07-07 11:37:12,526 INFO    MainThread:38948 [wandb_setup.py:_flush():76] Loading settings from C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\settings
+2024-07-07 11:37:12,526 INFO    MainThread:38948 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'entity': 'bellatomer', 'project': 'NLP2024_PROJECT_BellaPerel', 'sweep_id': 'zov8tzzi', 'root_dir': 'C:\\Users\\Bella Perel\\PycharmProjects\\nlp_project_eilam\\HumanChoicePrediction', 'run_id': '2zmu3pig', 'sweep_param_path': 'C:\\Users\\Bella Perel\\PycharmProjects\\nlp_project_eilam\\HumanChoicePrediction\\wandb\\sweep-zov8tzzi\\config-2zmu3pig.yaml'}
+2024-07-07 11:37:12,526 INFO    MainThread:38948 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-07-07 11:37:12,526 INFO    MainThread:38948 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'StrategyTransfer.py', 'program_abspath': 'C:\\Users\\Bella Perel\\PycharmProjects\\nlp_project_eilam\\HumanChoicePrediction\\StrategyTransfer.py', 'program': 'C:\\Users\\Bella Perel\\PycharmProjects\\nlp_project_eilam\\HumanChoicePrediction\\StrategyTransfer.py'}
+2024-07-07 11:37:12,526 INFO    MainThread:38948 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-07-07 11:37:12,526 INFO    MainThread:38948 [wandb_init.py:_log_setup():527] Logging user logs to C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240707_113712-2zmu3pig\logs\debug.log
+2024-07-07 11:37:12,527 INFO    MainThread:38948 [wandb_init.py:_log_setup():528] Logging internal logs to C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240707_113712-2zmu3pig\logs\debug-internal.log
+2024-07-07 11:37:12,527 INFO    MainThread:38948 [wandb_init.py:init():567] calling init triggers
+2024-07-07 11:37:12,527 INFO    MainThread:38948 [wandb_init.py:init():574] wandb.init called with sweep_config: {'ENV_HPT_mode': False, 'ENV_LEARNING_RATE': 0.002, 'architecture': 'CNN', 'features': 'EFs', 'online_simulation_factor': 0, 'seed': 4}
+config: {}
+2024-07-07 11:37:12,527 INFO    MainThread:38948 [wandb_init.py:init():617] starting backend
+2024-07-07 11:37:12,527 INFO    MainThread:38948 [wandb_init.py:init():621] setting up manager
+2024-07-07 11:37:12,535 INFO    MainThread:38948 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-07-07 11:37:12,538 INFO    MainThread:38948 [wandb_init.py:init():629] backend started and connected
+2024-07-07 11:37:12,554 INFO    MainThread:38948 [wandb_run.py:_config_callback():1347] config_cb None None {'ENV_HPT_mode': False, 'ENV_LEARNING_RATE': 0.002, 'architecture': 'CNN', 'features': 'EFs', 'online_simulation_factor': 0, 'seed': 4}
+2024-07-07 11:37:12,554 INFO    MainThread:38948 [wandb_init.py:init():721] updated telemetry
+2024-07-07 11:37:12,593 INFO    MainThread:38948 [wandb_init.py:init():754] communicating run to backend with 90.0 second timeout
+2024-07-07 11:37:13,112 INFO    MainThread:38948 [wandb_run.py:_on_init():2344] communicating current version
+2024-07-07 11:37:13,392 INFO    MainThread:38948 [wandb_run.py:_on_init():2353] got version response upgrade_message: "wandb version 0.17.4 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-07-07 11:37:13,393 INFO    MainThread:38948 [wandb_init.py:init():805] starting run threads in backend
+2024-07-07 11:37:13,961 INFO    MainThread:38948 [wandb_run.py:_console_start():2323] atexit reg
+2024-07-07 11:37:13,961 INFO    MainThread:38948 [wandb_run.py:_redirect():2178] redirect: wrap_raw
+2024-07-07 11:37:13,961 INFO    MainThread:38948 [wandb_run.py:_redirect():2243] Wrapping output streams.
+2024-07-07 11:37:13,961 INFO    MainThread:38948 [wandb_run.py:_redirect():2268] Redirects installed.
+2024-07-07 11:37:13,962 INFO    MainThread:38948 [wandb_init.py:init():848] run started, returning control to user process
+2024-07-07 11:37:13,970 INFO    MainThread:38948 [wandb_run.py:_config_callback():1347] config_cb None None {'task': 'off_policy', 'loss_weight_type': 'None', 'save_artifacts': True, 'strategies': None, 'total_epochs': 25, 'hidden_dim': 32, 'layers': 2, 'transformer_nheads': 4, 'dropout': 0, 'human_train_size': 210, 'online_sim_type': 'before_epoch', 'basic_nature': 12, 'simulation_bot_per_user': 0, 'simulation_signal_error': 0.3, 'simulation_user_improve': 0.01, 'max_games': 4, 'zero_knowledge': True, 'bots_per_user': 6, 'SIMULATION_EFs_PATH': 'data/EFs_by_GPT35.csv', 'favorite_topic_method': 'review', 'agent': 'modelbasedRL', 'force_train': True, 'output_dim': 2, 'offline_simulation_size': 0, 'OFFLINE_SIM_DATA_PATH': 'data/LLM_games_personas.csv', 'personas_balanced': True, 'personas_group_number': -1, 'offline_train_test_datasets': 'key_word_tagging'}
+2024-07-07 11:37:19,814 WARNING MsgRouterThr:38948 [router.py:message_loop():77] message_loop has been closed

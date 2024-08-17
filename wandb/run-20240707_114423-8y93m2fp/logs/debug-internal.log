@@ -1,0 +1,188 @@
+2024-07-07 11:44:23,727 INFO    StreamThr :9088 [internal.py:wandb_internal():86] W&B internal server running at pid: 9088, started at: 2024-07-07 11:44:23.726980
+2024-07-07 11:44:23,728 DEBUG   HandlerThread:9088 [handler.py:handle_request():146] handle_request: status
+2024-07-07 11:44:23,744 INFO    WriterThread:9088 [datastore.py:open_for_write():87] open: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240707_114423-8y93m2fp\run-8y93m2fp.wandb
+2024-07-07 11:44:23,745 DEBUG   SenderThread:9088 [sender.py:send():379] send: header
+2024-07-07 11:44:23,785 DEBUG   SenderThread:9088 [sender.py:send():379] send: run
+2024-07-07 11:44:24,277 DEBUG   HandlerThread:9088 [handler.py:handle_request():146] handle_request: check_version
+2024-07-07 11:44:24,280 INFO    SenderThread:9088 [dir_watcher.py:__init__():211] watching files in: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240707_114423-8y93m2fp\files
+2024-07-07 11:44:24,280 INFO    SenderThread:9088 [sender.py:_start_run_threads():1124] run started: 8y93m2fp with start time 1720341863.727283
+2024-07-07 11:44:24,280 DEBUG   SenderThread:9088 [sender.py:send_request():406] send_request: check_version
+2024-07-07 11:44:24,653 DEBUG   HandlerThread:9088 [handler.py:handle_request():146] handle_request: run_start
+2024-07-07 11:44:24,664 DEBUG   HandlerThread:9088 [system_info.py:__init__():26] System info init
+2024-07-07 11:44:24,664 DEBUG   HandlerThread:9088 [system_info.py:__init__():41] System info init done
+2024-07-07 11:44:24,664 INFO    HandlerThread:9088 [system_monitor.py:start():194] Starting system monitor
+2024-07-07 11:44:24,666 INFO    SystemMonitor:9088 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-07 11:44:24,666 INFO    HandlerThread:9088 [system_monitor.py:probe():214] Collecting system info
+2024-07-07 11:44:24,672 INFO    SystemMonitor:9088 [interfaces.py:start():190] Started cpu monitoring
+2024-07-07 11:44:24,672 DEBUG   HandlerThread:9088 [system_info.py:probe():150] Probing system
+2024-07-07 11:44:24,673 INFO    SystemMonitor:9088 [interfaces.py:start():190] Started disk monitoring
+2024-07-07 11:44:24,674 INFO    SystemMonitor:9088 [interfaces.py:start():190] Started memory monitoring
+2024-07-07 11:44:24,682 INFO    SystemMonitor:9088 [interfaces.py:start():190] Started network monitoring
+2024-07-07 11:44:24,689 DEBUG   HandlerThread:9088 [system_info.py:_probe_git():135] Probing git
+2024-07-07 11:44:24,767 DEBUG   HandlerThread:9088 [system_info.py:_probe_git():143] Probing git done
+2024-07-07 11:44:24,767 DEBUG   HandlerThread:9088 [system_info.py:probe():198] Probing system done
+2024-07-07 11:44:24,767 DEBUG   HandlerThread:9088 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.19045-SP0', 'python': '3.9.19', 'heartbeatAt': '2024-07-07T08:44:24.673612', 'startedAt': '2024-07-07T08:44:23.710351', 'docker': None, 'cuda': None, 'args': ('--ENV_HPT_mode=False', '--ENV_LEARNING_RATE=0.002', '--architecture=LSTM', '--features=BERT', '--online_simulation_factor=0', '--seed=3'), 'state': 'running', 'program': 'C:\\Users\\Bella Perel\\PycharmProjects\\nlp_project_eilam\\HumanChoicePrediction\\StrategyTransfer.py', 'codePathLocal': 'StrategyTransfer.py', 'codePath': 'StrategyTransfer.py', 'git': {'remote': 'https://github.com/BellaPerel/HumanChoicePrediction.git', 'commit': '520285f25684dc9943c34677678e1c9e49b478ff'}, 'email': '81310709+BellaPerel@users.noreply.github.com', 'root': 'C:/Users/Bella Perel/PycharmProjects/nlp_project_eilam/HumanChoicePrediction', 'host': 'LAPTOP-AJ1T6PPE', 'username': 'Bella Perel', 'executable': 'C:\\ProgramData\\Anaconda3\\envs\\Pokemon\\python.exe', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2803.0, 'min': 0.0, 'max': 2803.0}, 'cpu_freq_per_core': [{'current': 2803.0, 'min': 0.0, 'max': 2803.0}], 'disk': {'/': {'total': 475.69237899780273, 'used': 473.21155548095703}}, 'memory': {'total': 15.804008483886719}}
+2024-07-07 11:44:24,767 INFO    HandlerThread:9088 [system_monitor.py:probe():224] Finished collecting system info
+2024-07-07 11:44:24,767 INFO    HandlerThread:9088 [system_monitor.py:probe():227] Publishing system info
+2024-07-07 11:44:24,768 DEBUG   HandlerThread:9088 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-07-07 11:44:24,770 ERROR   HandlerThread:9088 [system_info.py:_save_conda():221] Error saving conda packages: [WinError 2] The system cannot find the file specified
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\site-packages\wandb\sdk\internal\system\system_info.py", line 214, in _save_conda
+    subprocess.call(
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\subprocess.py", line 349, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\subprocess.py", line 1436, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+2024-07-07 11:44:24,772 DEBUG   HandlerThread:9088 [system_info.py:_save_conda():222] Saving conda packages done
+2024-07-07 11:44:24,773 INFO    HandlerThread:9088 [system_monitor.py:probe():229] Finished publishing system info
+2024-07-07 11:44:24,784 DEBUG   SenderThread:9088 [sender.py:send():379] send: files
+2024-07-07 11:44:24,785 INFO    SenderThread:9088 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-07-07 11:44:25,257 DEBUG   HandlerThread:9088 [handler.py:handle_request():146] handle_request: python_packages
+2024-07-07 11:44:25,258 DEBUG   SenderThread:9088 [sender.py:send_request():406] send_request: python_packages
+2024-07-07 11:44:25,259 DEBUG   HandlerThread:9088 [handler.py:handle_request():146] handle_request: stop_status
+2024-07-07 11:44:25,259 DEBUG   HandlerThread:9088 [handler.py:handle_request():146] handle_request: internal_messages
+2024-07-07 11:44:25,261 DEBUG   SenderThread:9088 [sender.py:send_request():406] send_request: stop_status
+2024-07-07 11:44:25,290 INFO    Thread-16 :9088 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240707_114423-8y93m2fp\files\conda-environment.yaml
+2024-07-07 11:44:25,290 INFO    Thread-16 :9088 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240707_114423-8y93m2fp\files\requirements.txt
+2024-07-07 11:44:25,290 INFO    Thread-16 :9088 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240707_114423-8y93m2fp\files\wandb-metadata.json
+2024-07-07 11:44:25,466 INFO    wandb-upload_0:9088 [upload_job.py:push():131] Uploaded file C:\Users\BELLAP~1\AppData\Local\Temp\tmp06irfhh3wandb\tj5244u9-wandb-metadata.json
+2024-07-07 11:44:25,517 DEBUG   SenderThread:9088 [sender.py:send():379] send: telemetry
+2024-07-07 11:44:25,522 DEBUG   SenderThread:9088 [sender.py:send():379] send: config
+2024-07-07 11:44:25,522 DEBUG   SenderThread:9088 [sender.py:send():379] send: exit
+2024-07-07 11:44:25,522 INFO    SenderThread:9088 [sender.py:send_exit():586] handling exit code: 1
+2024-07-07 11:44:25,522 INFO    SenderThread:9088 [sender.py:send_exit():588] handling runtime: 0
+2024-07-07 11:44:25,523 INFO    SenderThread:9088 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-07-07 11:44:25,523 INFO    SenderThread:9088 [sender.py:send_exit():594] send defer
+2024-07-07 11:44:25,525 DEBUG   HandlerThread:9088 [handler.py:handle_request():146] handle_request: defer
+2024-07-07 11:44:25,525 INFO    HandlerThread:9088 [handler.py:handle_request_defer():172] handle defer: 0
+2024-07-07 11:44:25,526 DEBUG   SenderThread:9088 [sender.py:send_request():406] send_request: defer
+2024-07-07 11:44:25,526 INFO    SenderThread:9088 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-07-07 11:44:25,526 INFO    SenderThread:9088 [sender.py:transition_state():614] send defer: 1
+2024-07-07 11:44:25,526 DEBUG   HandlerThread:9088 [handler.py:handle_request():146] handle_request: defer
+2024-07-07 11:44:25,526 INFO    HandlerThread:9088 [handler.py:handle_request_defer():172] handle defer: 1
+2024-07-07 11:44:25,527 DEBUG   SenderThread:9088 [sender.py:send_request():406] send_request: defer
+2024-07-07 11:44:25,527 INFO    SenderThread:9088 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-07-07 11:44:25,527 INFO    SenderThread:9088 [sender.py:transition_state():614] send defer: 2
+2024-07-07 11:44:25,527 DEBUG   HandlerThread:9088 [handler.py:handle_request():146] handle_request: defer
+2024-07-07 11:44:25,527 INFO    HandlerThread:9088 [handler.py:handle_request_defer():172] handle defer: 2
+2024-07-07 11:44:25,527 INFO    HandlerThread:9088 [system_monitor.py:finish():203] Stopping system monitor
+2024-07-07 11:44:25,527 INFO    HandlerThread:9088 [interfaces.py:finish():202] Joined cpu monitor
+2024-07-07 11:44:25,528 DEBUG   SystemMonitor:9088 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-07-07 11:44:25,528 INFO    HandlerThread:9088 [interfaces.py:finish():202] Joined disk monitor
+2024-07-07 11:44:25,528 DEBUG   SystemMonitor:9088 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-07-07 11:44:25,528 INFO    HandlerThread:9088 [interfaces.py:finish():202] Joined memory monitor
+2024-07-07 11:44:25,528 DEBUG   SystemMonitor:9088 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-07-07 11:44:25,529 INFO    HandlerThread:9088 [interfaces.py:finish():202] Joined network monitor
+2024-07-07 11:44:25,530 DEBUG   SenderThread:9088 [sender.py:send_request():406] send_request: defer
+2024-07-07 11:44:25,530 INFO    SenderThread:9088 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-07-07 11:44:25,530 INFO    SenderThread:9088 [sender.py:transition_state():614] send defer: 3
+2024-07-07 11:44:25,530 DEBUG   SenderThread:9088 [sender.py:send():379] send: stats
+2024-07-07 11:44:25,531 DEBUG   HandlerThread:9088 [handler.py:handle_request():146] handle_request: defer
+2024-07-07 11:44:25,531 INFO    HandlerThread:9088 [handler.py:handle_request_defer():172] handle defer: 3
+2024-07-07 11:44:25,532 DEBUG   SenderThread:9088 [sender.py:send_request():406] send_request: defer
+2024-07-07 11:44:25,532 INFO    SenderThread:9088 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-07-07 11:44:25,532 INFO    SenderThread:9088 [sender.py:transition_state():614] send defer: 4
+2024-07-07 11:44:25,532 DEBUG   HandlerThread:9088 [handler.py:handle_request():146] handle_request: defer
+2024-07-07 11:44:25,532 INFO    HandlerThread:9088 [handler.py:handle_request_defer():172] handle defer: 4
+2024-07-07 11:44:25,532 DEBUG   SenderThread:9088 [sender.py:send_request():406] send_request: defer
+2024-07-07 11:44:25,532 INFO    SenderThread:9088 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-07-07 11:44:25,532 INFO    SenderThread:9088 [sender.py:transition_state():614] send defer: 5
+2024-07-07 11:44:25,532 DEBUG   HandlerThread:9088 [handler.py:handle_request():146] handle_request: defer
+2024-07-07 11:44:25,532 INFO    HandlerThread:9088 [handler.py:handle_request_defer():172] handle defer: 5
+2024-07-07 11:44:25,533 DEBUG   SenderThread:9088 [sender.py:send():379] send: summary
+2024-07-07 11:44:25,533 INFO    SenderThread:9088 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-07-07 11:44:25,533 DEBUG   SenderThread:9088 [sender.py:send_request():406] send_request: defer
+2024-07-07 11:44:25,533 INFO    SenderThread:9088 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-07-07 11:44:25,534 INFO    SenderThread:9088 [sender.py:transition_state():614] send defer: 6
+2024-07-07 11:44:25,534 DEBUG   HandlerThread:9088 [handler.py:handle_request():146] handle_request: defer
+2024-07-07 11:44:25,534 INFO    HandlerThread:9088 [handler.py:handle_request_defer():172] handle defer: 6
+2024-07-07 11:44:25,534 DEBUG   SenderThread:9088 [sender.py:send_request():406] send_request: defer
+2024-07-07 11:44:25,534 INFO    SenderThread:9088 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-07-07 11:44:25,538 DEBUG   HandlerThread:9088 [handler.py:handle_request():146] handle_request: status_report
+2024-07-07 11:44:25,723 INFO    SenderThread:9088 [sender.py:transition_state():614] send defer: 7
+2024-07-07 11:44:25,723 DEBUG   HandlerThread:9088 [handler.py:handle_request():146] handle_request: defer
+2024-07-07 11:44:25,723 INFO    HandlerThread:9088 [handler.py:handle_request_defer():172] handle defer: 7
+2024-07-07 11:44:25,723 DEBUG   SenderThread:9088 [sender.py:send_request():406] send_request: defer
+2024-07-07 11:44:25,723 INFO    SenderThread:9088 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-07-07 11:44:26,279 DEBUG   HandlerThread:9088 [handler.py:handle_request():146] handle_request: poll_exit
+2024-07-07 11:44:26,295 INFO    Thread-16 :9088 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240707_114423-8y93m2fp\files\config.yaml
+2024-07-07 11:44:26,296 INFO    Thread-16 :9088 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240707_114423-8y93m2fp\files\output.log
+2024-07-07 11:44:26,297 INFO    Thread-16 :9088 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240707_114423-8y93m2fp\files\wandb-summary.json
+2024-07-07 11:44:27,532 INFO    SenderThread:9088 [sender.py:transition_state():614] send defer: 8
+2024-07-07 11:44:27,533 DEBUG   SenderThread:9088 [sender.py:send_request():406] send_request: poll_exit
+2024-07-07 11:44:27,534 DEBUG   HandlerThread:9088 [handler.py:handle_request():146] handle_request: defer
+2024-07-07 11:44:27,534 INFO    HandlerThread:9088 [handler.py:handle_request_defer():172] handle defer: 8
+2024-07-07 11:44:27,534 DEBUG   SenderThread:9088 [sender.py:send_request():406] send_request: defer
+2024-07-07 11:44:27,534 INFO    SenderThread:9088 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-07-07 11:44:27,534 INFO    SenderThread:9088 [sender.py:transition_state():614] send defer: 9
+2024-07-07 11:44:27,534 DEBUG   HandlerThread:9088 [handler.py:handle_request():146] handle_request: defer
+2024-07-07 11:44:27,534 INFO    HandlerThread:9088 [handler.py:handle_request_defer():172] handle defer: 9
+2024-07-07 11:44:27,534 DEBUG   SenderThread:9088 [sender.py:send_request():406] send_request: defer
+2024-07-07 11:44:27,534 INFO    SenderThread:9088 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-07-07 11:44:27,534 INFO    SenderThread:9088 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-07-07 11:44:28,309 DEBUG   HandlerThread:9088 [handler.py:handle_request():146] handle_request: poll_exit
+2024-07-07 11:44:28,325 INFO    SenderThread:9088 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240707_114423-8y93m2fp\files\output.log
+2024-07-07 11:44:28,325 INFO    SenderThread:9088 [dir_watcher.py:finish():388] scan: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240707_114423-8y93m2fp\files
+2024-07-07 11:44:28,326 INFO    SenderThread:9088 [dir_watcher.py:finish():402] scan save: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240707_114423-8y93m2fp\files\conda-environment.yaml conda-environment.yaml
+2024-07-07 11:44:28,326 INFO    SenderThread:9088 [dir_watcher.py:finish():402] scan save: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240707_114423-8y93m2fp\files\config.yaml config.yaml
+2024-07-07 11:44:28,326 INFO    SenderThread:9088 [dir_watcher.py:finish():402] scan save: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240707_114423-8y93m2fp\files\output.log output.log
+2024-07-07 11:44:28,327 INFO    SenderThread:9088 [dir_watcher.py:finish():402] scan save: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240707_114423-8y93m2fp\files\requirements.txt requirements.txt
+2024-07-07 11:44:28,333 INFO    SenderThread:9088 [dir_watcher.py:finish():402] scan save: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240707_114423-8y93m2fp\files\wandb-metadata.json wandb-metadata.json
+2024-07-07 11:44:28,334 INFO    SenderThread:9088 [dir_watcher.py:finish():402] scan save: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240707_114423-8y93m2fp\files\wandb-summary.json wandb-summary.json
+2024-07-07 11:44:28,339 INFO    SenderThread:9088 [sender.py:transition_state():614] send defer: 10
+2024-07-07 11:44:28,340 DEBUG   SenderThread:9088 [sender.py:send_request():406] send_request: poll_exit
+2024-07-07 11:44:28,340 DEBUG   HandlerThread:9088 [handler.py:handle_request():146] handle_request: defer
+2024-07-07 11:44:28,340 INFO    HandlerThread:9088 [handler.py:handle_request_defer():172] handle defer: 10
+2024-07-07 11:44:28,344 DEBUG   SenderThread:9088 [sender.py:send_request():406] send_request: defer
+2024-07-07 11:44:28,344 INFO    SenderThread:9088 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-07-07 11:44:28,344 INFO    SenderThread:9088 [file_pusher.py:finish():172] shutting down file pusher
+2024-07-07 11:44:28,773 INFO    wandb-upload_0:9088 [upload_job.py:push():131] Uploaded file C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240707_114423-8y93m2fp\files\config.yaml
+2024-07-07 11:44:28,857 INFO    wandb-upload_1:9088 [upload_job.py:push():131] Uploaded file C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240707_114423-8y93m2fp\files\output.log
+2024-07-07 11:44:28,865 INFO    wandb-upload_3:9088 [upload_job.py:push():131] Uploaded file C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240707_114423-8y93m2fp\files\wandb-summary.json
+2024-07-07 11:44:28,883 INFO    wandb-upload_2:9088 [upload_job.py:push():131] Uploaded file C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240707_114423-8y93m2fp\files\requirements.txt
+2024-07-07 11:44:29,088 INFO    Thread-15 :9088 [sender.py:transition_state():614] send defer: 11
+2024-07-07 11:44:29,089 DEBUG   HandlerThread:9088 [handler.py:handle_request():146] handle_request: defer
+2024-07-07 11:44:29,089 INFO    HandlerThread:9088 [handler.py:handle_request_defer():172] handle defer: 11
+2024-07-07 11:44:29,090 DEBUG   SenderThread:9088 [sender.py:send_request():406] send_request: defer
+2024-07-07 11:44:29,090 INFO    SenderThread:9088 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-07-07 11:44:29,090 INFO    SenderThread:9088 [file_pusher.py:join():178] waiting for file pusher
+2024-07-07 11:44:29,091 INFO    SenderThread:9088 [sender.py:transition_state():614] send defer: 12
+2024-07-07 11:44:29,092 DEBUG   HandlerThread:9088 [handler.py:handle_request():146] handle_request: defer
+2024-07-07 11:44:29,092 INFO    HandlerThread:9088 [handler.py:handle_request_defer():172] handle defer: 12
+2024-07-07 11:44:29,092 DEBUG   SenderThread:9088 [sender.py:send_request():406] send_request: defer
+2024-07-07 11:44:29,092 INFO    SenderThread:9088 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-07-07 11:44:29,092 INFO    SenderThread:9088 [file_stream.py:finish():614] file stream finish called
+2024-07-07 11:44:29,285 INFO    SenderThread:9088 [file_stream.py:finish():618] file stream finish is done
+2024-07-07 11:44:29,286 INFO    SenderThread:9088 [sender.py:transition_state():614] send defer: 13
+2024-07-07 11:44:29,286 DEBUG   HandlerThread:9088 [handler.py:handle_request():146] handle_request: defer
+2024-07-07 11:44:29,286 INFO    HandlerThread:9088 [handler.py:handle_request_defer():172] handle defer: 13
+2024-07-07 11:44:29,287 DEBUG   SenderThread:9088 [sender.py:send_request():406] send_request: defer
+2024-07-07 11:44:29,287 INFO    SenderThread:9088 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-07-07 11:44:29,287 INFO    SenderThread:9088 [sender.py:transition_state():614] send defer: 14
+2024-07-07 11:44:29,288 DEBUG   HandlerThread:9088 [handler.py:handle_request():146] handle_request: defer
+2024-07-07 11:44:29,288 DEBUG   SenderThread:9088 [sender.py:send():379] send: final
+2024-07-07 11:44:29,288 INFO    HandlerThread:9088 [handler.py:handle_request_defer():172] handle defer: 14
+2024-07-07 11:44:29,288 DEBUG   SenderThread:9088 [sender.py:send():379] send: footer
+2024-07-07 11:44:29,290 DEBUG   SenderThread:9088 [sender.py:send_request():406] send_request: defer
+2024-07-07 11:44:29,290 INFO    SenderThread:9088 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-07-07 11:44:29,291 DEBUG   HandlerThread:9088 [handler.py:handle_request():146] handle_request: poll_exit
+2024-07-07 11:44:29,292 DEBUG   SenderThread:9088 [sender.py:send_request():406] send_request: poll_exit
+2024-07-07 11:44:29,294 DEBUG   HandlerThread:9088 [handler.py:handle_request():146] handle_request: poll_exit
+2024-07-07 11:44:29,294 DEBUG   HandlerThread:9088 [handler.py:handle_request():146] handle_request: server_info
+2024-07-07 11:44:29,294 DEBUG   HandlerThread:9088 [handler.py:handle_request():146] handle_request: get_summary
+2024-07-07 11:44:29,295 DEBUG   SenderThread:9088 [sender.py:send_request():406] send_request: poll_exit
+2024-07-07 11:44:29,295 DEBUG   HandlerThread:9088 [handler.py:handle_request():146] handle_request: sampled_history
+2024-07-07 11:44:29,296 DEBUG   SenderThread:9088 [sender.py:send_request():406] send_request: server_info
+2024-07-07 11:44:29,296 DEBUG   HandlerThread:9088 [handler.py:handle_request():146] handle_request: internal_messages
+2024-07-07 11:44:29,479 INFO    MainThread:9088 [wandb_run.py:_footer_history_summary_info():3920] rendering history
+2024-07-07 11:44:29,479 INFO    MainThread:9088 [wandb_run.py:_footer_history_summary_info():3952] rendering summary
+2024-07-07 11:44:29,479 INFO    MainThread:9088 [wandb_run.py:_footer_sync_info():3879] logging synced files
+2024-07-07 11:44:29,482 DEBUG   HandlerThread:9088 [handler.py:handle_request():146] handle_request: shutdown
+2024-07-07 11:44:29,482 INFO    HandlerThread:9088 [handler.py:finish():866] shutting down handler
+2024-07-07 11:44:30,298 INFO    WriterThread:9088 [datastore.py:close():296] close: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240707_114423-8y93m2fp\run-8y93m2fp.wandb
+2024-07-07 11:44:30,485 INFO    SenderThread:9088 [sender.py:finish():1546] shutting down sender
+2024-07-07 11:44:30,485 INFO    SenderThread:9088 [file_pusher.py:finish():172] shutting down file pusher
+2024-07-07 11:44:30,485 INFO    SenderThread:9088 [file_pusher.py:join():178] waiting for file pusher

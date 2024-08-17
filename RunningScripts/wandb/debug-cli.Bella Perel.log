@@ -1,0 +1,583 @@
+2024-07-05 20:52:46 INFO Running runs: []
+2024-07-05 20:52:47 INFO Agent received command: run
+2024-07-05 20:52:47 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	architecture: CNN
+	features: EFs
+	online_simulation_factor: 0
+	seed: 1
+2024-07-05 20:52:47 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --architecture=CNN --features=EFs --online_simulation_factor=0 --seed=1
+2024-07-05 20:52:52 INFO Running runs: ['e2keg8ye']
+2024-07-05 20:52:52 INFO Cleaning up finished run: e2keg8ye
+2024-07-05 20:52:57 INFO Running runs: []
+2024-07-05 21:52:48 INFO Agent received command: run
+2024-07-05 21:52:48 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	architecture: CNN
+	features: EFs
+	online_simulation_factor: 0
+	seed: 1
+2024-07-05 21:52:48 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --architecture=CNN --features=EFs --online_simulation_factor=0 --seed=1
+2024-07-05 21:52:53 INFO Running runs: ['e2keg8ye']
+2024-07-05 21:52:53 INFO Cleaning up finished run: e2keg8ye
+2024-07-05 21:52:59 INFO Running runs: []
+2024-07-05 22:52:50 INFO Agent received command: run
+2024-07-05 22:52:50 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	architecture: CNN
+	features: EFs
+	online_simulation_factor: 0
+	seed: 1
+2024-07-05 22:52:50 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --architecture=CNN --features=EFs --online_simulation_factor=0 --seed=1
+2024-07-05 22:52:55 INFO Running runs: ['e2keg8ye']
+2024-07-05 22:52:55 INFO Cleaning up finished run: e2keg8ye
+2024-07-05 22:53:00 INFO Running runs: []
+2024-07-05 23:52:52 INFO Agent received command: run
+2024-07-05 23:52:52 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	architecture: CNN
+	features: EFs
+	online_simulation_factor: 0
+	seed: 1
+2024-07-05 23:52:52 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --architecture=CNN --features=EFs --online_simulation_factor=0 --seed=1
+2024-07-05 23:52:57 INFO Running runs: ['e2keg8ye']
+2024-07-05 23:52:57 INFO Cleaning up finished run: e2keg8ye
+2024-07-05 23:53:02 INFO Running runs: []
+2024-07-06 00:52:56 INFO Agent received command: run
+2024-07-06 00:52:56 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	architecture: CNN
+	features: EFs
+	online_simulation_factor: 0
+	seed: 1
+2024-07-06 00:52:56 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --architecture=CNN --features=EFs --online_simulation_factor=0 --seed=1
+2024-07-06 00:53:01 INFO Running runs: ['e2keg8ye']
+2024-07-06 00:53:01 ERROR Detected 5 failed runs in a row, shutting down.
+2024-07-06 00:53:01 INFO To change this value set WANDB_AGENT_MAX_INITIAL_FAILURES=val
+2024-07-06 15:51:02 INFO Running runs: []
+2024-07-06 15:51:02 INFO Agent received command: run
+2024-07-06 15:51:02 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	architecture: CNN
+	features: EFs
+	online_simulation_factor: 0
+	seed: 1
+2024-07-06 15:51:02 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --architecture=CNN --features=EFs --online_simulation_factor=0 --seed=1
+2024-07-06 15:51:07 INFO Running runs: ['owcvh1hb']
+2024-07-06 15:51:07 INFO Cleaning up finished run: owcvh1hb
+2024-07-06 15:51:12 INFO Running runs: []
+2024-07-06 15:52:39 INFO Running runs: []
+2024-07-06 15:52:40 INFO Agent received command: run
+2024-07-06 15:52:40 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	architecture: CNN
+	features: EFs
+	online_simulation_factor: 0
+	seed: 1
+2024-07-06 15:52:40 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --architecture=CNN --features=EFs --online_simulation_factor=0 --seed=1
+2024-07-06 15:52:45 INFO Running runs: ['wzpiycxq']
+2024-07-06 15:52:45 INFO Cleaning up finished run: wzpiycxq
+2024-07-06 15:52:50 INFO Running runs: []
+2024-07-06 16:52:54 INFO Agent received command: exit
+2024-07-06 16:52:54 INFO Received exit command. Killing runs and quitting.
+2024-07-06 18:53:16 INFO Running runs: []
+2024-07-06 18:53:16 INFO Agent received command: run
+2024-07-06 18:53:16 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 1e-05
+	architecture: CNN
+	features: EFs
+	online_simulation_factor: 0
+	seed: 0
+2024-07-06 18:53:16 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=1e-05 --architecture=CNN --features=EFs --online_simulation_factor=0 --seed=0
+2024-07-06 18:53:21 INFO Running runs: ['xmxgiwye']
+2024-07-06 18:53:21 INFO Cleaning up finished run: xmxgiwye
+2024-07-06 18:53:22 INFO Agent received command: run
+2024-07-06 18:53:22 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 1e-05
+	architecture: CNN
+	features: EFs
+	online_simulation_factor: 0
+	seed: 1
+2024-07-06 18:53:22 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=1e-05 --architecture=CNN --features=EFs --online_simulation_factor=0 --seed=1
+2024-07-06 18:53:27 INFO Running runs: ['kjwjnjah']
+2024-07-06 18:53:27 INFO Cleaning up finished run: kjwjnjah
+2024-07-06 18:53:28 INFO Agent received command: run
+2024-07-06 18:53:28 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 1e-05
+	architecture: CNN
+	features: EFs
+	online_simulation_factor: 0
+	seed: 3
+2024-07-06 18:53:28 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=1e-05 --architecture=CNN --features=EFs --online_simulation_factor=0 --seed=3
+2024-07-06 18:53:33 INFO Running runs: ['ia7abjgl']
+2024-07-06 18:53:33 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2024-07-06 18:53:33 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2024-07-07 12:30:08 INFO Running runs: []
+2024-07-07 12:30:08 INFO Agent received command: run
+2024-07-07 12:30:08 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: EFs
+	offline_train_test_datasets: LLM_tagged
+	online_simulation_factor: 0
+	seed: 0
+2024-07-07 12:30:08 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=EFs --offline_train_test_datasets=LLM_tagged --online_simulation_factor=0 --seed=0
+2024-07-07 12:30:14 INFO Running runs: ['gbx48s5f']
+2024-07-07 12:30:14 INFO Cleaning up finished run: gbx48s5f
+2024-07-07 12:30:19 INFO Running runs: []
+2024-07-07 12:33:27 INFO Running runs: []
+2024-07-07 12:33:27 INFO Agent received command: run
+2024-07-07 12:33:27 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: EFs
+	offline_train_test_datasets: LLM_tagged
+	online_simulation_factor: 0
+	seed: 0
+2024-07-07 12:33:27 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=EFs --offline_train_test_datasets=LLM_tagged --online_simulation_factor=0 --seed=0
+2024-07-07 12:33:32 INFO Running runs: ['iixw8gpv']
+2024-07-07 12:33:32 INFO Cleaning up finished run: iixw8gpv
+2024-07-07 12:33:38 INFO Running runs: []
+2024-07-07 12:40:51 INFO Running runs: []
+2024-07-07 12:40:51 INFO Agent received command: run
+2024-07-07 12:40:51 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: EFs
+	offline_train_test_datasets: LLM_tagged
+	online_simulation_factor: 0
+	seed: 0
+2024-07-07 12:40:51 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=EFs --offline_train_test_datasets=LLM_tagged --online_simulation_factor=0 --seed=0
+2024-07-07 12:40:56 INFO Running runs: ['irouxc8i']
+2024-07-07 12:40:56 INFO Cleaning up finished run: irouxc8i
+2024-07-07 12:41:01 INFO Running runs: []
+2024-07-07 12:55:18 INFO Running runs: []
+2024-07-07 12:55:19 INFO Agent received command: run
+2024-07-07 12:55:19 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: EFs
+	offline_train_test_datasets: LLM_tagged
+	online_simulation_factor: 0
+	seed: 0
+2024-07-07 12:55:19 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=EFs --offline_train_test_datasets=LLM_tagged --online_simulation_factor=0 --seed=0
+2024-07-07 12:55:24 INFO Running runs: ['podl0ryh']
+2024-07-07 12:55:24 INFO Cleaning up finished run: podl0ryh
+2024-07-07 12:55:29 INFO Running runs: []
+2024-07-07 13:00:11 INFO Running runs: []
+2024-07-07 13:00:11 INFO Agent received command: run
+2024-07-07 13:00:11 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: EFs
+	online_simulation_factor: 0
+	seed: 0
+2024-07-07 13:00:11 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=EFs --online_simulation_factor=0 --seed=0
+2024-07-07 13:00:16 INFO Running runs: ['7l89ts76']
+2024-07-07 13:00:16 INFO Cleaning up finished run: 7l89ts76
+2024-07-07 13:00:21 INFO Running runs: []
+2024-07-07 13:03:49 INFO Running runs: []
+2024-07-07 13:03:49 INFO Agent received command: run
+2024-07-07 13:03:49 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: EFs
+	offline_train_test_datasets: key_word_tagging
+	online_simulation_factor: 0
+	seed: 0
+2024-07-07 13:03:49 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=EFs --offline_train_test_datasets=key_word_tagging --online_simulation_factor=0 --seed=0
+2024-07-07 13:03:54 INFO Running runs: ['otqr6ijr']
+2024-07-07 13:03:54 INFO Cleaning up finished run: otqr6ijr
+2024-07-07 13:03:55 INFO Agent received command: run
+2024-07-07 13:03:55 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: EFs
+	offline_train_test_datasets: key_word_tagging
+	online_simulation_factor: 0
+	seed: 2
+2024-07-07 13:03:55 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=EFs --offline_train_test_datasets=key_word_tagging --online_simulation_factor=0 --seed=2
+2024-07-07 13:04:00 INFO Running runs: ['0lc11ogv']
+2024-07-07 13:04:00 INFO Cleaning up finished run: 0lc11ogv
+2024-07-07 13:04:00 INFO Agent received command: run
+2024-07-07 13:04:00 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: EFs
+	offline_train_test_datasets: LLM_tagged
+	online_simulation_factor: 0
+	seed: 0
+2024-07-07 13:04:00 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=EFs --offline_train_test_datasets=LLM_tagged --online_simulation_factor=0 --seed=0
+2024-07-07 13:04:05 INFO Running runs: ['x05m3gpi']
+2024-07-07 13:04:05 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2024-07-07 13:04:05 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2024-07-07 13:07:27 INFO Running runs: []
+2024-07-07 13:07:27 INFO Agent received command: run
+2024-07-07 13:07:27 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: EFs
+	offline_train_test_datasets: LLM_tagged
+	online_simulation_factor: 0
+	seed: 0
+2024-07-07 13:07:27 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=EFs --offline_train_test_datasets=LLM_tagged --online_simulation_factor=0 --seed=0
+2024-07-07 13:07:32 INFO Running runs: ['uv7c8dc1']
+2024-07-07 13:07:32 INFO Cleaning up finished run: uv7c8dc1
+2024-07-07 13:07:33 INFO Agent received command: run
+2024-07-07 13:07:33 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: EFs
+	offline_train_test_datasets: LLM_tagged
+	online_simulation_factor: 0
+	seed: 2
+2024-07-07 13:07:33 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=EFs --offline_train_test_datasets=LLM_tagged --online_simulation_factor=0 --seed=2
+2024-07-07 13:07:38 INFO Running runs: ['ksi27bxr']
+2024-07-07 13:07:38 INFO Cleaning up finished run: ksi27bxr
+2024-07-07 13:07:38 INFO Agent received command: run
+2024-07-07 13:07:38 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: GPT4
+	offline_train_test_datasets: LLM_tagged
+	online_simulation_factor: 0
+	seed: 0
+2024-07-07 13:07:38 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=GPT4 --offline_train_test_datasets=LLM_tagged --online_simulation_factor=0 --seed=0
+2024-07-07 13:07:43 INFO Running runs: ['lw4xzhuh']
+2024-07-07 13:07:43 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2024-07-07 13:07:43 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2024-07-07 13:25:01 INFO Running runs: []
+2024-07-07 13:25:01 INFO Agent received command: run
+2024-07-07 13:25:01 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: EFs
+	offline_train_test_datasets: key_word_tagging
+	online_simulation_factor: 0
+	seed: 0
+2024-07-07 13:25:01 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=EFs --offline_train_test_datasets=key_word_tagging --online_simulation_factor=0 --seed=0
+2024-07-07 13:25:06 INFO Running runs: ['iab2q3ei']
+2024-07-07 13:25:06 INFO Cleaning up finished run: iab2q3ei
+2024-07-07 13:25:06 INFO Agent received command: run
+2024-07-07 13:25:06 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: EFs
+	offline_train_test_datasets: key_word_tagging
+	online_simulation_factor: 0
+	seed: 2
+2024-07-07 13:25:06 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=EFs --offline_train_test_datasets=key_word_tagging --online_simulation_factor=0 --seed=2
+2024-07-07 13:25:11 INFO Running runs: ['y2mincvi']
+2024-07-07 13:25:11 INFO Cleaning up finished run: y2mincvi
+2024-07-07 13:25:12 INFO Agent received command: run
+2024-07-07 13:25:12 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: EFs
+	offline_train_test_datasets: transformer_tagged
+	online_simulation_factor: 0
+	seed: 0
+2024-07-07 13:25:12 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=EFs --offline_train_test_datasets=transformer_tagged --online_simulation_factor=0 --seed=0
+2024-07-07 13:25:17 INFO Running runs: ['fm405sxw']
+2024-07-07 13:25:17 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2024-07-07 13:25:17 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2024-07-13 11:11:53 INFO Running runs: []
+2024-07-13 11:11:54 INFO Agent received command: run
+2024-07-13 11:11:54 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: EFs
+	offline_train_test_datasets: original_data
+	online_simulation_factor: 0
+	seed: 0
+2024-07-13 11:11:54 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=EFs --offline_train_test_datasets=original_data --online_simulation_factor=0 --seed=0
+2024-07-13 11:11:59 INFO Running runs: ['uqbmj88v']
+2024-07-13 11:11:59 INFO Cleaning up finished run: uqbmj88v
+2024-07-13 11:11:59 INFO Agent received command: run
+2024-07-13 11:11:59 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: EFs
+	offline_train_test_datasets: original_data
+	online_simulation_factor: 0
+	seed: 2
+2024-07-13 11:11:59 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=EFs --offline_train_test_datasets=original_data --online_simulation_factor=0 --seed=2
+2024-07-13 11:12:04 INFO Running runs: ['7a6jabz4']
+2024-07-13 11:12:04 INFO Cleaning up finished run: 7a6jabz4
+2024-07-13 11:12:09 INFO Running runs: []
+2024-07-13 12:49:04 INFO Running runs: []
+2024-07-13 12:49:05 INFO Agent received command: run
+2024-07-13 12:49:05 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: EFs
+	offline_train_test_datasets: original_data
+	online_simulation_factor: 0
+	seed: 0
+2024-07-13 12:49:05 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=EFs --offline_train_test_datasets=original_data --online_simulation_factor=0 --seed=0
+2024-07-13 12:49:10 INFO Running runs: ['izw6fveh']
+2024-07-13 12:49:10 INFO Cleaning up finished run: izw6fveh
+2024-07-13 12:49:10 INFO Agent received command: run
+2024-07-13 12:49:10 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: EFs
+	offline_train_test_datasets: original_data
+	online_simulation_factor: 0
+	seed: 2
+2024-07-13 12:49:10 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=EFs --offline_train_test_datasets=original_data --online_simulation_factor=0 --seed=2
+2024-07-13 12:49:15 INFO Running runs: ['ozscndvz']
+2024-07-13 12:49:15 INFO Cleaning up finished run: ozscndvz
+2024-07-13 12:49:16 INFO Agent received command: run
+2024-07-13 12:49:16 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: EFs
+	offline_train_test_datasets: original_data
+	online_simulation_factor: 0
+	seed: 4
+2024-07-13 12:49:16 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=EFs --offline_train_test_datasets=original_data --online_simulation_factor=0 --seed=4
+2024-07-13 12:49:21 INFO Running runs: ['emf51c26']
+2024-07-13 12:49:21 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2024-07-13 12:49:21 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2024-07-13 13:08:35 INFO Running runs: []
+2024-07-13 13:08:35 INFO Agent received command: run
+2024-07-13 13:08:35 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: EFs
+	offline_train_test_datasets: original_data
+	online_simulation_factor: 0
+	seed: 0
+2024-07-13 13:08:35 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=EFs --offline_train_test_datasets=original_data --online_simulation_factor=0 --seed=0
+2024-07-13 13:08:40 INFO Running runs: ['1dm77ryl']
+2024-07-13 13:08:40 INFO Cleaning up finished run: 1dm77ryl
+2024-07-13 13:08:41 INFO Agent received command: run
+2024-07-13 13:08:41 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: EFs
+	offline_train_test_datasets: original_data
+	online_simulation_factor: 0
+	seed: 2
+2024-07-13 13:08:41 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=EFs --offline_train_test_datasets=original_data --online_simulation_factor=0 --seed=2
+2024-07-13 13:08:46 INFO Running runs: ['lp5e7gut']
+2024-07-13 13:08:46 INFO Cleaning up finished run: lp5e7gut
+2024-07-13 13:08:47 INFO Agent received command: run
+2024-07-13 13:08:47 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: EFs
+	offline_train_test_datasets: original_data
+	online_simulation_factor: 0
+	seed: 4
+2024-07-13 13:08:47 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=EFs --offline_train_test_datasets=original_data --online_simulation_factor=0 --seed=4
+2024-07-13 13:08:52 INFO Running runs: ['3t9iiq80']
+2024-07-13 13:08:52 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2024-07-13 13:08:52 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2024-07-22 21:43:39 INFO Running runs: []
+2024-07-22 21:43:39 INFO Agent received command: run
+2024-07-22 21:43:39 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: EFs
+	offline_train_test_datasets: key_word_tagging
+	online_simulation_factor: 0
+	seed: 0
+2024-07-22 21:43:39 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=EFs --offline_train_test_datasets=key_word_tagging --online_simulation_factor=0 --seed=0
+2024-07-22 21:43:44 INFO Running runs: ['ldupkacj']
+2024-07-22 21:43:44 INFO Cleaning up finished run: ldupkacj
+2024-07-22 21:43:44 INFO Agent received command: run
+2024-07-22 21:43:44 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: EFs
+	offline_train_test_datasets: key_word_tagging
+	online_simulation_factor: 0
+	seed: 2
+2024-07-22 21:43:44 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=EFs --offline_train_test_datasets=key_word_tagging --online_simulation_factor=0 --seed=2
+2024-07-22 21:43:49 INFO Running runs: ['hthxu8u6']
+2024-07-22 21:43:49 INFO Cleaning up finished run: hthxu8u6
+2024-07-22 21:43:50 INFO Agent received command: run
+2024-07-22 21:43:50 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: EFs
+	offline_train_test_datasets: key_word_tagging
+	online_simulation_factor: 0
+	seed: 4
+2024-07-22 21:43:50 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=EFs --offline_train_test_datasets=key_word_tagging --online_simulation_factor=0 --seed=4
+2024-07-22 21:43:55 INFO Running runs: ['s07igemv']
+2024-07-22 21:43:55 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2024-07-22 21:43:55 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2024-07-23 20:20:20 INFO Running runs: []
+2024-07-23 20:20:20 INFO Agent received command: run
+2024-07-23 20:20:20 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: EFs
+	offline_train_test_datasets: key_word_tagging
+	online_simulation_factor: 0
+	seed: 0
+2024-07-23 20:20:20 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=EFs --offline_train_test_datasets=key_word_tagging --online_simulation_factor=0 --seed=0
+2024-07-23 20:20:25 INFO Running runs: ['4fg53sgx']
+2024-07-23 20:20:25 INFO Cleaning up finished run: 4fg53sgx
+2024-07-23 20:20:26 INFO Agent received command: run
+2024-07-23 20:20:26 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: EFs
+	offline_train_test_datasets: key_word_tagging
+	online_simulation_factor: 0
+	seed: 2
+2024-07-23 20:20:26 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=EFs --offline_train_test_datasets=key_word_tagging --online_simulation_factor=0 --seed=2
+2024-07-23 20:20:31 INFO Running runs: ['0z2hr16k']
+2024-07-23 20:20:31 INFO Cleaning up finished run: 0z2hr16k
+2024-07-23 20:20:31 INFO Agent received command: run
+2024-07-23 20:20:31 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: EFs
+	offline_train_test_datasets: key_word_tagging
+	online_simulation_factor: 0
+	seed: 4
+2024-07-23 20:20:31 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=EFs --offline_train_test_datasets=key_word_tagging --online_simulation_factor=0 --seed=4
+2024-07-23 20:20:36 INFO Running runs: ['zszjhnle']
+2024-07-23 20:20:36 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2024-07-23 20:20:36 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2024-07-23 20:26:08 INFO Running runs: []
+2024-07-23 20:26:09 INFO Agent received command: run
+2024-07-23 20:26:09 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: EFs
+	offline_train_test_datasets: key_word_tagging
+	seed: 0
+2024-07-23 20:26:09 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=EFs --offline_train_test_datasets=key_word_tagging --seed=0
+2024-07-23 20:26:14 INFO Running runs: ['3da01bpw']
+2024-07-23 20:26:14 INFO Cleaning up finished run: 3da01bpw
+2024-07-23 20:26:14 INFO Agent received command: run
+2024-07-23 20:26:14 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: EFs
+	offline_train_test_datasets: key_word_tagging
+	seed: 2
+2024-07-23 20:26:14 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=EFs --offline_train_test_datasets=key_word_tagging --seed=2
+2024-07-23 20:26:19 INFO Running runs: ['xsjmjdpq']
+2024-07-23 20:26:19 INFO Cleaning up finished run: xsjmjdpq
+2024-07-23 20:26:19 INFO Agent received command: run
+2024-07-23 20:26:19 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: EFs
+	offline_train_test_datasets: key_word_tagging
+	seed: 4
+2024-07-23 20:26:19 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=EFs --offline_train_test_datasets=key_word_tagging --seed=4
+2024-07-23 20:26:24 INFO Running runs: ['rpo195rq']
+2024-07-23 20:26:24 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2024-07-23 20:26:24 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2024-07-27 12:19:17 INFO Running runs: []
+2024-07-27 12:19:18 INFO Agent received command: run
+2024-07-27 12:19:18 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: EFs
+	offline_train_test_datasets: key_word_tagging
+	seed: 0
+2024-07-27 12:19:18 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=EFs --offline_train_test_datasets=key_word_tagging --seed=0
+2024-07-27 12:19:23 INFO Running runs: ['5n99wob2']
+2024-07-27 12:19:23 INFO Cleaning up finished run: 5n99wob2
+2024-07-27 12:19:23 INFO Agent received command: run
+2024-07-27 12:19:23 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: EFs
+	offline_train_test_datasets: key_word_tagging
+	seed: 2
+2024-07-27 12:19:23 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=EFs --offline_train_test_datasets=key_word_tagging --seed=2
+2024-07-27 12:19:28 INFO Running runs: ['06yty6wj']
+2024-07-27 12:19:28 INFO Cleaning up finished run: 06yty6wj
+2024-07-27 12:19:28 INFO Agent received command: run
+2024-07-27 12:19:28 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: EFs
+	offline_train_test_datasets: trans_tagging
+	seed: 0
+2024-07-27 12:19:28 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=EFs --offline_train_test_datasets=trans_tagging --seed=0
+2024-07-27 12:19:33 INFO Running runs: ['bolb9usi']
+2024-07-27 12:19:33 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2024-07-27 12:19:33 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2024-07-27 18:04:32 INFO Running runs: []
+2024-07-27 18:04:33 INFO Agent received command: run
+2024-07-27 18:04:33 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: EFs
+	offline_train_test_datasets: key_word_tagging
+	seed: 0
+2024-07-27 18:04:33 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=EFs --offline_train_test_datasets=key_word_tagging --seed=0
+2024-07-27 18:04:38 INFO Running runs: ['0531kxc8']
+2024-07-27 18:04:38 INFO Cleaning up finished run: 0531kxc8
+2024-07-27 18:04:38 INFO Agent received command: run
+2024-07-27 18:04:38 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: EFs
+	offline_train_test_datasets: key_word_tagging
+	seed: 2
+2024-07-27 18:04:38 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=EFs --offline_train_test_datasets=key_word_tagging --seed=2
+2024-07-27 18:04:43 INFO Running runs: ['a3w6wk3v']
+2024-07-27 18:04:43 INFO Cleaning up finished run: a3w6wk3v
+2024-07-27 18:04:43 INFO Agent received command: run
+2024-07-27 18:04:43 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: EFs
+	offline_train_test_datasets: key_word_tagging
+	seed: 4
+2024-07-27 18:04:43 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=EFs --offline_train_test_datasets=key_word_tagging --seed=4
+2024-07-27 18:04:48 INFO Running runs: ['87gscj6d']
+2024-07-27 18:04:48 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2024-07-27 18:04:48 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
