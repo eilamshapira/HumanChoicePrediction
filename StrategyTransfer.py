@@ -71,7 +71,7 @@ parser.add_argument('--offline_train_test_datasets', type=str, default='key_word
 
 args = parser.parse_args()
 
-main_run = wandb.init(project='Strategy_Transfer_TACL')
+main_run = wandb.init(project='NLP2024_PROJECT_BellaPerel')
 config = wandb.config
 
 config.update(args.__dict__)
