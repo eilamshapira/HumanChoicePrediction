@@ -1,0 +1,31 @@
+wandb: Starting wandb agent \U0001f575\ufe0f
+2024-08-17 20:49:41,001 - wandb.wandb_agent - INFO - Running runs: []
+2024-08-17 20:49:41,402 - wandb.wandb_agent - INFO - Agent received command: run
+2024-08-17 20:49:41,402 - wandb.wandb_agent - INFO - Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: EFs
+	offline_train_test_datasets: key_word_tagging
+	seed: 0
+2024-08-17 20:49:41,406 - wandb.wandb_agent - INFO - About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=EFs --offline_train_test_datasets=key_word_tagging --seed=0
+wandb: Ctrl-c pressed. Waiting for runs to end. Press ctrl-c again to terminate them.
+wandb: Currently logged in as: bellaperel (bellatomer). Use `wandb login --relogin` to force relogin
+wandb: WARNING Ignored wandb.init() arg project when running a sweep.
+wandb: wandb version 0.17.7 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.16.5
+wandb: Run data is saved locally in C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240817_204954-zalrbr42
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run likely-sweep-1
+wandb:  View project at https://wandb.ai/bellatomer/NLP2024_PROJECT_BellaPerel
+wandb:  View sweep at https://wandb.ai/bellatomer/NLP2024_PROJECT_BellaPerel/sweeps/qc9nc6vq
+wandb:  View run at https://wandb.ai/bellatomer/NLP2024_PROJECT_BellaPerel/runs/zalrbr42/workspace
+wandb: WARNING Config item 'ENV_HPT_mode' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'seed' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'ENV_LEARNING_RATE' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'features' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'architecture' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'offline_train_test_datasets' was locked by 'sweep' (ignored update).
+wandb: Terminating and syncing runs. Press ctrl-c to kill.
+wandb: Killing runs and quitting.

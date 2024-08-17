@@ -3128,3 +3128,24 @@ wandb.errors.UsageError: Sweep bellatomer/NLP2024_PROJECT_BellaPerel/f368mnls is
 2024-07-27 16:17:18 INFO Cleaning up finished run: t5ctkvtp
 2024-07-27 16:17:19 INFO Agent received command: exit
 2024-07-27 16:17:19 INFO Received exit command. Killing runs and quitting.
+2024-08-17 20:49:41 INFO Running runs: []
+2024-08-17 20:49:41 INFO Agent received command: run
+2024-08-17 20:49:41 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: EFs
+	offline_train_test_datasets: key_word_tagging
+	seed: 0
+2024-08-17 20:49:41 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=EFs --offline_train_test_datasets=key_word_tagging --seed=0
+2024-08-17 20:50:35 INFO Running runs: []
+2024-08-17 20:50:36 INFO Agent received command: run
+2024-08-17 20:50:36 INFO Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: EFs
+	offline_train_test_datasets: key_word_tagging
+	seed: 2
+2024-08-17 20:50:36 INFO About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=EFs --offline_train_test_datasets=key_word_tagging --seed=2
+2024-08-17 20:50:41 INFO Running runs: ['g1r5eory']
