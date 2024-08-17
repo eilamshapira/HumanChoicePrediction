@@ -1,0 +1,13 @@
+
+Start training the environment...
+################
+# Epoch 0
+################
+Traceback (most recent call last):
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\StrategyTransfer.py", line 128, in <module>
+    env_model = environments.CNN_env.CNN_env(env_name, config=config)
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\environments\environment.py", line 38, in __init__
+    self.train()
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\environments\environment.py", line 144, in train
+    self.model.user_vectors.delete_all_users()
+AttributeError: 'UsersVectors' object has no attribute 'delete_all_users'

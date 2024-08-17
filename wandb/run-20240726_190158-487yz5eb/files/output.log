@@ -1,0 +1,20 @@
+
+Start training the environment...
+################
+# Epoch 0
+################
+Train:   0%|          | 0/2260 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\StrategyTransfer.py", line 128, in <module>
+    env_model = environments.CNN_env.CNN_env(env_name, config=config)
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\environments\environment.py", line 38, in __init__
+    self.train()
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\environments\environment.py", line 175, in train
+    model_output = self.model(model_vectors)
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\site-packages\torch\nn\modules\module.py", line 1190, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\environments\CNN_env.py", line 8, in forward
+    data = super().forward(vectors["x"], vectors["game_vector"], vectors["user_vector"])
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\SpecialCNN.py", line 53, in forward
+    game_vector = game_vector.unsqueeze(1).expand(batch_size, seq_len, -1)
+RuntimeError: expand(torch.DoubleTensor{[4, 1, 2, 64]}, size=[4, 10, -1]): the number of sizes provided (3) must be greater or equal to the number of dimensions in the tensor (4)

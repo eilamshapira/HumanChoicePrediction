@@ -134,25 +134,54 @@ class OfflineDataSet(Dataset):
         reviewId = game["reviewId"]
         round_num = np.full(10, -1)
         round_num[:n_rounds] = np.arange(n_rounds)
-
-        sample = {"user_id": user_id, "bot_strategy": bot_strategy, "n_rounds": n_rounds, "roundNum": round_num,
-                  "hotels_scores": hotels_scores, "action_taken": action_taken, "is_hotel_good": is_hotel_good,
-                  "reaction_time": reaction_time, "last_reaction_time": last_reaction_time,
-                  "last_didGo_True": game["last_didGo_True"].to_numpy(),
-                  "last_didWin_True": game["last_didWin_True"].to_numpy(),
-                  "last_didGo_False": game["last_didGo_False"].to_numpy(),
-                  "last_didWin_False": game["last_didWin_False"].to_numpy(),
-                  "last_last_didGo_False": game["last_last_didGo_False"].to_numpy(),
-                  "last_last_didGo_True": game["last_last_didGo_True"].to_numpy(),
-                  "last_last_didWin_False": game["last_last_didWin_False"].to_numpy(),
-                  "last_last_didWin_True": game["last_last_didWin_True"].to_numpy(),
-                  "user_points": user_points / 10,
-                  "bot_points": bot_points / 10, "user_earned_more": user_earned_more,
-                  "user_not_earned_more": user_not_earned_more,
-                  "review_vector": reviewId.apply(lambda r: self.review_reduced[r]).tolist(),
-                  "is_sample": game["is_sample"].to_numpy(),
-                  "weight": game["weight"].to_numpy(),
-                  "action_id": game["index"].to_numpy()}
+        if (DATA_CLEAN_ACTION_PATH_X == "data/games_clean_X_original.csv"):
+            sample = {"user_id": user_id, "bot_strategy": bot_strategy, "n_rounds": n_rounds, "roundNum": round_num,
+                      "hotels_scores": hotels_scores, "action_taken": action_taken, "is_hotel_good": is_hotel_good,
+                      "reaction_time": reaction_time, "last_reaction_time": last_reaction_time,
+                      "last_didGo_True": game["last_didGo_True"].to_numpy(),
+                      "last_didWin_True": game["last_didWin_True"].to_numpy(),
+                      "last_didGo_False": game["last_didGo_False"].to_numpy(),
+                      "last_didWin_False": game["last_didWin_False"].to_numpy(),
+                      "last_last_didGo_False": game["last_last_didGo_False"].to_numpy(),
+                      "last_last_didGo_True": game["last_last_didGo_True"].to_numpy(),
+                      "last_last_didWin_False": game["last_last_didWin_False"].to_numpy(),
+                      "last_last_didWin_True": game["last_last_didWin_True"].to_numpy(),
+                      "user_points": user_points / 10,
+                      "bot_points": bot_points / 10, "user_earned_more": user_earned_more,
+                      "user_not_earned_more": user_not_earned_more,
+                      "review_vector": reviewId.apply(lambda r: self.review_reduced[r]).tolist(),
+                      "is_sample": game["is_sample"].to_numpy(),
+                      "weight": game["weight"].to_numpy(),
+                      "action_id": game["index"].to_numpy()}
+        else:
+            sample = {"user_id": user_id, "bot_strategy": bot_strategy, "n_rounds": n_rounds, "roundNum": round_num,
+                      "hotels_scores": hotels_scores, "action_taken": action_taken, "is_hotel_good": is_hotel_good,
+                      "reaction_time": reaction_time, "last_reaction_time": last_reaction_time,
+                      "last_didGo_True": game["last_didGo_True"].to_numpy(),
+                      "last_didWin_True": game["last_didWin_True"].to_numpy(),
+                      "last_didGo_False": game["last_didGo_False"].to_numpy(),
+                      "last_didWin_False": game["last_didWin_False"].to_numpy(),
+                      "last_last_didGo_False": game["last_last_didGo_False"].to_numpy(),
+                      "last_last_didGo_True": game["last_last_didGo_True"].to_numpy(),
+                      "last_last_didWin_False": game["last_last_didWin_False"].to_numpy(),
+                      "last_last_didWin_True": game["last_last_didWin_True"].to_numpy(),
+                      "user_points": user_points / 10,
+                      "bot_points": bot_points / 10, "user_earned_more": user_earned_more,
+                      "user_not_earned_more": user_not_earned_more,
+                      "review_vector": reviewId.apply(lambda r: self.review_reduced[r]).tolist(),
+                      "is_sample": game["is_sample"].to_numpy(),
+                      "weight": game["weight"].to_numpy(),
+                      "action_id": game["index"].to_numpy(),
+                      'Staff (Pos)': game['Staff (Pos)'].to_numpy(),
+                      'Facilities (Pos)': game['Facilities (Pos)'].to_numpy(),
+                      'Cleanliness (Pos)': game['Cleanliness (Pos)'].to_numpy(),
+                      'Location (Pos)': game['Location (Pos)'].to_numpy(),
+                      'Food (Pos)': game['Food (Pos)'].to_numpy(),
+                      'Staff (Neg)': game['Staff (Neg)'].to_numpy(),
+                      'Facilities (Neg)': game['Facilities (Neg)'].to_numpy(),
+                      'Cleanliness (Neg)': game['Cleanliness (Neg)'].to_numpy(),
+                      'Location (Neg)': game['Location (Neg)'].to_numpy(),
+                      'Food (Neg)': game['Food (Neg)'].to_numpy(),}
 
         for column_name, (lower, upper) in zip(reaction_time_columns_names, reaction_time_bins):
             sample[column_name] = (lower <= last_reaction_time) & (last_reaction_time < upper)
@@ -398,7 +427,17 @@ class OnlineSimulationDataSet(Dataset):
                            "last_last_didGo_False": last_last_didGo_False, "last_last_didGo_True": last_last_didGo_True,
                            "last_last_didWin_False": last_last_didWin_False,
                            "last_last_didWin_True": last_last_didWin_True,
-                           "user_points": user_points, "bot_points": bot_points, "weight": weight, "is_sample": True}
+                           "user_points": user_points, "bot_points": bot_points, "weight": weight, "is_sample": True,
+                           'Staff (Pos)': 0,
+                           'Facilities (Pos)': 0,
+                           'Cleanliness (Pos)': 0,
+                           'Location (Pos)': 0,
+                           'Food (Pos)': 0,
+                           'Staff (Neg)': 0,
+                           'Facilities (Neg)': 0,
+                           'Cleanliness (Neg)': 0,
+                           'Location (Neg)': 0,
+                           'Food (Neg)': 0}
 
                     # if self.advanced_reaction_time:
                     #     last_reaction_time = self.get_reaction_time(row)
@@ -481,7 +520,16 @@ class OnlineSimulationDataSet(Dataset):
                   "review_vector": reviewId.apply(lambda r: self.review_reduced[r]).tolist(),
                   "is_sample": game["is_sample"].to_numpy(),
                   "weight": weight,
-                  "action_id": action_ids}
+                  "action_id": action_ids,'Staff (Pos)': 0,
+                  'Facilities (Pos)': 0,
+                  'Cleanliness (Pos)': 0,
+                  'Location (Pos)': 0,
+                  'Food (Pos)': 0,
+                  'Staff (Neg)': 0,
+                  'Facilities (Neg)': 0,
+                  'Cleanliness (Neg)': 0,
+                  'Location (Neg)': 0,
+                  'Food (Neg)': 0}
 
         for column_name, (lower, upper) in zip(reaction_time_columns_names, reaction_time_bins):
             sample[column_name] = (lower <= last_reaction_time) & (last_reaction_time < upper)

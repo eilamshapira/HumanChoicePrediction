@@ -1,0 +1,13 @@
+Configuration,Max Accuracy,Seed,Epoch
+"('EFs', 'CNN', 0.001, 'key_word_tagging')",0.8218160610533101,4,3
+"('EFs', 'CNN', 0.001, 'original_data')",0.8222497660240017,4,1
+"('EFs', 'CNN', 0.001, 'trans_tagging')",0.8238998599437464,2,4
+"('EFs', 'CNN', 0.003, 'key_word_tagging')",0.8214559760546165,2,8
+"('EFs', 'CNN', 0.003, 'original_data')",0.8238004805156997,0,4
+"('EFs', 'CNN', 0.003, 'trans_tagging')",0.8224891017397419,4,4
+"('EFs', 'LSTM', 0.001, 'key_word_tagging')",0.8316325379469344,2,8
+"('EFs', 'LSTM', 0.001, 'original_data')",0.8325731597062312,0,11
+"('EFs', 'LSTM', 0.001, 'trans_tagging')",0.8355035321017082,2,10
+"('EFs', 'LSTM', 0.003, 'key_word_tagging')",0.8318188377115345,4,7
+"('EFs', 'LSTM', 0.003, 'original_data')",0.8339295898570905,0,11
+"('EFs', 'LSTM', 0.003, 'trans_tagging')",0.8337374974823344,4,7

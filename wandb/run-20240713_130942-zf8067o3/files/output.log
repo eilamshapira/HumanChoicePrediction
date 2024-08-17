@@ -1,0 +1,39 @@
+
+Start training the environment...
+################
+# Epoch 0
+################
+Train:   0%|          | 0/2260 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Staff (Pos)'
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\StrategyTransfer.py", line 126, in <module>
+    env_model = environments.CNN_env.CNN_env(env_name, config=config)
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\environments\environment.py", line 38, in __init__
+    self.train()
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\environments\environment.py", line 159, in train
+    for batch in tqdm(dataloader, desc=phase):
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\site-packages\tqdm\std.py", line 1195, in __iter__
+    for obj in iterable:
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\site-packages\torch\utils\data\dataloader.py", line 628, in __next__
+    data = self._next_data()
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\site-packages\torch\utils\data\dataloader.py", line 671, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\site-packages\torch\utils\data\_utils\fetch.py", line 58, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\site-packages\torch\utils\data\_utils\fetch.py", line 58, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\utils\datasets.py", line 168, in __getitem__
+    'Staff (Pos)': game['Staff (Pos)'].to_numpy(),
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Staff (Pos)'

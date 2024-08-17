@@ -1,0 +1,32 @@
+
+Start training the environment...
+################
+# Epoch 0
+################
+conv_output shape: torch.Size([40, 256])
+output shape before view: torch.Size([4, 10, 2])
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+conv_output shape: torch.Size([40, 256])
+output shape before view: torch.Size([4, 10, 2])
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+conv_output shape: torch.Size([40, 256])
+output shape before view: torch.Size([4, 10, 2])
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+conv_output shape: torch.Size([40, 256])
+output shape before view: torch.Size([4, 10, 2])
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Train:   0%|          | 4/2260 [00:01<13:29,  2.79it/s]
+Traceback (most recent call last):
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\StrategyTransfer.py", line 113, in <module>
+    env_model = environments.CNN_env.CNN_env(env_name, config=config)
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\environments\environment.py", line 38, in __init__
+    self.train()
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\environments\environment.py", line 170, in train
+    model_vectors["user_vector"] = self.model.user_vectors[batch["user_id"].to("cpu").numpy()].to(
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\utils\usersvectors.py", line 21, in __getitem__
+    return torch.stack([self.users[k] if k in self.users.keys() else self.get_init_vector() for k in key])
+RuntimeError: stack expects each tensor to be equal size, but got [256] at entry 0 and [1, 256] at entry 1

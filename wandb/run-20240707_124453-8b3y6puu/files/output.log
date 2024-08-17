@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\StrategyTransfer.py", line 1, in <module>
+    import utils
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\utils\__init__.py", line 3, in <module>
+    from consts import *
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\consts.py", line 4, in <module>
+    import StrategyTransfer as ST
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\StrategyTransfer.py", line 82, in <module>
+    json.dump(config, f)
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\json\__init__.py", line 179, in dump
+    for chunk in iterable:
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\json\encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Config is not JSON serializable

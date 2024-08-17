@@ -1,0 +1,16 @@
+wandb: WARNING Config item 'ENV_HPT_mode' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'seed' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'ENV_LEARNING_RATE' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'features' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'architecture' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'online_simulation_factor' was locked by 'sweep' (ignored update).
+Traceback (most recent call last):
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\StrategyTransfer.py", line 1, in <module>
+    import utils
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\utils\__init__.py", line 3, in <module>
+    from consts import *
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\consts.py", line 4, in <module>
+    import StrategyTransfer as ST
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\StrategyTransfer.py", line 113, in <module>
+    all_bot_points = []
+NameError: name 'STRATEGY_DIM' is not defined

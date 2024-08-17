@@ -1,0 +1,53 @@
+
+Start training the environment...
+################
+# Epoch 0
+################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Create online-simulation users for this epoch. mean games/user: 44.30: 100%|██████████| 420/420 [01:18<00:00,  5.36it/s]
+Online Simulation:   0%|          | 0/4651 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\StrategyTransfer.py", line 113, in <module>
+    env_model = environments.CNN_env.CNN_env(env_name, config=config)
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\environments\environment.py", line 38, in __init__
+    self.train()
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\environments\environment.py", line 166, in train
+    env_input = torch.cat(env_input, dim=2).double().to(device)
+RuntimeError: Tensors must have same number of dimensions: got 3 and 2

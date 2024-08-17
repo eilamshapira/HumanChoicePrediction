@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\StrategyTransfer.py", line 113, in <module>
+    env_model = environments.CNN_env.CNN_env(env_name, config=config)
+AttributeError: module 'environments' has no attribute 'CNN_env'

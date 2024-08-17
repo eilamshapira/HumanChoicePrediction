@@ -1,0 +1,25 @@
+
+Start training the environment...
+################
+# Epoch 0
+################
+Stage: Training
+Input vector shape: torch.Size([4, 10, 70])
+Permuted input vector shape: torch.Size([4, 70, 10])
+Conv output shape: torch.Size([4, 256, 10])
+Reshaped conv output shape: torch.Size([40, 256])
+User vector shape: torch.Size([40, 128])
+Game vector shape: torch.Size([40, 128])
+Combined output shape: torch.Size([40, 512])
+Final output shape: torch.Size([4, 10, 2])
+Train:   0%|          | 0/2260 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\StrategyTransfer.py", line 128, in <module>
+    env_model = environments.CNN_env.CNN_env(env_name, config=config)
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\environments\environment.py", line 38, in __init__
+    self.train()
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\environments\environment.py", line 214, in train
+    self.model.user_vectors[batch["user_id"].to("cpu").numpy()] = updated_user_vectors.squeeze()
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\utils\usersvectors.py", line 29, in __setitem__
+    assert len(key) == len(new_value)
+AssertionError

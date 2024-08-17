@@ -1,0 +1,32 @@
+wandb: Starting wandb agent \U0001f575\ufe0f
+2024-08-17 21:09:43,301 - wandb.wandb_agent - INFO - Running runs: []
+2024-08-17 21:09:43,644 - wandb.wandb_agent - INFO - Agent received command: run
+2024-08-17 21:09:43,644 - wandb.wandb_agent - INFO - Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: EFs
+	offline_train_test_datasets: key_word_tagging
+	seed: 0
+2024-08-17 21:09:43,649 - wandb.wandb_agent - INFO - About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=EFs --offline_train_test_datasets=key_word_tagging --seed=0
+Traceback (most recent call last):
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\RunningScripts\StrategyTransfer.py", line 1, in <module>
+    import utils
+ModuleNotFoundError: No module named 'utils'
+2024-08-17 21:09:48,660 - wandb.wandb_agent - INFO - Running runs: ['r2w77qu3']
+2024-08-17 21:09:48,660 - wandb.wandb_agent - INFO - Cleaning up finished run: r2w77qu3
+2024-08-17 21:09:49,498 - wandb.wandb_agent - INFO - Agent received command: run
+2024-08-17 21:09:49,498 - wandb.wandb_agent - INFO - Agent starting run with config:
+	ENV_HPT_mode: False
+	ENV_LEARNING_RATE: 0.001
+	architecture: CNN
+	features: EFs
+	offline_train_test_datasets: key_word_tagging
+	seed: 2
+2024-08-17 21:09:49,503 - wandb.wandb_agent - INFO - About to run command: python StrategyTransfer.py --ENV_HPT_mode=False --ENV_LEARNING_RATE=0.001 --architecture=CNN --features=EFs --offline_train_test_datasets=key_word_tagging --seed=2
+Traceback (most recent call last):
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\RunningScripts\StrategyTransfer.py", line 1, in <module>
+    import utils
+ModuleNotFoundError: No module named 'utils'
+wandb: Ctrl-c pressed. Waiting for runs to end. Press ctrl-c again to terminate them.
+wandb: Terminating and syncing runs. Press ctrl-c to kill.

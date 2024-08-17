@@ -1,0 +1,96 @@
+2024-07-13 13:10:48,124 INFO    StreamThr :7088 [internal.py:wandb_internal():86] W&B internal server running at pid: 7088, started at: 2024-07-13 13:10:48.123718
+2024-07-13 13:10:48,128 DEBUG   HandlerThread:7088 [handler.py:handle_request():146] handle_request: status
+2024-07-13 13:10:48,132 INFO    WriterThread:7088 [datastore.py:open_for_write():87] open: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240713_131048-op99lw9n\run-op99lw9n.wandb
+2024-07-13 13:10:48,136 DEBUG   SenderThread:7088 [sender.py:send():379] send: header
+2024-07-13 13:10:48,171 DEBUG   SenderThread:7088 [sender.py:send():379] send: run
+2024-07-13 13:10:48,921 INFO    SenderThread:7088 [dir_watcher.py:__init__():211] watching files in: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240713_131048-op99lw9n\files
+2024-07-13 13:10:48,921 INFO    SenderThread:7088 [sender.py:_start_run_threads():1124] run started: op99lw9n with start time 1720865448.12572
+2024-07-13 13:10:48,944 DEBUG   HandlerThread:7088 [handler.py:handle_request():146] handle_request: check_version
+2024-07-13 13:10:48,944 DEBUG   SenderThread:7088 [sender.py:send_request():406] send_request: check_version
+2024-07-13 13:10:49,226 DEBUG   HandlerThread:7088 [handler.py:handle_request():146] handle_request: run_start
+2024-07-13 13:10:49,238 DEBUG   HandlerThread:7088 [system_info.py:__init__():26] System info init
+2024-07-13 13:10:49,238 DEBUG   HandlerThread:7088 [system_info.py:__init__():41] System info init done
+2024-07-13 13:10:49,238 INFO    HandlerThread:7088 [system_monitor.py:start():194] Starting system monitor
+2024-07-13 13:10:49,239 INFO    SystemMonitor:7088 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-13 13:10:49,240 INFO    HandlerThread:7088 [system_monitor.py:probe():214] Collecting system info
+2024-07-13 13:10:49,240 DEBUG   HandlerThread:7088 [system_info.py:probe():150] Probing system
+2024-07-13 13:10:49,245 INFO    SystemMonitor:7088 [interfaces.py:start():190] Started cpu monitoring
+2024-07-13 13:10:49,246 INFO    SystemMonitor:7088 [interfaces.py:start():190] Started disk monitoring
+2024-07-13 13:10:49,248 INFO    SystemMonitor:7088 [interfaces.py:start():190] Started memory monitoring
+2024-07-13 13:10:49,259 INFO    SystemMonitor:7088 [interfaces.py:start():190] Started network monitoring
+2024-07-13 13:10:49,267 DEBUG   HandlerThread:7088 [system_info.py:_probe_git():135] Probing git
+2024-07-13 13:10:49,340 DEBUG   HandlerThread:7088 [system_info.py:_probe_git():143] Probing git done
+2024-07-13 13:10:49,340 DEBUG   HandlerThread:7088 [system_info.py:probe():198] Probing system done
+2024-07-13 13:10:49,340 DEBUG   HandlerThread:7088 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.19045-SP0', 'python': '3.9.19', 'heartbeatAt': '2024-07-13T10:10:49.240911', 'startedAt': '2024-07-13T10:10:48.112367', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'C:/Users/Bella Perel/PycharmProjects/nlp_project_eilam/HumanChoicePrediction/StrategyTransfer.py', 'codePathLocal': 'StrategyTransfer.py', 'codePath': 'StrategyTransfer.py', 'git': {'remote': 'https://github.com/BellaPerel/HumanChoicePrediction.git', 'commit': '6fbe9b1b18f9ee53d979f30e214d89492c259668'}, 'email': '81310709+BellaPerel@users.noreply.github.com', 'root': 'C:/Users/Bella Perel/PycharmProjects/nlp_project_eilam/HumanChoicePrediction', 'host': 'LAPTOP-AJ1T6PPE', 'username': 'Bella Perel', 'executable': 'C:\\ProgramData\\Anaconda3\\envs\\Pokemon\\python.exe', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2803.0, 'min': 0.0, 'max': 2803.0}, 'cpu_freq_per_core': [{'current': 2803.0, 'min': 0.0, 'max': 2803.0}], 'disk': {'/': {'total': 475.69237899780273, 'used': 470.9374656677246}}, 'memory': {'total': 15.804008483886719}}
+2024-07-13 13:10:49,340 INFO    HandlerThread:7088 [system_monitor.py:probe():224] Finished collecting system info
+2024-07-13 13:10:49,340 INFO    HandlerThread:7088 [system_monitor.py:probe():227] Publishing system info
+2024-07-13 13:10:49,340 DEBUG   HandlerThread:7088 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-07-13 13:10:49,343 ERROR   HandlerThread:7088 [system_info.py:_save_conda():221] Error saving conda packages: [WinError 2] The system cannot find the file specified
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\site-packages\wandb\sdk\internal\system\system_info.py", line 214, in _save_conda
+    subprocess.call(
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\subprocess.py", line 349, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\subprocess.py", line 1436, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_bundle\pydev_monkey.py", line 575, in new_CreateProcess
+    return getattr(_subprocess, original_name)(app_name, patch_arg_str_win(cmd_line), *args)
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+2024-07-13 13:10:49,346 DEBUG   HandlerThread:7088 [system_info.py:_save_conda():222] Saving conda packages done
+2024-07-13 13:10:49,348 INFO    HandlerThread:7088 [system_monitor.py:probe():229] Finished publishing system info
+2024-07-13 13:10:49,368 DEBUG   SenderThread:7088 [sender.py:send():379] send: files
+2024-07-13 13:10:49,368 INFO    SenderThread:7088 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-07-13 13:10:49,935 INFO    Thread-21 :7088 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240713_131048-op99lw9n\files\wandb-metadata.json
+2024-07-13 13:10:49,936 INFO    Thread-21 :7088 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240713_131048-op99lw9n\files\conda-environment.yaml
+2024-07-13 13:10:50,063 INFO    wandb-upload_0:7088 [upload_job.py:push():131] Uploaded file C:\Users\BELLAP~1\AppData\Local\Temp\tmpobpsj7flwandb\emofiyiq-wandb-metadata.json
+2024-07-13 13:10:50,211 DEBUG   HandlerThread:7088 [handler.py:handle_request():146] handle_request: python_packages
+2024-07-13 13:10:50,212 DEBUG   SenderThread:7088 [sender.py:send_request():406] send_request: python_packages
+2024-07-13 13:10:50,213 DEBUG   HandlerThread:7088 [handler.py:handle_request():146] handle_request: stop_status
+2024-07-13 13:10:50,214 DEBUG   SenderThread:7088 [sender.py:send_request():406] send_request: stop_status
+2024-07-13 13:10:50,219 DEBUG   HandlerThread:7088 [handler.py:handle_request():146] handle_request: internal_messages
+2024-07-13 13:10:50,496 DEBUG   SenderThread:7088 [sender.py:send():379] send: telemetry
+2024-07-13 13:10:50,497 DEBUG   SenderThread:7088 [sender.py:send():379] send: config
+2024-07-13 13:10:50,497 DEBUG   SenderThread:7088 [sender.py:send():379] send: telemetry
+2024-07-13 13:10:50,498 DEBUG   SenderThread:7088 [sender.py:send():379] send: config
+2024-07-13 13:10:50,498 DEBUG   SenderThread:7088 [sender.py:send():379] send: config
+2024-07-13 13:10:50,498 DEBUG   SenderThread:7088 [sender.py:send():379] send: config
+2024-07-13 13:10:50,498 DEBUG   SenderThread:7088 [sender.py:send():379] send: config
+2024-07-13 13:10:50,498 DEBUG   SenderThread:7088 [sender.py:send():379] send: config
+2024-07-13 13:10:50,498 DEBUG   SenderThread:7088 [sender.py:send():379] send: config
+2024-07-13 13:10:50,938 INFO    Thread-21 :7088 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240713_131048-op99lw9n\files\output.log
+2024-07-13 13:10:50,938 INFO    Thread-21 :7088 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240713_131048-op99lw9n\files\requirements.txt
+2024-07-13 13:10:53,524 DEBUG   HandlerThread:7088 [handler.py:handle_request():146] handle_request: status_report
+2024-07-13 13:10:58,556 DEBUG   HandlerThread:7088 [handler.py:handle_request():146] handle_request: status_report
+2024-07-13 13:11:03,602 DEBUG   HandlerThread:7088 [handler.py:handle_request():146] handle_request: status_report
+2024-07-13 13:11:05,068 INFO    Thread-21 :7088 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240713_131048-op99lw9n\files\output.log
+2024-07-13 13:11:05,213 DEBUG   HandlerThread:7088 [handler.py:handle_request():146] handle_request: stop_status
+2024-07-13 13:11:05,213 DEBUG   SenderThread:7088 [sender.py:send_request():406] send_request: stop_status
+2024-07-13 13:11:05,218 DEBUG   HandlerThread:7088 [handler.py:handle_request():146] handle_request: internal_messages
+2024-07-13 13:11:09,444 DEBUG   HandlerThread:7088 [handler.py:handle_request():146] handle_request: status_report
+2024-07-13 13:11:14,485 DEBUG   HandlerThread:7088 [handler.py:handle_request():146] handle_request: status_report
+2024-07-13 13:11:19,540 DEBUG   HandlerThread:7088 [handler.py:handle_request():146] handle_request: status_report
+2024-07-13 13:11:20,185 INFO    Thread-21 :7088 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\wandb\run-20240713_131048-op99lw9n\files\config.yaml
+2024-07-13 13:11:20,216 DEBUG   HandlerThread:7088 [handler.py:handle_request():146] handle_request: stop_status
+2024-07-13 13:11:20,217 DEBUG   SenderThread:7088 [sender.py:send_request():406] send_request: stop_status
+2024-07-13 13:11:20,217 DEBUG   HandlerThread:7088 [handler.py:handle_request():146] handle_request: internal_messages
+2024-07-13 13:11:25,471 DEBUG   HandlerThread:7088 [handler.py:handle_request():146] handle_request: status_report
+2024-07-13 13:11:30,522 DEBUG   HandlerThread:7088 [handler.py:handle_request():146] handle_request: status_report
+2024-07-13 13:11:35,217 DEBUG   HandlerThread:7088 [handler.py:handle_request():146] handle_request: stop_status
+2024-07-13 13:11:35,218 DEBUG   HandlerThread:7088 [handler.py:handle_request():146] handle_request: internal_messages
+2024-07-13 13:11:35,218 DEBUG   SenderThread:7088 [sender.py:send_request():406] send_request: stop_status
+2024-07-13 13:11:36,501 DEBUG   HandlerThread:7088 [handler.py:handle_request():146] handle_request: status_report
+2024-07-13 13:11:41,540 DEBUG   HandlerThread:7088 [handler.py:handle_request():146] handle_request: status_report
+2024-07-13 13:11:46,579 DEBUG   HandlerThread:7088 [handler.py:handle_request():146] handle_request: status_report
+2024-07-13 13:11:49,263 DEBUG   SystemMonitor:7088 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-07-13 13:11:49,265 DEBUG   SenderThread:7088 [sender.py:send():379] send: stats
+2024-07-13 13:11:50,218 DEBUG   HandlerThread:7088 [handler.py:handle_request():146] handle_request: stop_status
+2024-07-13 13:11:50,219 DEBUG   HandlerThread:7088 [handler.py:handle_request():146] handle_request: internal_messages
+2024-07-13 13:11:50,219 DEBUG   SenderThread:7088 [sender.py:send_request():406] send_request: stop_status
+2024-07-13 13:11:52,521 DEBUG   HandlerThread:7088 [handler.py:handle_request():146] handle_request: status_report
+2024-07-13 13:11:55,547 INFO    memory    :7088 [interfaces.py:monitor():140] Process proc.memory.rssMB has exited.
+2024-07-13 13:11:55,548 DEBUG   SystemMonitor:7088 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-07-13 13:11:55,548 DEBUG   SystemMonitor:7088 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-07-13 13:11:55,549 DEBUG   SenderThread:7088 [sender.py:send():379] send: stats
+2024-07-13 13:11:55,840 INFO    MainThread:7088 [internal.py:handle_exit():76] Internal process exited

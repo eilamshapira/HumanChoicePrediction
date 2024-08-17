@@ -1,0 +1,23 @@
+
+Start training the environment...
+################
+# Epoch 0
+################
+Stage: Training
+Input vector shape: torch.Size([4, 10, 70])
+Permuted input vector shape: torch.Size([4, 70, 10])
+Train:   0%|          | 0/2260 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\StrategyTransfer.py", line 128, in <module>
+    env_model = environments.CNN_env.CNN_env(env_name, config=config)
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\environments\environment.py", line 38, in __init__
+    self.train()
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\environments\environment.py", line 175, in train
+    model_output = self.model(model_vectors)
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\site-packages\torch\nn\modules\module.py", line 1190, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\environments\CNN_env.py", line 8, in forward
+    data = super().forward(vectors["x"], vectors["game_vector"], vectors["user_vector"])
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\SpecialCNN.py", line 59, in forward
+    combined_vec = torch.cat((input_vec, user_vector, game_vector), dim=2).permute(0, 2, 1)
+RuntimeError: Sizes of tensors must match except in dimension 2. Expected size 70 but got size 10 for tensor number 1 in the list.

@@ -1,0 +1,9 @@
+
+Start training the environment...
+################
+# Epoch 0
+################
+Train:   0%|          | 0/2260 [00:00<?, ?it/s]
+Stage: Training
+Input vector shape: torch.Size([4, 10, 70])
+Permuted input vector shape: torch.Size([4, 70, 10])

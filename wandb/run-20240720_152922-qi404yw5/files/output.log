@@ -1,0 +1,52 @@
+{'ENV_HPT_mode': False, 'seed': 1, 'task': 'off_policy', 'ENV_LEARNING_RATE': 0.001, 'loss_weight_type': 'None', 'save_artifacts': True, 'strategies': None, 'total_epochs': 25, 'features': 'EFs', 'architecture': 'CNN', 'hidden_dim': 32, 'layers': 2, 'transformer_nheads': 4, 'dropout': 0, 'human_train_size': 210, 'online_sim_type': 'before_epoch', 'basic_nature': 12, 'online_simulation_factor': 0, 'simulation_bot_per_user': 0, 'simulation_signal_error': 0.3, 'simulation_user_improve': 0.01, 'max_games': 4, 'zero_knowledge': True, 'bots_per_user': 6, 'SIMULATION_EFs_PATH': 'data/EFs_by_GPT35.csv', 'favorite_topic_method': 'review', 'agent': 'modelbasedRL', 'force_train': True, 'output_dim': 2, 'offline_simulation_size': 0, 'OFFLINE_SIM_DATA_PATH': 'data/LLM_games_personas.csv', 'personas_balanced': True, 'personas_group_number': -1, 'offline_train_test_datasets': 'original_data', 'FEATURES_PATH': 'data/EFs_by_GPT35.csv', 'REVIEW_DIM': 37, 'use_user_vector': True, 'online_simulation_size': 0, 'input_dim': 60, 'wandb_run_id': 'qi404yw5'}
+Start training the environment...
+################
+# Epoch 0
+################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Train: 100%|█████████▉| 2259/2260 [01:07<00:00, 33.27it/s]
+
+
+
+
+
+
+
+Test: 642it [00:13, 46.16it/s]
+proba_accuracy_per_mean_user_and_bot:  0.9743501139520454
+accuracy_per_mean_user_and_bot:  0.9835590517559702
+Train:   9%|▉         | 203/2260 [00:05<00:56, 36.69it/s]
+################
+# Epoch 1
+

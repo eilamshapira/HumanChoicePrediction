@@ -1,0 +1,31 @@
+
+Start training the environment...
+################
+# Epoch 0
+################
+Train:   0%|          | 0/2260 [01:01<?, ?it/s]
+Traceback (most recent call last):
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\pydevd.py", line 1483, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "C:/Users/Bella Perel/PycharmProjects/nlp_project_eilam/HumanChoicePrediction/StrategyTransfer.py", line 108, in <module>
+    env_model = environments.LSTM_env.LSTM_env(env_name, config=config)
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\environments\environment.py", line 38, in __init__
+    self.train()
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\environments\environment.py", line 175, in train
+    model_output = self.model(model_vectors)
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\site-packages\torch\nn\modules\module.py", line 1190, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\environments\LSTM_env.py", line 10, in forward
+    data = super().forward(vectors["x"], vectors["game_vector"], vectors["user_vector"])
+  File "C:\Users\Bella Perel\PycharmProjects\nlp_project_eilam\HumanChoicePrediction\SpecialLSTM.py", line 47, in forward
+    lstm_input = self.input_fc(input_vec)
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\site-packages\torch\nn\modules\module.py", line 1190, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\site-packages\torch\nn\modules\container.py", line 204, in forward
+    input = module(input)
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\site-packages\torch\nn\modules\module.py", line 1190, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\ProgramData\Anaconda3\envs\Pokemon\lib\site-packages\torch\nn\modules\linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)

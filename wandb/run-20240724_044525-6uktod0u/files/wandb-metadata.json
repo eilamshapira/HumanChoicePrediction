@@ -1,0 +1,52 @@
+{
+    "os": "Windows-10-10.0.19045-SP0",
+    "python": "3.9.19",
+    "heartbeatAt": "2024-07-24T01:45:26.210472",
+    "startedAt": "2024-07-24T01:45:25.340057",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--ENV_HPT_mode=False",
+        "--ENV_LEARNING_RATE=0.001",
+        "--architecture=LSTM",
+        "--features=EFs",
+        "--offline_train_test_datasets=key_word_tagging",
+        "--seed=0"
+    ],
+    "state": "running",
+    "program": "C:\\Users\\Bella Perel\\PycharmProjects\\nlp_project_eilam\\HumanChoicePrediction\\StrategyTransfer.py",
+    "codePathLocal": "StrategyTransfer.py",
+    "codePath": "StrategyTransfer.py",
+    "git": {
+        "remote": "https://github.com/BellaPerel/HumanChoicePrediction.git",
+        "commit": "aef1da439ee30d74f99062941223dbc5f9819ddd"
+    },
+    "email": "81310709+BellaPerel@users.noreply.github.com",
+    "root": "C:/Users/Bella Perel/PycharmProjects/nlp_project_eilam/HumanChoicePrediction",
+    "host": "LAPTOP-AJ1T6PPE",
+    "username": "Bella Perel",
+    "executable": "C:\\ProgramData\\Anaconda3\\envs\\Pokemon\\python.exe",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2803.0,
+        "min": 0.0,
+        "max": 2803.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2803.0,
+            "min": 0.0,
+            "max": 2803.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 475.69237899780273,
+            "used": 472.0877571105957
+        }
+    },
+    "memory": {
+        "total": 15.804008483886719
+    }
+}

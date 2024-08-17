@@ -1,0 +1,76 @@
+wandb: WARNING Config item 'ENV_HPT_mode' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'seed' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'ENV_LEARNING_RATE' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'features' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'architecture' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'online_simulation_factor' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'offline_train_test_datasets' was locked by 'sweep' (ignored update).
+Start training the environment...
+Train:   0%|▏                                                                                                         | 4/2260 [00:00<02:01, 18.63it/s]
+################
+# Epoch 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Train:  82%|████████████████████████████████████████████████████████████████████████████████████▌                  | 1855/2260 [02:08<00:46,  8.64it/s]

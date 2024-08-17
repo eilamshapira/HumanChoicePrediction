@@ -1,0 +1,4 @@
+config_features,config_architecture,config_ENV_LEARNING_RATE,config_offline_train_test_datasets,Max Epoch,Max Accuracy,Std Over Epochs
+EFs,LSTM,0.003,original_data,11,0.8339295898570905,0.004311789409183778
+EFs,LSTM,0.001,original_data,11,0.8325731597062312,0.003779460206119931
+EFs,LSTM,0.001,trans_tagging,10,0.8315390693793473,0.004503979384470413

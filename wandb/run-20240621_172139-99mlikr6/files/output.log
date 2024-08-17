@@ -1,0 +1,149 @@
+
+Start training the environment...
+################
+# Epoch 0
+################
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Train:   1%|          | 23/2260 [00:01<02:53, 12.86it/s]
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+
+Train:   2%|▏         | 48/2260 [00:03<02:26, 15.11it/s]
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+Batch size: 4, DATA_ROUNDS_PER_GAME: 10
+Output shape before reshape: torch.Size([4, 10, 2])
+
