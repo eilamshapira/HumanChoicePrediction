@@ -49,4 +49,5 @@ If you find this work useful, please cite our paper:
   author = {Shapira, Eilam and Madmon, Omer and Apel, Reut and Tennenholtz, Moshe and Reichart, Roi},
   journal = {arXiv preprint arXiv:2305.10361},
   year = {2023},
-}```
+}
+```
