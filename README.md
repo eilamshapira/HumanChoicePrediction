@@ -44,10 +44,13 @@ To install and run the code on your local machine, follow these steps:
 
 If you find this work useful, please cite our paper:
 
-```@article{shapira2023human,
-  title = {Human Choice Prediction in Language-based Persuasion Games: Simulation-based Off-Policy Evaluation},
-  author = {Shapira, Eilam and Madmon, Omer and Apel, Reut and Tennenholtz, Moshe and Reichart, Roi},
-  journal = {arXiv preprint arXiv:2305.10361},
-  year = {2023},
+```@article{shapira2025human,
+  title={Human choice prediction in language-based persuasion games: Simulation-based off-policy evaluation},
+  author={Shapira, Eilam and Madmon, Omer and Apel, Reut and Tennenholtz, Moshe and Reichart, Roi},
+  journal={Transactions of the Association for Computational Linguistics},
+  volume={13},
+  pages={980--1006},
+  year={2025},
+  publisher={MIT Press 255 Main Street, 9th Floor, Cambridge, Massachusetts 02142, USA}
 }
 ```
