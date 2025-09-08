@@ -44,7 +44,7 @@ To install and run the code on your local machine, follow these steps:
 
 If you find this work useful, please cite our paper:
 
-```
+```bibTex
 @article{shapira2025human,
   title={Human choice prediction in language-based persuasion games: Simulation-based off-policy evaluation},
   author={Shapira, Eilam and Madmon, Omer and Apel, Reut and Tennenholtz, Moshe and Reichart, Roi},
